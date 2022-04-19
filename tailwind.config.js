@@ -9,10 +9,10 @@ module.exports = {
 		},
 		extend: {
 			backgroundImage: {
-				'main-background': "url('/src/imgs/3.jpg')",
-				'nav-logo': "url('/src/imgs/logos/LFB-logo_transparent.png')",
-				'second-background': "url('/src/imgs/1.jpg')",
-				'third-background': "url('/src/imgs/2.jpg')",
+				'main-background': "url('/dist/imgs/3.jpg')",
+				'nav-logo': "url('/dist/imgs/logos/LFB-logo_transparent.png')",
+				'second-background': "url('/dist/imgs/1.jpg')",
+				'third-background': "url('/dist/imgs/2.jpg')",
 			},
 			colors: {
 				'custom-light-gray': '#ECEDED',
