@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.0.24"
+  },
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "animated-tailwindcss": "^3.2.7",
+    "tailwindcss-animatecss": "^1.0.7",
+    "tw-elements": "^1.0.0-alpha12"
+  }
+}

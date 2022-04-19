@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="/dist/output.css" />
+		
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+		/>
+	</head>
+	<body class="h-full font-roboto">
+		<header class="h-screen">
+			<nav
+				class="z-30 flex justify-between items-center flex-row w-full h-24"
+			>
+				<div
+					class="text-custom-dark-gray font-bold text-lg pl-24 flex items-center justify-start space-x-12"
+				>
+					<a href="">
+						<img
+							src="/src/imgs/logos/LFB-logo_transparent.png"
+							class="w-48"
+							alt=""
+						/>
+					</a>
+					<a href="">A propos</a>
+					<a href="">Notre savoir faire</a>
+					<a href="">Clients</a>
+					<a href="">Partenaires</a>
+					<a href="A la une"></a>
+				</div>
+				<div
+					class="font-bold text-base pr-24 flex items-center justify-start space-x-12"
+				>
+					<a href="">Support</a>
+					<button class="font-bold text-base bg-yellow-300 py-3 px-7">
+						<a href="">Contact</a>
+					</button>
+				</div>
+			</nav>
+
+			<div
+				id="carouselExampleControls"
+				class="carousel slide relative"
+				data-bs-ride="carousel"
+			>
+				<div
+					class="carousel-inner relative w-full overflow-hidden h-screen"
+				>
+					<div
+						id="carousel-item"
+						class="carousel-item active relative float-left h-full w-full transition-all ease-in-out duration-1000"
+					>
+						<div
+							class="h-full w-full bg-black opacity-40 absolute"
+						></div>
+						<div
+							class="bg-main-background bg-center bg-cover bg-fixed h-full"
+						>
+							<div
+								class="text-center text-white absolute flex justify-center items-center flex-col w-full h-full m-auto space-y-4"
+							>
+								<h1
+									id="h1"
+									class="text-5xl font-bold animate__animated animate__slideInLeft"
+								>
+									WE ARE&nbsp;<span
+										class="p-1/2 bg-custom-light-blue"
+										>LFB-SERVICES</span
+									>
+								</h1>
+								<h2
+									data-aos="fade-left"
+									class="font-thin text-lg"
+								>
+									THE IT SERVICE PROVIDER
+								</h2>
+								<button
+									data-aos="fade-up"
+									class="hover:bg-white hover:text-black font-thin text-xs border-2 py-3 px-5 transition-all ease-in-out duration-1000"
+								>
+									<p>START NOW</p>
+								</button>
+							</div>
+						</div>
+					</div>
+					<div
+						id="carousel-item"
+						class="carousel-item relative float-left h-full w-full transition-all ease-in-out duration-1000"
+					>
+						<div
+							class="h-full w-full bg-black opacity-40 absolute"
+						></div>
+						<div
+							class="bg-second-background bg-center bg-cover bg-fixed h-full"
+						>
+							<div
+								class="text-center text-white absolute flex justify-center items-center flex-col w-full h-full m-auto space-y-4"
+							>
+								<h1 id="h1" class="animate__animated animate__slideInLeft text-5xl font-bold">
+									DESIGN YOUR&nbsp;<span
+										class="bg-custom-light-blue"
+										>BUSINESS</span
+									>
+								</h1>
+								<h2
+									data-aos="fade-left"
+									class="font-thin text-lg"
+								>
+									IT'S OUR JOB TO HELP YOU
+								</h2>
+								<button
+									data-aos="fade-up"
+									class="font-thin text-xs border-2 py-3 px-5"
+								>
+									<p>START NOW</p>
+								</button>
+							</div>
+						</div>
+					</div>
+					<div
+						id="carousel-item"
+						class="carousel-item relative float-left h-full w-full transition-all ease-in-out duration-1000"
+					>
+						<div
+							class="h-full w-full bg-black opacity-40 absolute"
+						></div>
+						<div
+							class="bg-third-background bg-center bg-cover bg-fixed h-full"
+						>
+							<div
+								class="text-center text-white absolute flex justify-center items-center flex-col w-full h-full m-auto space-y-4"
+							>
+								<h1 id="h1" class="animate__animated animate__slideInDown text-5xl font-bold">
+									EVERYTHING IS&nbsp;<span
+										class="bg-custom-light-blue"
+										>DIGITAL</span
+									>
+								</h1>
+								<h2
+									data-aos="fade-left"
+									class="font-thin text-lg"
+								>
+									THE FUTURE OF IT
+								</h2>
+								<button
+									data-aos="fade-up"
+									class="font-thin text-xs border-2 py-3 px-5"
+								>
+									<p>START NOW</p>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<button
+					class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+					type="button"
+					data-bs-target="#carouselExampleControls"
+					data-bs-slide="prev"
+				>
+					<span
+						class="carousel-control-prev-icon inline-block bg-no-repeat"
+						aria-hidden="true"
+					></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button
+					class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+					type="button"
+					data-bs-target="#carouselExampleControls"
+					data-bs-slide="next"
+				>
+					<span
+						class="carousel-control-next-icon inline-block bg-no-repeat"
+						aria-hidden="true"
+					></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+		</header>
+
+		<div
+			class="flex justify-center items-center h-96 space-x-6 space-y-40"
+			id="container"
+		></div>
+
+		<!-- <div class="mapouter">
+			<div class="gmap_canvas">
+				<iframe
+				width="449"
+				height="389"
+					id="gmap_canvas"
+					src="https://maps.google.com/maps?q=lfb%20services&t=&z=13&ie=UTF8&iwloc=&output=embed"
+					frameborder="0"
+					scrolling="no"
+					marginheight="0"
+					marginwidth="0"
+				></iframe
+				><a href="https://fmovies-online.net"></a><br /><style>
+					.mapouter {
+						position: relative;
+						text-align: right;
+						height: 389px;
+						width: 449px;
+					}</style
+				><a href="https://www.embedgooglemap.net"
+					>insert google map into website</a
+				><style>
+					.gmap_canvas {
+						overflow: hidden;
+						background: none !important;
+						height: 389px;
+						width: 449px;
+					}
+				</style>
+			</div>
+		</div>
+-->
+
+		<script src="test.js"></script>
+		<script src="//code.tidio.co/srtdiq5itjkkfgg3wtx48fmtrjzqf0ec.js"></script>
+		<script src="/node_modules/tw-elements/dist/js/index.min.js"></script>
+		
+</html>
