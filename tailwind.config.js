@@ -4,10 +4,6 @@ module.exports = {
 		'./node_modules/tw-elements/dist/js/**/*.js',
 	],
 	theme: {
-		fontSize: {
-			'extra-sm': '.25rem',
-			'super-sm': '.5rem',
-		},
 		fontFamily: {
 			roboto: ['sans-serif', 'Roboto'],
 		},

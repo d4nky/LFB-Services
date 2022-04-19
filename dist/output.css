@@ -3906,6 +3906,10 @@ textarea.form-control.is-invalid{
   margin-top: 0.25rem;
 }
 
+.mt-24{
+  margin-top: 6rem;
+}
+
 .block{
   display: block;
 }
@@ -4109,6 +4113,10 @@ textarea.form-control.is-invalid{
   padding: 0px;
 }
 
+.p-4{
+  padding: 1rem;
+}
+
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -4139,6 +4147,11 @@ textarea.form-control.is-invalid{
   padding-right: 1.25rem;
 }
 
+.py-10{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
 .pl-24{
   padding-left: 6rem;
 }
@@ -4159,8 +4172,34 @@ textarea.form-control.is-invalid{
   font-family: sans-serif, Roboto;
 }
 
-.text-super-sm{
-  font-size: .5rem;
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-xs{
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .font-bold{
@@ -4347,6 +4386,20 @@ textarea.form-control.is-invalid{
   }
 }
 
+.custom-border {
+  position: relative;
+}
+
+.custom-border::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 30%;
+  left: 30%;
+  border-bottom: 4px solid #1191d0;
+}
+
 .hover\:bg-gray-100:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
@@ -4385,5 +4438,10 @@ textarea.form-control.is-invalid{
 @media (min-width: 1024px){
   .lg\:flex{
     display: flex;
+  }
+
+  .lg\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
   }
 }

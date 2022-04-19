@@ -2,3 +2,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.custom-border {
+	position: relative;
+}
+.custom-border::after {
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: 0;
+	width: 30%;
+	left: 30%;
+	border-bottom: 4px solid #1191d0;
+}
