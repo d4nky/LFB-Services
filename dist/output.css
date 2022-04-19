@@ -4027,15 +4027,15 @@ textarea.form-control.is-invalid{
 }
 
 .bg-main-background{
-  background-image: url('/dist/imgs/3.jpg');
+  background-image: url('imgs/3.jpg');
 }
 
 .bg-second-background{
-  background-image: url('/dist/imgs/1.jpg');
+  background-image: url('imgs/1.jpg');
 }
 
 .bg-third-background{
-  background-image: url('/dist/imgs/2.jpg');
+  background-image: url('imgs/2.jpg');
 }
 
 .bg-cover{
