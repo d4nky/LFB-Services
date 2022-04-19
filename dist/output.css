@@ -4077,11 +4077,6 @@ textarea.form-control.is-invalid{
   background-color: rgb(17 145 208 / var(--tw-bg-opacity));
 }
 
-.bg-red-300{
-  --tw-bg-opacity: 1;
-  background-color: rgb(252 165 165 / var(--tw-bg-opacity));
-}
-
 .bg-main-background{
   background-image: url('imgs/3.jpg');
 }
@@ -4392,6 +4387,7 @@ textarea.form-control.is-invalid{
 }
 
 .custom-border {
+  width: 250px;
   position: relative;
 }
 
@@ -4400,8 +4396,8 @@ textarea.form-control.is-invalid{
   display: block;
   position: absolute;
   bottom: 0;
-  width: 20%;
-  left: 40%;
+  width: 40px;
+  left: 102.5px;
   border-bottom: 4px solid #1191d0;
 }
 

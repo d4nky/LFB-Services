@@ -3,6 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 .custom-border {
+    width: 250px;
 	position: relative;
 }
 .custom-border::after {
@@ -10,7 +11,7 @@
 	display: block;
 	position: absolute;
 	bottom: 0;
-	width: 20%;
-	left: 40%;
+	width: 40px;
+	left: 102.5px;
 	border-bottom: 4px solid #1191d0;
 }
