@@ -7,5 +7,6 @@
     "animated-tailwindcss": "^3.2.7",
     "tailwindcss-animatecss": "^1.0.7",
     "tw-elements": "^1.0.0-alpha12"
-  }
+  },
+  "scripts": {"build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"}
 }
