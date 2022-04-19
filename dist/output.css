@@ -4392,6 +4392,11 @@ textarea.form-control.is-invalid{
           animation-fill-mode: both;
 }
 
+.animate__fadeIn{
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+}
+
 @-webkit-keyframes fadeIn{
   from{
     opacity: 0;
