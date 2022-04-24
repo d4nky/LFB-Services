@@ -4364,6 +4364,14 @@ textarea.form-control.is-invalid{
   padding-right: 6rem;
 }
 
+.pb-6{
+  padding-bottom: 1.5rem;
+}
+
+.pb-4{
+  padding-bottom: 1rem;
+}
+
 .text-left{
   text-align: left;
 }
