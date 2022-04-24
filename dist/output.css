@@ -3886,6 +3886,10 @@ textarea.form-control.is-invalid{
   z-index: 50;
 }
 
+.float-right{
+  float: right;
+}
+
 .float-left{
   float: left;
 }
@@ -4295,6 +4299,10 @@ textarea.form-control.is-invalid{
   padding: 0.5rem;
 }
 
+.p-8{
+  padding: 2rem;
+}
+
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -4437,6 +4445,11 @@ textarea.form-control.is-invalid{
 .text-custom-dark-blue{
   --tw-text-opacity: 1;
   color: rgb(48 70 114 / var(--tw-text-opacity));
+}
+
+.text-custom-light-blue{
+  --tw-text-opacity: 1;
+  color: rgb(17 145 208 / var(--tw-text-opacity));
 }
 
 .opacity-40{
