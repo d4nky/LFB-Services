@@ -13,6 +13,7 @@ module.exports = {
 				'nav-logo': "url('imgs/logos/LFB-logo_transparent.png')",
 				'second-background': "url('imgs/1.jpg')",
 				'third-background': "url('imgs/2.jpg')",
+				'first-background': "url('imgs/bg.jpg')",
 			},
 			colors: {
 				'custom-light-gray': '#ECEDED',

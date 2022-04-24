@@ -1,4 +1,6 @@
 const container = document.getElementById('container');
+const clientSlider = document.getElementById('client-slider');
+var infinitecarousel = new InfiniteCarousel('#container', 'horizontal', 8);
 
 // Promise.all([fetch('test.json').then((x) => x.text())]).then(([sampleResp]) => {
 // 	container.innerHTML = sampleResp;
