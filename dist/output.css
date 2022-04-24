@@ -3990,6 +3990,14 @@ textarea.form-control.is-invalid{
   height: auto;
 }
 
+.h-12{
+  height: 3rem;
+}
+
+.h-2\/4{
+  height: 50%;
+}
+
 .w-full{
   width: 100%;
 }
@@ -4028,6 +4036,22 @@ textarea.form-control.is-invalid{
 
 .w-8{
   width: 2rem;
+}
+
+.w-6{
+  width: 1.5rem;
+}
+
+.w-40{
+  width: 10rem;
+}
+
+.w-1\/2{
+  width: 50%;
+}
+
+.w-1\/4{
+  width: 25%;
 }
 
 .min-w-max{
@@ -4138,6 +4162,18 @@ textarea.form-control.is-invalid{
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
 }
 
+.space-y-8 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+}
+
+.space-x-4 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .overflow-hidden{
   overflow: hidden;
 }
@@ -4245,6 +4281,11 @@ textarea.form-control.is-invalid{
   background-repeat: no-repeat;
 }
 
+.object-fill{
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
 .p-0{
   padding: 0px;
 }
@@ -4312,6 +4353,11 @@ textarea.form-control.is-invalid{
   padding-bottom: 1rem;
 }
 
+.py-8{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .pl-24{
   padding-left: 6rem;
 }
@@ -4334,6 +4380,10 @@ textarea.form-control.is-invalid{
 
 .text-right{
   text-align: right;
+}
+
+.text-justify{
+  text-align: justify;
 }
 
 .font-roboto{
