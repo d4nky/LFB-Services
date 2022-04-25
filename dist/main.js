@@ -1,10 +1,8 @@
-const container = document.getElementById('container');
-const clientSlider = document.getElementById('client-slider');
-var infinitecarousel = new InfiniteCarousel('#container', 'horizontal', 8);
+const container = document.getElementById('news-container');
 
-// Promise.all([fetch('test.json').then((x) => x.text())]).then(([sampleResp]) => {
-// 	container.innerHTML = sampleResp;
-// });
+Promise.all([fetch('test.json').then((x) => x.text())]).then(([sampleResp]) => {
+	container.innerHTML = sampleResp;
+});
 
 // const navBar = document.getElementById('navBar');
 // const offsetY = 100;

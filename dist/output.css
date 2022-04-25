@@ -3966,36 +3966,20 @@ textarea.form-control.is-invalid{
   height: 7rem;
 }
 
+.h-2\/4{
+  height: 50%;
+}
+
 .h-4{
   height: 1rem;
-}
-
-.h-20{
-  height: 5rem;
-}
-
-.h-96{
-  height: 24rem;
 }
 
 .h-8{
   height: 2rem;
 }
 
-.h-24{
-  height: 6rem;
-}
-
-.h-auto{
-  height: auto;
-}
-
-.h-12{
-  height: 3rem;
-}
-
-.h-2\/4{
-  height: 50%;
+.h-96{
+  height: 24rem;
 }
 
 .w-full{
@@ -4022,6 +4006,18 @@ textarea.form-control.is-invalid{
   width: 6rem;
 }
 
+.w-1\/2{
+  width: 50%;
+}
+
+.w-1\/4{
+  width: 25%;
+}
+
+.w-40{
+  width: 10rem;
+}
+
 .w-5\/6{
   width: 83.333333%;
 }
@@ -4030,28 +4026,8 @@ textarea.form-control.is-invalid{
   width: 1rem;
 }
 
-.w-12{
-  width: 3rem;
-}
-
 .w-8{
   width: 2rem;
-}
-
-.w-6{
-  width: 1.5rem;
-}
-
-.w-40{
-  width: 10rem;
-}
-
-.w-1\/2{
-  width: 50%;
-}
-
-.w-1\/4{
-  width: 25%;
 }
 
 .min-w-max{
@@ -4144,34 +4120,34 @@ textarea.form-control.is-invalid{
   margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.space-y-40 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-y-reverse: 0;
-  margin-top: calc(10rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(10rem * var(--tw-space-y-reverse));
-}
-
-.space-x-8 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-x-reverse: 0;
-  margin-right: calc(2rem * var(--tw-space-x-reverse));
-  margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
 .space-y-2 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
   margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
 }
 
-.space-y-8 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-y-reverse: 0;
-  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(2rem * var(--tw-space-y-reverse));
-}
-
 .space-x-4 > :not([hidden]) ~ :not([hidden]){
   --tw-space-x-reverse: 0;
   margin-right: calc(1rem * var(--tw-space-x-reverse));
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-y-40 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(10rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(10rem * var(--tw-space-y-reverse));
+}
+
+.space-y-14 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(3.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(3.5rem * var(--tw-space-y-reverse));
+}
+
+.space-y-8 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2rem * var(--tw-space-y-reverse));
 }
 
 .overflow-hidden{
@@ -4281,11 +4257,6 @@ textarea.form-control.is-invalid{
   background-repeat: no-repeat;
 }
 
-.object-fill{
-  -o-object-fit: fill;
-     object-fit: fill;
-}
-
 .p-0{
   padding: 0px;
 }
@@ -4338,6 +4309,11 @@ textarea.form-control.is-invalid{
   padding-right: 2rem;
 }
 
+.py-8{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .px-12{
   padding-left: 3rem;
   padding-right: 3rem;
@@ -4351,11 +4327,6 @@ textarea.form-control.is-invalid{
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.py-8{
-  padding-top: 2rem;
-  padding-bottom: 2rem;
 }
 
 .pl-24{
@@ -4430,6 +4401,10 @@ textarea.form-control.is-invalid{
 
 .font-thin{
   font-weight: 100;
+}
+
+.font-extralight{
+  font-weight: 200;
 }
 
 .uppercase{
@@ -4654,6 +4629,45 @@ textarea.form-control.is-invalid{
   width: 40px;
   left: 102.5px;
   border-bottom: 4px solid #1191d0;
+}
+
+.placeholder\:text-sm::-moz-placeholder{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.placeholder\:text-sm:-ms-input-placeholder{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.placeholder\:text-sm::placeholder{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.placeholder\:font-thin::-moz-placeholder{
+  font-weight: 100;
+}
+
+.placeholder\:font-thin:-ms-input-placeholder{
+  font-weight: 100;
+}
+
+.placeholder\:font-thin::placeholder{
+  font-weight: 100;
+}
+
+.placeholder\:font-extralight::-moz-placeholder{
+  font-weight: 200;
+}
+
+.placeholder\:font-extralight:-ms-input-placeholder{
+  font-weight: 200;
+}
+
+.placeholder\:font-extralight::placeholder{
+  font-weight: 200;
 }
 
 .placeholder\:text-black::-moz-placeholder{
