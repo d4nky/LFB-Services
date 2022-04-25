@@ -3890,6 +3890,22 @@ textarea.form-control.is-invalid{
   bottom: 2rem;
 }
 
+.right-4{
+  right: 1rem;
+}
+
+.bottom-12{
+  bottom: 3rem;
+}
+
+.bottom-24{
+  bottom: 6rem;
+}
+
+.bottom-28{
+  bottom: 7rem;
+}
+
 .z-40{
   z-index: 40;
 }
@@ -4056,6 +4072,10 @@ textarea.form-control.is-invalid{
 
 .w-8{
   width: 2rem;
+}
+
+.w-12{
+  width: 3rem;
 }
 
 .min-w-max{
