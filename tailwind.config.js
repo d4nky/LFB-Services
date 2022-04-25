@@ -1,5 +1,6 @@
 module.exports = {
 	content: [
+		'./node_modules/flowbite/**/*.js',
 		'./dist/**/*.{html,js}',
 		'./node_modules/tw-elements/dist/js/**/*.js',
 	],
@@ -25,6 +26,7 @@ module.exports = {
 		},
 	},
 	plugins: [
+		require('flowbite/plugin'),
 		require('tw-elements/dist/plugin'),
 		require('tailwindcss-animatecss')({
 			classes: [
