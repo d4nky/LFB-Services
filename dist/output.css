@@ -4286,10 +4286,6 @@ textarea.form-control.is-invalid{
   margin-right: 0.25rem;
 }
 
-.mr-2{
-  margin-right: 0.5rem;
-}
-
 .block{
   display: block;
 }
@@ -4446,23 +4442,6 @@ textarea.form-control.is-invalid{
 
 .transform{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-@-webkit-keyframes spin{
-  to{
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes spin{
-  to{
-    transform: rotate(360deg);
-  }
-}
-
-.animate-spin{
-  -webkit-animation: spin 1s linear infinite;
-          animation: spin 1s linear infinite;
 }
 
 .cursor-default{
@@ -4786,10 +4765,6 @@ textarea.form-control.is-invalid{
   background-repeat: no-repeat;
 }
 
-.fill-blue-600{
-  fill: #1C64F2;
-}
-
 .p-4{
   padding: 1rem;
 }
@@ -4812,10 +4787,6 @@ textarea.form-control.is-invalid{
 
 .p-6{
   padding: 1.5rem;
-}
-
-.p-8{
-  padding: 2rem;
 }
 
 .px-2{
@@ -4863,11 +4834,6 @@ textarea.form-control.is-invalid{
   padding-bottom: 2.5rem;
 }
 
-.px-8{
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
 .px-6{
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -4878,19 +4844,14 @@ textarea.form-control.is-invalid{
   padding-bottom: 2rem;
 }
 
-.px-12{
-  padding-left: 3rem;
-  padding-right: 3rem;
+.px-8{
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.px-1{
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
 }
 
 .pt-2{
@@ -4917,10 +4878,6 @@ textarea.form-control.is-invalid{
   text-align: center;
 }
 
-.text-justify{
-  text-align: justify;
-}
-
 .font-roboto{
   font-family: sans-serif, Roboto;
 }
@@ -4945,24 +4902,9 @@ textarea.form-control.is-invalid{
   line-height: 1rem;
 }
 
-.text-3xl{
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
-}
-
-.text-4xl{
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
-.text-xl{
-  font-size: 1.25rem;
-  line-height: 1.75rem;
 }
 
 .font-semibold{
@@ -4979,14 +4921,6 @@ textarea.form-control.is-invalid{
 
 .font-thin{
   font-weight: 100;
-}
-
-.font-extralight{
-  font-weight: 200;
-}
-
-.font-light{
-  font-weight: 300;
 }
 
 .uppercase{
@@ -5048,11 +4982,6 @@ textarea.form-control.is-invalid{
 .text-custom-dark-blue{
   --tw-text-opacity: 1;
   color: rgb(48 70 114 / var(--tw-text-opacity));
-}
-
-.text-gray-200{
-  --tw-text-opacity: 1;
-  color: rgb(229 231 235 / var(--tw-text-opacity));
 }
 
 .underline{
@@ -5266,7 +5195,8 @@ textarea.form-control.is-invalid{
 }
 
 iframe {
-  border: none;
+  height: 400px;
+  scrollbar-width: none;
 }
 
 .noSelect {
@@ -5435,11 +5365,6 @@ iframe {
 .dark .dark\:text-blue-500{
   --tw-text-opacity: 1;
   color: rgb(63 131 248 / var(--tw-text-opacity));
-}
-
-.dark .dark\:text-gray-600{
-  --tw-text-opacity: 1;
-  color: rgb(75 85 99 / var(--tw-text-opacity));
 }
 
 .dark .dark\:hover\:bg-gray-600:hover{

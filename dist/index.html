@@ -16,11 +16,11 @@
 			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 		/>
 	</head>
-	<body class="h-full font-roboto">
+	<body class="h-full font-roboto relative">
 		
-		<a href="#header" class="fixed noSelect flex justify-end right-4 bottom-28 items-end w-full h-full">
+		<!-- <a href="#header" class="fixed noSelect flex justify-end right-4 bottom-28 items-end w-full h-full">
 			<img src="imgs/logos/image.png" class="z-40 w-12" alt="">
-		</a>
+		</a> -->
 		<header id="header" class="z-30 h-screen w-full">
 			
 			<nav id="navBar"
@@ -304,9 +304,9 @@
 
 		<section id="about" class="h-full bg-first-background bg-fixed py-10">
 			
-			<div class="text-white flex flex-col justify-center items-center space-y-6 px-8 pb-4">
-				<h2 class="text-lg font-bold p-4 mb-2">A propos de <span class="text-custom-light-blue text-lg font-bold">LFB-Services</span></h2>
-				<p class="text-sm font-thin">Présent en Algérie depuis 2012, nous accompagnons nos clients dans la mise en place de leurs systèmes d'information en leur fournissant les ressources nécessaires pour optimiser et sécuriser leurs patrimoines de données ainsi que l'amélioration de leurs niveaux de services.
+			<div class="text-white flex flex-col justify-center items-center space-y-6 px-6 pb-4">
+				<h2 class="text-2xl font-bold p-1 mb-2">A propos de <span class="text-custom-light-blue text-2xl font-bold">LFB-Services</span></h2>
+				<p class=" text-sm font-thin">Présent en Algérie depuis 2012, nous accompagnons nos clients dans la mise en place de leurs systèmes d'information en leur fournissant les ressources nécessaires pour optimiser et sécuriser leurs patrimoines de données ainsi que l'amélioration de leurs niveaux de services.
 				Notre objectif est de satisfaire les clients que nous accompagnions et d'établir avec eux un partenariat sur le long terme.
 				Nous intervenons sur tous les secteurs d'activité de l'économie algérienne et oeuvrons principalement sur les axes suivants :</p>
 				<ul class="text-sm font-thin text-left list-disc ml-8 space-y-4">
@@ -327,15 +327,15 @@
 		</section>
 
 		<section id="" class="text-center flex flex-col justify-center items-center py-10">
-			<h3 class="w-full custom-border text-lg font-bold p-4 mb-8">Notre savoir faire</h3>
+			<h3 class="w-full custom-border text-2xl font-bold p-4 mb-8">Notre savoir faire</h3>
 
 			<div class="flex flex-col justify-center items-center space-y-12">
 				<div class="p-6 shadow-lg w-80 flex flex-col justify-center items-center">
 					<div class="">
 						<img class="w-36 m-auto" src="imgs/logos/infra logo.png" alt="">
-						<p class="font-bold text-sm text-custom-dark-blue">Infrastructure réseau et systèmes</p>
+						<p class="font-bold text-custom-dark-blue">Infrastructure réseau et systèmes</p>
 					</div>
-					<div class="mt-4 text-xs font-thin">
+					<div class="mt-4 text-sm font-thin">
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem a animi, sapiente unde fugit praesentium quas? Doloribus nesciunt sed culpa! Ullam explicabo qui suscipit blanditiis, corrupti eaque vel a voluptatibus.</p>
 					</div>
 				</div>
@@ -425,24 +425,24 @@
 
 		<section class="flex flex-col justify-center items-center py-10 space-y-4">
 			<h3 class="custom-border text-center text-2xl font-bold p-4 mb-8">Nos partenaires</h3>
-			<div class="overflow-scroll flex justify-center items-center space-x-4 py-8">
+			<div class="overflow-x-scroll flex justify-center items-center space-x-4 py-8">
 				<img class="w-1/4" src="imgs/Partenaires/Cisco-grayscale.png" alt="">
 				<img class="w-1/4 h-2/4" src="imgs/Partenaires/Microsoft_logo_(2012).svg.png" alt="">
 				<img class="w-1/4" src="imgs/Partenaires/fortinet-grayscale.png" alt="">
 			</div>
 			<div class="flex justify-center items-center px-8">
 				<div class="space-y-2">
-					<h3 class="font-bold text-center">LFB-SERVICES is a proud Microsoft Gold partner</h3>
-					<p class="font-thin text-xs text-center">LFB Services ’est associée aux plus grandes entreprises du secteur de l’IT pour offrir à ces clients les meilleures solutions du marché, et qui répondent à leurs attentes.</p>
+					<h3 class="font-bold text-lg text-center">LFB-SERVICES is a proud Microsoft Gold partner</h3>
+					<p class="font-thin text-xs text-center">LFB Services s’est associée aux plus grandes entreprises du secteur de l’IT pour offrir à ces clients les meilleures solutions du marché, et qui répondent à leurs attentes.</p>
+					<img class="m-auto w-44" src="imgs/Partenaires/GoldBadge.jpeg" alt="">
 				</div>
-				<img class="w-44" src="imgs/Partenaires/GoldBadge.jpeg" alt="">
 			</div>
 		</section>
 
 
 		<section class="flex flex-col justify-center items-center py-10">
 			<h3 class="custom-border  text-center text-2xl font-bold p-4 mb-8">A la une</h3>
-			<div class="py-6 h-full w-full overflow-x-scroll scrollbar-hide rounded-lg">
+			<div class="py-6 h-full w-full overflow-x-scroll  rounded-lg">
 				<div class="space-x-8 flex bg-transparent justify-start items-start" id="news-container"></div>
 			</div>
 		</section>
@@ -457,10 +457,13 @@
 				</div>
 				<input type="text" class="w-full text-sm  shadow-lg p-4 bg-custom-light-gray placeholder:text-black" placeholder="Objet">
 				<textarea name="" id="" cols="30" rows="10" class="w-full text-sm  shadow-lg p-4 bg-custom-light-gray placeholder:text-black" placeholder="Votre message"></textarea>
+				<button class="px-6 py-4 text-white bg-custom-light-blue">
+					Envoyer
+				</button>
 			</form>
 			
 			<div class="space-y-4 mt-12 w-5/6">
-				<div class="w-full space-y-4 px-6 flex flex-col justify-center m-auto ">
+				<div class="w-full space-y-4 flex flex-col justify-center m-auto ">
 					<div class="flex">
 					<img class="w-4 h-4 mt-1 mr-1" src="imgs/logos/location.png" alt="">
 					<p class="font-bold">Address: <span class=" text-custom-light-blue font-thin">Lotissment Sidi Merzoug 21 Logements Promotionnels BT03 Ben Aknoun - Alger Algérie</span></p>
@@ -478,9 +481,9 @@
 				<p class="font-bold">Email: <span class="text-custom-light-blue font-thin">contact@lfb-services.com</span></p>
 			</div>
 		</div>
-		<div class="z-2- w-full px-12 flex flex-col justify-center items-center space-y-6">
+		<div class="z-2- w-full px- flex flex-col justify-center items-center space-y-6">
 			<div class="w-full flex justify-center items-center">
-				<div class="mapouter"><div class="gmap_canvas"><iframe  height="200" id="gmap_canvas" src="https://maps.google.com/maps?q=lfb%20services&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe <a href="https://123movies-to.org">123movies</a><br><style>.mapouter{position:relative;text-align:right;height:200px;width:100%;}</style><a href="https://www.embedgooglemap.net">embedgooglemap.net</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:200px;width:100%;}</style></div></div>
+				<div class="mapouter"><div class="gmap_canvas"><iframe  height="200" width="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=lfb%20services&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe> <a href="https://123movies-to.org">123movies</a><br><style>.mapouter{position:relative;text-align:right;height:200px;width:100%;}</style><a href="https://www.embedgooglemap.net">embedgooglemap.net</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:200px;width:100%;}</style></div></div>
 			</div>
 		</div>
 			

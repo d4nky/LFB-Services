@@ -16,8 +16,10 @@
 	border-bottom: 4px solid #1191d0;
 }
 iframe {
-	border: none;
+	height: 400px;
+	scrollbar-width: none;
 }
+
 .noSelect {
 	-webkit-tap-highlight-color: transparent;
 	-webkit-touch-callout: none;
