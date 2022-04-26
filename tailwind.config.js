@@ -6,14 +6,14 @@ module.exports = {
 	],
 	theme: {
 		screens: {
-			'sm': '475px',
-			'md': '768px',
+			sm: '475px',
+			md: '768px',
 			// => @media (min-width: 768px) { ... }
 
-			'lg': '1024px',
+			lg: '1024px',
 			// => @media (min-width: 1024px) { ... }
 
-			'xl': '1280px',
+			xl: '1280px',
 			// => @media (min-width: 1280px) { ... }
 
 			'2xl': '1536px',
@@ -36,6 +36,7 @@ module.exports = {
 				'custom-light-blue': '#1191D0',
 				'custom-dark-blue': '#304672',
 				'custom-normal-yellow': '#FCAF17',
+				'custom-news-gray;': '#D9D9D9',
 			},
 		},
 	},

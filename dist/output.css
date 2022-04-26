@@ -4290,14 +4290,6 @@ textarea.form-control.is-invalid{
   margin-right: 0.25rem;
 }
 
-.ml-4{
-  margin-left: 1rem;
-}
-
-.ml-0{
-  margin-left: 0px;
-}
-
 .block{
   display: block;
 }
@@ -4390,6 +4382,10 @@ textarea.form-control.is-invalid{
   width: 0.5rem;
 }
 
+.w-3\/4{
+  width: 75%;
+}
+
 .w-80{
   width: 20rem;
 }
@@ -4402,6 +4398,10 @@ textarea.form-control.is-invalid{
   width: 6rem;
 }
 
+.w-1\/6{
+  width: 16.666667%;
+}
+
 .w-1\/4{
   width: 25%;
 }
@@ -4410,24 +4410,16 @@ textarea.form-control.is-invalid{
   width: 11rem;
 }
 
+.w-4\/5{
+  width: 80%;
+}
+
 .w-5\/6{
   width: 83.333333%;
 }
 
 .w-8{
   width: 2rem;
-}
-
-.w-1{
-  width: 0.25rem;
-}
-
-.w-3\/4{
-  width: 75%;
-}
-
-.w-1\/6{
-  width: 16.666667%;
 }
 
 .min-w-max{
@@ -4450,10 +4442,6 @@ textarea.form-control.is-invalid{
 
 .shrink{
   flex-shrink: 1;
-}
-
-.grow{
-  flex-grow: 1;
 }
 
 .grow-0{
@@ -4616,16 +4604,16 @@ textarea.form-control.is-invalid{
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
 }
 
-.space-x-4 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-x-reverse: 0;
-  margin-right: calc(1rem * var(--tw-space-x-reverse));
-  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
 .space-x-8 > :not([hidden]) ~ :not([hidden]){
   --tw-space-x-reverse: 0;
   margin-right: calc(2rem * var(--tw-space-x-reverse));
   margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-y-8 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2rem * var(--tw-space-y-reverse));
 }
 
 .space-x-6 > :not([hidden]) ~ :not([hidden]){
@@ -4650,6 +4638,10 @@ textarea.form-control.is-invalid{
 
 .overflow-x-scroll{
   overflow-x: scroll;
+}
+
+.overflow-y-scroll{
+  overflow-y: scroll;
 }
 
 .scroll-smooth{
@@ -4833,16 +4825,8 @@ textarea.form-control.is-invalid{
   padding: 0px;
 }
 
-.p-6{
-  padding: 1.5rem;
-}
-
 .p-8{
   padding: 2rem;
-}
-
-.p-9{
-  padding: 2.25rem;
 }
 
 .px-2{
@@ -4924,10 +4908,6 @@ textarea.form-control.is-invalid{
 
 .pb-4{
   padding-bottom: 1rem;
-}
-
-.pb-2{
-  padding-bottom: 0.5rem;
 }
 
 .text-left{
@@ -5090,12 +5070,6 @@ textarea.form-control.is-invalid{
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
-.backdrop-blur-sm{
-  --tw-backdrop-blur: blur(4px);
-  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-}
-
 .transition-all{
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -5126,10 +5100,6 @@ textarea.form-control.is-invalid{
 
 .duration-500{
   transition-duration: 500ms;
-}
-
-.duration-100{
-  transition-duration: 100ms;
 }
 
 .ease-out{
@@ -5317,30 +5287,6 @@ iframe {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-white\/\[\.06\]:hover{
-  background-color: rgb(255 255 255 / .06);
-}
-
-.hover\:bg-white\/\[\]:hover{
-  background-color: rgb(255 255 255 / );
-}
-
-.hover\:bg-white\/\[\.0\]:hover{
-  background-color: rgb(255 255 255 / .0);
-}
-
-.hover\:bg-white\/\[\.05\]:hover{
-  background-color: rgb(255 255 255 / .05);
-}
-
-.hover\:bg-white\/\[\.50\]:hover{
-  background-color: rgb(255 255 255 / .50);
-}
-
-.hover\:bg-white\/\[\.25\]:hover{
-  background-color: rgb(255 255 255 / .25);
-}
-
 .hover\:bg-white\/\[\.20\]:hover{
   background-color: rgb(255 255 255 / .20);
 }
@@ -5358,11 +5304,6 @@ iframe {
 .hover\:text-gray-600:hover{
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
-}
-
-.hover\:text-black:hover{
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .hover\:no-underline:hover{
@@ -5519,30 +5460,6 @@ iframe {
 }
 
 @media (min-width: 768px){
-  .md\:h-full{
-    height: 100%;
-  }
-
-  .md\:w-1\/2{
-    width: 50%;
-  }
-
-  .md\:w-1\/4{
-    width: 25%;
-  }
-
-  .md\:w-3\/4{
-    width: 75%;
-  }
-
-  .md\:p-0{
-    padding: 0px;
-  }
-
-  .md\:pb-4{
-    padding-bottom: 1rem;
-  }
-
   .md\:text-4xl{
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -5558,14 +5475,14 @@ iframe {
     line-height: 1.25rem;
   }
 
-  .md\:text-base{
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-
   .md\:text-3xl{
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+
+  .md\:text-base{
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 
   .md\:text-2xl{
