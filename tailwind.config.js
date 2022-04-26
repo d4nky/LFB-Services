@@ -5,6 +5,9 @@ module.exports = {
 		'./node_modules/tw-elements/dist/js/**/*.js',
 	],
 	theme: {
+		screens: {
+			sm: '475px',
+		},
 		fontFamily: {
 			roboto: ['sans-serif', 'Roboto'],
 		},
