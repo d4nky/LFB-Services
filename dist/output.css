@@ -4879,24 +4879,19 @@ textarea.form-control.is-invalid{
   padding-right: 1.5rem;
 }
 
-.py-8{
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
 .px-8{
   padding-left: 2rem;
   padding-right: 2rem;
 }
 
+.py-8{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.px-12{
-  padding-left: 3rem;
-  padding-right: 3rem;
 }
 
 .pt-2{
@@ -5448,6 +5443,10 @@ iframe {
 }
 
 @media (min-width: 475px){
+  .sm\:w-48{
+    width: 12rem;
+  }
+
   .sm\:text-3xl{
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -5462,9 +5461,40 @@ iframe {
     font-size: 1.5rem;
     line-height: 2rem;
   }
+
+  .sm\:text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .sm\:text-sm{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
 }
 
 @media (min-width: 768px){
+  .md\:w-6{
+    width: 1.5rem;
+  }
+
+  .md\:w-full{
+    width: 100%;
+  }
+
+  .md\:w-80{
+    width: 20rem;
+  }
+
+  .md\:px-8{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .md\:text-left{
+    text-align: left;
+  }
+
   .md\:text-4xl{
     font-size: 2.25rem;
     line-height: 2.5rem;
