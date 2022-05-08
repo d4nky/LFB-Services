@@ -16,43 +16,53 @@
 			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 		/>
 	</head>
-	<body class="h-full font-roboto relative">
+	<body class="drop-shadow-lg h-full font-roboto relative">
 		
+			<!-- <p class="fixed right-0 z-40 float-right md:space-x-1 space-y-1 md:space-y-0 mb-4">
+  <a class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+</a>
+</p>
+<div class="collapse fixed" id="collapseExample">
+	<div class="block p-6 rounded-lg shadow-lg bg-white">
+	  <a href="#about">ABOUT</a>
+    
+  </div>
+</div>			 -->
+
 		<a href="#header" class="fixed noSelect flex justify-end right-4 bottom-28 items-end">
 			<img src="imgs/logos/image.png" class="z-40 w-12" alt="">
 		</a>
-		<header id="header" class="z-30 h-screen w-full">
-			
-			<nav id="navBar"
-			class="hidden lg:flex z-30 fixed top-0 bg-white transition-all ease-in-out duration-1000 py-6 justify-between items-center flex-row w-full"
+		<nav id="navBar"
+			class="hidden lg:flex z-30 sticky top-0 bg-white transition-all ease-in-out duration-1000 py-6 justify-between items-center flex-row w-full"
 			>
 				<div
-					class="text-custom-dark-gray font-bold text-lg pl-24 flex items-center justify-start space-x-12"
+					class="text-custom-dark-gray font-bold text-xs pl-12 flex items-center justify-start space-x-12 xl:text-base xl:pl-24"
 				>
-					<a href="">
+					<a href="#">
 						<img
 							src="imgs/logos/LFB-logo_transparent.png"
 							class="w-48"
 							alt=""
-						/>
-					</a>
-					<a href="">A propos</a>
-					<a href="">Notre savoir faire</a>
-					<a href="">Clients</a>
-					<a href="">Partenaires</a>
-					<a href="A la une"></a>
+							/>
+						</a>
+					
+					<a class="hover:text-black" href="#about">A propos</a>
+					<a class="hover:text-black" href="#services">Savoir faire</a>
+					<a class="hover:text-black" href="#clients">Clients</a>
+					<a class="hover:text-black" href="#partners">Partenaires</a>
+					<a class="hover:text-black" href="#news">A la une</a>
 					
 				</div>
 				<div
-					class="font-bold text-base pr-24 flex items-center justify-start space-x-12"
+					class="font-bold text-xs pr-12 flex items-center justify-start space-x-12 xl:text-base xl:pr-24"
 				>
 					<a href="">Support</a>
-					<button class="font-bold text-base bg-yellow-300 py-3 px-7">
-						<a href="">Contact</a>
+					<button class="hover:cursor-pointer font-bold text-xs bg-yellow-300 py-3 px-7 xl:text-base">
+						<a href="#contact">Contact</a>
 					</button>
 					<div class="flex justify-center">
 			<div>
-				<div class="dropdown relative">
+				<div class="text-xs dropdown relative">
 				<button
 					class=" noSelect
 					dropdown-toggle
@@ -60,7 +70,6 @@
 					text-black
 					font-medium
 					text-xs
-					px-4
 					leading-tight
 					uppercase
 					transition
@@ -75,7 +84,7 @@
 					data-bs-toggle="dropdown"
 					aria-expanded="false"
 				>
-					Language
+					FR
 					<svg
 					aria-hidden="true"
 					focusable="false"
@@ -99,7 +108,7 @@
 					absolute
 					hidden
 					bg-white
-					text-base
+					text-xs
 					z-50
 					float-left
 					py-2
@@ -119,7 +128,7 @@
 					<a
 						class="
 						dropdown-item
-						text-sm
+						text-xs
 						py-2
 						px-4
 						font-roboto
@@ -138,7 +147,7 @@
 					<a
 						class="
 						dropdown-item
-						text-sm
+						text-xs
 						py-2
 						px-4
 						font-roboto
@@ -160,6 +169,9 @@
 				</div>
 				
 			</nav>
+		<header id="header" class="z-30 h-screen w-full">
+			
+			
 			
 			<div
 				id="carouselExampleControls"
@@ -184,7 +196,7 @@
 							>
 								<h1
 									id="h1"
-									class="px-2 text-2xl font-bold sm:text-3xl lg:text-5xl md:text-4xl"
+									class="px-2 text-2xl font-bold sm:text-3xl md:text-6xl"
 								>
 									WE ARE&nbsp;<span
 										class="p-1/2 bg-custom-light-blue"
@@ -193,7 +205,7 @@
 								</h1>
 								<h2
 									
-									class="text-sm animate__animated animate__fadeIn font-thin sm:text-base md:text-lg"
+									class="text-sm animate__animated animate__fadeIn font-thin sm:text-base md:text-2xl"
 								>
 									THE IT SERVICE PROVIDER
 								</h2>
@@ -202,7 +214,7 @@
           						data-mdb-ripple="true"
           						data-mdb-ripple-color="light"
 									data-aos="fade-up"
-									class="noSelect transition-all duration-50 hover:backdrop-blur-sm hover:bg-white/[.20]  text-xs md:text-sm border-2 mt-24 py-3 px-5"
+									class="noSelect transition-all duration-50 hover:backdrop-blur-sm hover:bg-white/[.20]  text-xs md:text-sm border-2 mt-24 py-3 px-5 xl:text-base""
 								>
 									<a href="#about">START NOW</a>
 								</button>
@@ -222,7 +234,7 @@
 							<div
 								class="text-center text-white absolute flex justify-center items-center flex-col w-full h-full m-auto space-y-5"
 							>
-								<h1 id="h1" class="px-2 text-2xl font-bold sm:text-3xl lg:text-5xl">
+								<h1 id="h1" class="px-2 text-2xl font-bold sm:text-3xl md:text-6xl">
 									DESIGN YOUR&nbsp;<span
 										class="bg-custom-light-blue"
 										>BUSINESS</span
@@ -230,13 +242,16 @@
 								</h1>
 								<h2
 									
-									class="text-sm sm:text-base animate__animated animate__fadeIn font-thin"
+									class="text-sm sm:text-base animate__animated animate__fadeIn font-thin md:text-2xl"
 								>
 									IT'S OUR JOB TO HELP YOU
 								</h2>
 								<button
+								role="button"
+          						data-mdb-ripple="true"
+          						data-mdb-ripple-color="light"
 									data-aos="fade-up"
-									class="noSelect transition-all duration-50 hover:backdrop-blur-sm hover:bg-white/[.20]  text-xs md:text-sm border-2 mt-24 py-3 px-5"
+									class="noSelect transition-all duration-50 hover:backdrop-blur-sm hover:bg-white/[.20]  text-xs md:text-sm border-2 mt-24 py-3 px-5 xl:text-base""
 								>
 									<a class="noSelect" href="#about">START NOW</a>
 								</button>
@@ -256,7 +271,7 @@
 							<div
 								class="text-center text-white absolute flex justify-center items-center flex-col w-full h-full m-auto space-y-5"
 							>
-								<h1 id="h1" class="text-2xl px-2 font-bold sm:text-3xl lg:text-5xl ">
+								<h1 id="h1" class="text-2xl px-2 font-bold sm:text-3xl md:text-6xl">
 									EVERYTHING IS&nbsp;<span
 										class="bg-custom-light-blue"
 										>DIGITAL</span
@@ -264,13 +279,16 @@
 								</h1>
 								<h2
 									
-									class="text-sm sm:text-base animate__animated animate__fadeIn animate__slow font-thin"
+									class="text-sm sm:text-base animate__animated animate__fadeIn animate__slow font-thin md:text-2xl"
 								>
 									THE FUTURE OF IT
 								</h2>
 								<button
+								role="button"
+          						data-mdb-ripple="true"
+          						data-mdb-ripple-color="light"
 									data-aos="fade-up"
-									class="noSelect transition-all duration-50 hover:backdrop-blur-sm hover:bg-white/[.20]  text-xs md:text-sm border-2 mt-24 py-3 px-5"
+									class="noSelect transition-all duration-50 hover:backdrop-blur-sm hover:bg-white/[.20]  text-xs md:text-sm border-2 mt-24 py-3 px-5 xl:text-base"
 								>
 									<a href="#about">START NOW</a>
 								</button>
@@ -305,14 +323,14 @@
 			</div>
 		</header>
 
-		<section id="about" class="overflow-scroll h-screen bg-first-background bg-fixed py-10">
+		<section id="about" class="overflow-scroll h-screen bg-first-background bg-fixed py-10 lg:overflow-hidden">
 			
 			<div class="text-white space-y-6 px-6 pb-4">
-				<h2 class="drop-shadow-lg text-lg font-bold px-4 mb-2 sm:text-2xl md:text-3xl">A propos de <span class="text-custom-light-blue text-lg font-bold sm:text-2xl md:text-3xl">LFB-Services</span></h2>
-				<p class="px-4 text-sm font-thin md:text-base drop-shadow-lg">Présent en Algérie depuis 2012, nous accompagnons nos clients dans la mise en place de leurs systèmes d'information en leur fournissant les ressources nécessaires pour optimiser et sécuriser leurs patrimoines de données ainsi que l'amélioration de leurs niveaux de services.
+				<h2 class="drop-shadow-lg text-white text-lg font-bold px-4 mb-2 sm:text-2xl md:text-4xl">A propos de <span class="text-custom-light-blue text-lg font-bold sm:text-2xl md:text-4xl">LFB-Services</span></h2>
+				<p class="px-4 text-sm text-white font-thin md:text-base drop-shadow-lg">Présent en Algérie depuis 2012, nous accompagnons nos clients dans la mise en place de leurs systèmes d'information en leur fournissant les ressources nécessaires pour optimiser et sécuriser leurs patrimoines de données ainsi que l'amélioration de leurs niveaux de services.
 				Notre objectif est de satisfaire les clients que nous accompagnions et d'établir avec eux un partenariat sur le long terme.
 				Nous intervenons sur tous les secteurs d'activité de l'économie algérienne et oeuvrons principalement sur les axes suivants :</p>
-				<ul class="text-sm font-thin text-left list-disc ml-8 space-y-4 md:text-base">
+				<ul class="text-sm font-thin text-white text-left list-disc ml-8 space-y-4 md:text-base">
 					<li>
 						Infrastructure réseau et systèmes
 					</li>
@@ -327,46 +345,46 @@
 					</li>
 				</ul>
 			</div>
-			<a class="flex justify-center items-end mt-24" href="#services"><img src="imgs/logos/chevron-down.png" alt=""></a>
+			
 		</section>
 
 		<section id="services" class="px-8 text-center flex flex-col justify-center items-center py-10">
-			<h3 class="w-full custom-border text-2xl font-bold pb-4 mb-8 md:text-3xl">Notre savoir faire</h3>
+			<h3 class="text-black w-full custom-border text-2xl font-bold pb-4 mb-8 md:text-4xl md:w-1/2">Notre savoir faire</h3>
 
-			<div class="flex flex-col flex-wrap justify-center items-center space-y-12">
-				<div class="flex-initial grow-0 shrink w-3/4 basis-auto p-8 shadow-lg w-80 flex flex-col justify-between items-center">
+			<div class="flex flex-col lg:flex-row flex-wrap justify-center items-center space-y-12 lg:space-x-10">
+				<div class="flex-initial grow-0 shrink w-3/4 basis-auto p-12 w-80 h-96 transition-all duration-150 hover:shadow-lg flex flex-col justify-between items-center">
 					<div class="">
 						<img class="w-36 m-auto" src="imgs/logos/infra logo.png" alt="">
-						<p class="text-lg font-bold text-custom-dark-blue md:text-2xl">Infrastructure réseau et systèmes</p>
+						<p class="text-lg font-bold text-custom-dark-blue md:text-lg">Infrastructure réseau et systèmes</p>
 					</div>
-					<div class="text-left mt-4 text-sm font-thin md:text-base">
+					<div class="text-left mt-4 text-sm font-thin">
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem a animi, sapiente unde fugit praesentium quas? Doloribus nesciunt sed culpa! Ullam explicabo qui suscipit blanditiis, corrupti eaque vel a voluptatibus.</p>
 					</div>
 				</div>
-				<div class="flex-initial grow-0 shrink w-3/4 basis-auto p-8 shadow-lg w-80 flex flex-col justify-between items-center">
+				<div class="w-3/4 p-12 shadow-lg w-80 flex flex-col justify-between items-center">
 					<div class="">
 						<img class="w-36 m-auto" src="imgs/logos/integration logo.png" alt="">
-						<p class="font-bold text-lg text-custom-dark-blue md:text-2xl">Intégration des solutions d'entreprise</p>
+						<p class="font-bold text-lg text-custom-dark-blue md:text-lg">Intégration des solutions d'entreprise</p>
 					</div>
-					<div <div class="text-left mt-4 text-sm font-thin md:text-base">
+					<div <div class="text-left mt-4 text-sm font-thin">
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem a animi, sapiente unde fugit praesentium quas? Doloribus nesciunt sed culpa! Ullam explicabo qui suscipit blanditiis, corrupti eaque vel a voluptatibus.</p>
 					</div>
 				</div>
-				<div class="flex-initial grow-0 shrink w-3/4 basis-auto p-8 shadow-lg w-80 flex flex-col justify-between items-center">
+				<div class="flex-initial grow-0 shrink w-3/4 basis-auto p-12 shadow-lg w-80 flex flex-col justify-between items-center">
 					<div class="">
 						<img class="w-36 m-auto" src="imgs/logos/dev logo.png" alt="">
-						<p class="font-bold text-lg text-custom-dark-blue md:text-2xl">Développement</p>
+						<p class="font-bold text-lg text-custom-dark-blue md:text-lg">Développement</p>
 					</div>
-					<div class="text-left mt-4 text-sm font-thin md:text-base">
+					<div class="text-left mt-4 text-sm font-thin">
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem a animi, sapiente unde fugit praesentium quas? Doloribus nesciunt sed culpa! Ullam explicabo qui suscipit blanditiis, corrupti eaque vel a voluptatibus.</p>
 					</div>
 				</div>
-				<div class="flex-initial grow-0 shrink w-3/4 basis-auto p-8 shadow-lg w-80 flex flex-col justify-between items-center">
+				<div class="flex-initial grow-0 shrink w-3/4 basis-auto p-12 shadow-lg w-80 flex flex-col justify-between items-center">
 					<div class="">
 						<img class="w-36 m-auto" src="imgs/logos/info logo.png" alt="">
-						<p class="font-bold text-lg  text-custom-dark-blue md:text-2xl">Infogérance et Outsourcing</p>
+						<p class="font-bold text-lg  text-custom-dark-blue md:text-lg">Infogérance et Outsourcing</p>
 					</div>
-					<div <div class="text-left mt-4 text-sm font-thin md:text-base">
+					<div <div class="text-left mt-4 text-sm font-thin">
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem a animi, sapiente unde fugit praesentium quas? Doloribus nesciunt sed culpa! Ullam explicabo qui suscipit blanditiis, corrupti eaque vel a voluptatibus.</p>
 					</div>
 				</div>
@@ -374,8 +392,8 @@
 		</section>
 
 
-		<section class="px-8 flex flex-col justify-center items-center py-10">
-			<h3 class="w-full custom-border text-center text-2xl font-bold pb-4 mb-8 md:text-3xl">Nos clients</h3>
+		<section id="clients" class="px-8 flex flex-col justify-center items-center py-10">
+			<h3 class="text-black w-full custom-border text-center text-2xl font-bold pb-4 mb-8 md:text-4xl">Nos clients</h3>
 
 			<div id="client-container" class="infinite-carousel-shell">
 					<div id="container" class="w-full h-28 flex justify-center items-center scrollbar-hide overflow-scroll space-x-12 infinite-carousel-group infinite-carousel-horizontal">
@@ -391,7 +409,7 @@
 
 			<div id="quote-cards" class="flex flex-col justify-center items-center mt-8 px-6 space-y-14">
 				<div class="flex justify-center items-center w-full text-center">			
-					<div id="quote-card" class="space-y-2 w-1/2">
+					<div id="quote-card" class="space-y-2 w-1/2 lg:w-1/4">
 						<h3 class="font-bold ">"Quote"</h3>
 						<p class="text-xs">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda natus modi nemo neque, voluptatem ex non architecto labore nam quibusdam consequatur deleniti vel nostrum? Culpa autem eveniet vel dolorum delectus?</p>
 						<p class="text-xs font-bold">-Name of client</p>
@@ -406,14 +424,14 @@
 						<p class="text-center">BRAND IMAGE</p>
 					</div>
 
-					<div id="quote-card" class="space-y-2 w-1/2">
+					<div id="quote-card" class="space-y-2 w-1/2 lg:w-1/4">
 						<h3 class="font-bold">"Quote"</h3>
 						<p class="text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam laborum repellat deleniti error voluptas. Voluptatum harum, aut, eos veniam aliquid repellat vel est consectetur omnis aspernatur quas nulla perspiciatis! Quam!</p>
 						<p class="text-xs font-bold">-Name of client</p>
 					</div>
 				</div>
 				<div class="flex justify-center items-center w-full text-center">
-					<div id="quote-card" class="space-y-2  w-1/2">
+					<div id="quote-card" class="space-y-2 w-1/2 lg:w-1/4">
 						<h3 class="font-bold">"Quote"</h3>
 						<p class="text-xs">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis corrupti quaerat non delectus expedita pariatur esse ipsa. Atque, est delectus! Et aspernatur eaque ullam tempora illo dolorum commodi perferendis consectetur!</p>
 						<p class="text-xs font-bold">-Name of client</p>
@@ -427,8 +445,8 @@
 		</section>
 
 
-		<section class="px-8 flex flex-col justify-center items-center py-10 space-y-4">
-			<h3 class="w-full custom-border text-center text-2xl font-bold pb-4 md:text-3xl ">Nos partenaires</h3>
+		<section id="partners" class="px-8 flex flex-col justify-center items-center py-10 space-y-4">
+			<h3 class="text-black w-full custom-border text-center text-2xl font-bold pb-4 md:text-4xl ">Nos partenaires</h3>
 			<div class="overflow-x-scroll flex justify-center items-center space-x-8 py-8 mb-4">
 				<img class="w-1/6" src="imgs/Partenaires/Cisco-grayscale.png" alt="">
 				<img class="w-1/4 h-2/4" src="imgs/Partenaires/Microsoft_logo_(2012).svg.png" alt="">
@@ -447,8 +465,8 @@
 		</section>
 
 
-		<section class="px-8 flex flex-col justify-center items-center py-10">
-			<h3 class="w-full custom-border text-center text-2xl font-bold pb-4 mb-8 md:text-3xl">A la une</h3>
+		<section id="news" class="px-8 flex flex-col justify-center items-center py-10">
+			<h3 class="text-black w-full custom-border text-center text-2xl font-bold pb-4 mb-8 md:text-4xl">A la une</h3>
 			<div class="py-6 h-96 overflow-scroll w-4/5 bg-custom-news-gray  rounded-lg">
 				<div class="bg-custom-news-gray">
 					<div class="space-y-8 scrollbar-hide flex flex flex-col justify-center items-center" id="news-container"></div>
@@ -457,15 +475,15 @@
 		</section>
 
 
-		<section class="px-8 flex flex-col justify-center items-center py-10">
-			<h3 class="w-full custom-border text-center text-2xl font-bold pb-4 mb-8 md:text-3xl">Nous contacter</h3>
+		<section id="contact" class="px-8 flex flex-col justify-center items-center py-10">
+			<h3 class="text-black w-full custom-border text-center text-2xl font-bold pb-4 mb-8 md:text-4xl">Nous contacter</h3>
 			<form action="" class="w-5/6 flex flex-col justify-center items-center space-y-6">
 				<div class="flex space-x-6 w-full">
-					<input type="text" class="w-full text-sm shadow-lg p-4 bg-custom-light-gray placeholder:text-black" placeholder="Votre nom">
-					<input type="text" class="w-full text-sm  shadow-lg p-4 bg-custom-light-gray placeholder:text-black" placeholder="Votre email">
+					<input type="text" class="border-none w-full text-sm shadow-lg p-4 bg-custom-light-gray placeholder:text-black" placeholder="Votre nom">
+					<input type="text" class="border-none w-full text-sm  shadow-lg p-4 bg-custom-light-gray placeholder:text-black" placeholder="Votre email">
 				</div>
-				<input type="text" class="w-full text-sm  shadow-lg p-4 bg-custom-light-gray placeholder:text-black" placeholder="Objet">
-				<textarea name="" id="" cols="30" rows="10" class="w-full text-sm  shadow-lg p-4 bg-custom-light-gray placeholder:text-black" placeholder="Votre message"></textarea>
+				<input type="text" class="border-none w-full text-sm  shadow-lg p-4 bg-custom-light-gray placeholder:text-black" placeholder="Objet">
+				<textarea name="" id="" cols="30" rows="10" class="border-none w-full text-sm  shadow-lg p-4 bg-custom-light-gray placeholder:text-black" placeholder="Votre message"></textarea>
 				<button class="px-6 py-4 text-white bg-custom-light-blue">
 					Envoyer
 				</button>
@@ -473,21 +491,21 @@
 			
 			<div class="space-y-4 mt-12 w-5/6">
 				<div class="w-full space-y-4 flex flex-col justify-center m-auto ">
-					<div class="flex">
-					<img class="w-4 h-4 mt-1 mr-1" src="imgs/logos/location.png" alt="">
-					<p class="font-bold">Address: <span class=" text-custom-light-blue font-thin">Lotissment Sidi Merzoug 21 &emsp;Logements Promotionnels BT03 Ben Aknoun - Alger Algérie</span></p>
+				<div class="flex">
+				<img class="w-4 h-4 mt-1 mr-1" src="imgs/logos/location.png" alt="">
+				<p class="font-bold">Address:</p>&nbsp;<p class=" text-custom-light-blue font-thin">Lotissment Sidi Merzoug 21Logements Promotionnels BT03 Ben Aknoun - Alger Algérie</p>
 			</div>
 			<div class="flex">
 				<img class="w-4 h-4 mt-1 mr-1" src="imgs/logos/phone.png" alt="">
-				<p class="font-bold">Phone: <span class="text-custom-light-blue font-thin underline"><a href="tel:+213661128109">+213 (0) 661 128 109</a></span></p>
+				<p class="font-bold">Phone:</p>&nbsp;<a class="text-custom-light-blue font-thin underline" href="tel:+213661128109">+213 (0) 661 128 109</a>
 			</div>
 			<div class="flex">
 				<img class="w-4 h-4 mt-1 mr-1" src="imgs/logos/fax.png" alt="">
-				<p class="font-bold">Fax: <span class="text-custom-light-blue font-thin underline"><a href="tel:+21323381555">+213 (0) 23 38 15 55</a></span></p>
+				<p class="font-bold">Fax:</p>&nbsp;<a class="text-custom-light-blue font-thin underline" href="tel:+21323381555">+213 (0) 23 38 15 55</a>
 			</div>
 			<div class="flex">
 				<img class="w-4 h-4 mt-1 mr-1" src="imgs/logos/mail.png" alt="">
-				<p class="font-bold">Email: <span class="text-custom-light-blue font-thin">contact@lfb-services.com</span></p>
+				<p class="font-bold">Email:</p>&nbsp;<p class="text-custom-light-blue font-thin">contact@lfb-services.com</p>
 			</div>
 		</div>
 		<div class="z-2- w-full px- flex flex-col justify-center items-center space-y-6">
@@ -509,46 +527,11 @@
 			</div>
 			<p class="text-center font-thin text-xs">Copyright © 2022 LFB-Services.</p>
 		</footer>
-		<!-- <div
-			class="flex justify-center items-center h-96 space-x-6 space-y-40"
-			id="container"
-		></div> -->
-
-		<!-- <div class="mapouter">
-			<div class="gmap_canvas">
-				<iframe
-				width="449"
-				height="389"
-					id="gmap_canvas"
-					src="https://maps.google.com/maps?q=lfb%20services&t=&z=13&ie=UTF8&iwloc=&output=embed"
-					frameborder="0"
-					scrolling="no"
-					marginheight="0"
-					marginwidth="0"
-				></iframe
-				><a href="https://fmovies-online.net"></a><br /><style>
-					.mapouter {
-						position: relative;
-						text-align: right;
-						height: 389px;
-						width: 449px;
-					}</style
-				><a href="https://www.embedgooglemap.net"
-					>insert google map into website</a
-				><style>
-					.gmap_canvas {
-						overflow: hidden;
-						background: none !important;
-						height: 389px;
-						width: 449px;
-					}
-				</style>
-			</div>
-		</div>
--->
+		
+		<script src="/node_modules/tw-elements/dist/js/index.min.js"></script>
 		<script src="../path/to/flowbite/dist/flowbite.js"></script>
 		<script src="main.js"></script>
 		<script src="//code.tidio.co/ifypvamfk473nptf6gyb8bogtt2lrckx.js" async></script>
 		<script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
-		
+	</body>
 </html>
