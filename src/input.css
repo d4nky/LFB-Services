@@ -11,9 +11,9 @@
 	display: block;
 	position: absolute;
 	bottom: 0;
-	width: 40px;
-	left: 102.5px;
-	border-bottom: 4px solid #1191d0;
+	width: 50px;
+	left: 40%;
+	border-bottom: 3px solid #1191d0;
 }
 iframe {
 	height: 400px;
