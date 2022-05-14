@@ -3,7 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 .custom-border {
-	width: 250px;
+	width: 500px;
 	position: relative;
 }
 .custom-border::after {
@@ -11,9 +11,9 @@
 	display: block;
 	position: absolute;
 	bottom: 0;
-	width: 50px;
-	left: 40%;
-	border-bottom: 3px solid #1191d0;
+	width: 62px;
+	left: 43.5%;
+	border-bottom: 4px solid #1191d0;
 }
 iframe {
 	height: 400px;
