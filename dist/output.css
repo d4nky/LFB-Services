@@ -4242,11 +4242,6 @@ textarea.form-control.is-invalid{
   margin: auto;
 }
 
-.my-12{
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-}
-
 .my-20{
   margin-top: 5rem;
   margin-bottom: 5rem;
@@ -4288,20 +4283,12 @@ textarea.form-control.is-invalid{
   margin-bottom: 2rem;
 }
 
-.mt-4{
-  margin-top: 1rem;
-}
-
-.mt-\[60px\]{
-  margin-top: 60px;
-}
-
-.mt-\[68px\]{
-  margin-top: 68px;
-}
-
 .mt-8{
   margin-top: 2rem;
+}
+
+.mt-4{
+  margin-top: 1rem;
 }
 
 .mb-16{
@@ -4310,6 +4297,18 @@ textarea.form-control.is-invalid{
 
 .mr-1{
   margin-right: 0.25rem;
+}
+
+.mr-12{
+  margin-right: 3rem;
+}
+
+.mr-16{
+  margin-right: 4rem;
+}
+
+.mb-20{
+  margin-bottom: 5rem;
 }
 
 .block{
@@ -4376,10 +4375,6 @@ textarea.form-control.is-invalid{
   height: 1000px;
 }
 
-.h-28{
-  height: 7rem;
-}
-
 .h-2\/4{
   height: 50%;
 }
@@ -4390,6 +4385,14 @@ textarea.form-control.is-invalid{
 
 .h-8{
   height: 2rem;
+}
+
+.h-2{
+  height: 0.5rem;
+}
+
+.h-40{
+  height: 10rem;
 }
 
 .w-64{
@@ -4428,10 +4431,6 @@ textarea.form-control.is-invalid{
   width: 300px;
 }
 
-.w-36{
-  width: 9rem;
-}
-
 .w-\[155px\]{
   width: 155px;
 }
@@ -4452,6 +4451,10 @@ textarea.form-control.is-invalid{
   width: 500px;
 }
 
+.w-36{
+  width: 9rem;
+}
+
 .w-4\/5{
   width: 80%;
 }
@@ -4464,8 +4467,24 @@ textarea.form-control.is-invalid{
   width: 2rem;
 }
 
+.w-6{
+  width: 1.5rem;
+}
+
+.w-\[200px\]{
+  width: 200px;
+}
+
 .w-\[\]{
   width: ;
+}
+
+.w-\[150\]{
+  width: 150;
+}
+
+.w-\[150px\]{
+  width: 150px;
 }
 
 .min-w-max{
@@ -4628,18 +4647,6 @@ textarea.form-control.is-invalid{
   margin-bottom: calc(8rem * var(--tw-space-y-reverse));
 }
 
-.space-y-12 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-y-reverse: 0;
-  margin-top: calc(3rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(3rem * var(--tw-space-y-reverse));
-}
-
-.space-x-12 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-x-reverse: 0;
-  margin-right: calc(3rem * var(--tw-space-x-reverse));
-  margin-left: calc(3rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
 .space-y-14 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
   margin-top: calc(3.5rem * calc(1 - var(--tw-space-y-reverse)));
@@ -4668,6 +4675,12 @@ textarea.form-control.is-invalid{
   --tw-space-x-reverse: 0;
   margin-right: calc(1.5rem * var(--tw-space-x-reverse));
   margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-4 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .self-start{
@@ -4718,10 +4731,6 @@ textarea.form-control.is-invalid{
 
 .border-2{
   border-width: 2px;
-}
-
-.border-4{
-  border-width: 4px;
 }
 
 .border-none{
@@ -4841,6 +4850,34 @@ textarea.form-control.is-invalid{
   background-image: url('imgs/bg.png');
 }
 
+.bg-\[url\(\'\/img\/hero-pattern\.svg\'\)\]{
+  background-image: url('/img/hero-pattern.svg');
+}
+
+.bg-\[url\(\'\'\)\]{
+  background-image: url('');
+}
+
+.bg-\[url\(\'img\'\)\]{
+  background-image: url('img');
+}
+
+.bg-\[url\(\'imgs\/\'\)\]{
+  background-image: url('imgs/');
+}
+
+.bg-\[url\(\'imgs\/Clients\/\'\)\]{
+  background-image: url('imgs/Clients/');
+}
+
+.bg-\[url\(\'imgs\/Clients\/Air_\'\)\]{
+  background-image: url('imgs/Clients/Air_');
+}
+
+.bg-\[url\(\'imgs\/Clients\/Air_Alg\E9rie_Logo\.svg\'\)\]{
+  background-image: url('imgs/Clients/Air_Algérie_Logo.svg');
+}
+
 .bg-cover{
   background-size: cover;
 }
@@ -4883,14 +4920,6 @@ textarea.form-control.is-invalid{
 
 .p-0{
   padding: 0px;
-}
-
-.p-12{
-  padding: 3rem;
-}
-
-.p-8{
-  padding: 2rem;
 }
 
 .p-\[25px\]{
@@ -4965,6 +4994,26 @@ textarea.form-control.is-invalid{
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.px-\[25px\]{
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.py-\[\]{
+  padding-top: ;
+  padding-bottom: ;
+}
+
+.py-\[20\]{
+  padding-top: 20;
+  padding-bottom: 20;
+}
+
+.py-5{
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .pt-2{
@@ -5051,6 +5100,10 @@ textarea.form-control.is-invalid{
 
 .text-\[20px\]{
   font-size: 20px;
+}
+
+.text-\[26px\]{
+  font-size: 26px;
 }
 
 .font-semibold{
@@ -5397,26 +5450,9 @@ iframe {
   cursor: pointer;
 }
 
-.hover\:rounded-sm:hover{
-  border-radius: 0.125rem;
-}
-
-.hover\:rounded-lg:hover{
-  border-radius: 0.5rem;
-}
-
-.hover\:border-2:hover{
-  border-width: 2px;
-}
-
 .hover\:border-gray-300:hover{
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
-}
-
-.hover\:border-black:hover{
-  --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
 .hover\:bg-gray-100:hover{
@@ -5478,11 +5514,6 @@ iframe {
   --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
   --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.hover\:shadow-black:hover{
-  --tw-shadow-color: #000000;
-  --tw-shadow: var(--tw-shadow-colored);
 }
 
 .hover\:outline-none:hover{
@@ -5656,11 +5687,6 @@ iframe {
 }
 
 @media (min-width: 768px){
-  .md\:mx-6{
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-  }
-
   .md\:w-24{
     width: 6rem;
   }
@@ -5718,23 +5744,6 @@ iframe {
     line-height: 1.25rem;
   }
 
-  .md\:text-\[42px\]{
-    font-size: 42px;
-  }
-
-  .md\:text-\[16px\]{
-    font-size: 16px;
-  }
-
-  .md\:text-\[24px\]{
-    font-size: 24px;
-  }
-
-  .md\:text-4xl{
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
-
   .md\:text-\[32px\]{
     font-size: 32px;
   }
@@ -5743,8 +5752,17 @@ iframe {
     font-size: 14px;
   }
 
+  .md\:text-\[42px\]{
+    font-size: 42px;
+  }
+
   .md\:text-\[20px\]{
     font-size: 20px;
+  }
+
+  .md\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
 
@@ -5798,8 +5816,8 @@ iframe {
     height: 480px;
   }
 
-  .lg\:w-\[400px\]{
-    width: 400px;
+  .lg\:w-\[300px\]{
+    width: 300px;
   }
 
   .lg\:w-1\/4{
@@ -5808,10 +5826,6 @@ iframe {
 
   .lg\:w-\[500px\]{
     width: 500px;
-  }
-
-  .lg\:w-\[300px\]{
-    width: 300px;
   }
 
   .lg\:flex-row{
@@ -5838,6 +5852,12 @@ iframe {
     justify-content: center;
   }
 
+  .lg\:space-x-12 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-x-reverse: 0;
+    margin-right: calc(3rem * var(--tw-space-x-reverse));
+    margin-left: calc(3rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
   .lg\:space-y-0 > :not([hidden]) ~ :not([hidden]){
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
@@ -5848,12 +5868,6 @@ iframe {
     --tw-space-x-reverse: 0;
     margin-right: calc(7rem * var(--tw-space-x-reverse));
     margin-left: calc(7rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
-  .lg\:space-x-12 > :not([hidden]) ~ :not([hidden]){
-    --tw-space-x-reverse: 0;
-    margin-right: calc(3rem * var(--tw-space-x-reverse));
-    margin-left: calc(3rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .lg\:overflow-hidden{
@@ -5875,20 +5889,12 @@ iframe {
     line-height: 2rem;
   }
 
-  .lg\:text-\[15px\]{
-    font-size: 15px;
-  }
-
-  .lg\:text-\[16px\]{
-    font-size: 16px;
-  }
-
-  .lg\:text-\[12px\]{
-    font-size: 12px;
-  }
-
   .lg\:text-\[14px\]{
     font-size: 14px;
+  }
+
+  .lg\:text-\[18px\]{
+    font-size: 18px;
   }
 }
 
