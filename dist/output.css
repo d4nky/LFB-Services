@@ -4395,6 +4395,18 @@ textarea.form-control.is-invalid{
   height: 10rem;
 }
 
+.h-\[300px\]{
+  height: 300px;
+}
+
+.h-\[400px\]{
+  height: 400px;
+}
+
+.h-\[200px\]{
+  height: 200px;
+}
+
 .w-64{
   width: 16rem;
 }
@@ -4485,6 +4497,26 @@ textarea.form-control.is-invalid{
 
 .w-\[150px\]{
   width: 150px;
+}
+
+.w-\[x\]{
+  width: x;
+}
+
+.w-\[50x\]{
+  width: 50x;
+}
+
+.w-\[50px\]{
+  width: 50px;
+}
+
+.w-\[250px\]{
+  width: 250px;
+}
+
+.w-\[125px\]{
+  width: 125px;
 }
 
 .min-w-max{
@@ -4924,6 +4956,10 @@ textarea.form-control.is-invalid{
 
 .p-\[25px\]{
   padding: 25px;
+}
+
+.p-3{
+  padding: 0.75rem;
 }
 
 .px-2{
