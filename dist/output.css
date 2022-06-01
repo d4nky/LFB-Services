@@ -4715,6 +4715,12 @@ textarea.form-control.is-invalid{
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.space-y-12 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(3rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(3rem * var(--tw-space-y-reverse));
+}
+
 .self-start{
   align-self: flex-start;
 }
@@ -5140,6 +5146,10 @@ textarea.form-control.is-invalid{
 
 .text-\[26px\]{
   font-size: 26px;
+}
+
+.text-\[14px\]{
+  font-size: 14px;
 }
 
 .font-semibold{
@@ -5760,6 +5770,11 @@ iframe {
   .md\:px-8{
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  .md\:px-12{
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 
   .md\:text-left{
