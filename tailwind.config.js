@@ -6,7 +6,7 @@ module.exports = {
 	],
 	theme: {
 		screens: {
-			sm: '475px',
+			sm: '360px',
 			md: '768px',
 			// => @media (min-width: 768px) { ... }
 
@@ -28,7 +28,7 @@ module.exports = {
 				'nav-logo': "url('imgs/logos/LFB-logo_transparent.png')",
 				'second-background': "url('imgs/1.jpg')",
 				'third-background': "url('imgs/2.jpg')",
-				'first-background': "url('imgs/bg.jpg')",
+				'first-background': "url('imgs/bg.png')",
 			},
 			colors: {
 				'custom-light-gray': '#ECEDED',
