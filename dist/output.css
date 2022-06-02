@@ -4375,6 +4375,10 @@ textarea.form-control.is-invalid{
   height: 2rem;
 }
 
+.h-1\/4{
+  height: 25%;
+}
+
 .w-64{
   width: 16rem;
 }
@@ -5046,6 +5050,10 @@ textarea.form-control.is-invalid{
 
 .text-\[20px\]{
   font-size: 20px;
+}
+
+.text-\[28px\]{
+  font-size: 28px;
 }
 
 .font-semibold{
