@@ -318,7 +318,7 @@
 			</div>
 		</header>
 
-		<section id="about" class="flex flex-col justify-center items-center overflow-scroll h-[500px] lg:h-[700px] bg-first-background bg-no-repeat bg-cover bg-fixed py-2 lg:py-10 lg:overflow-hidden">
+		<section id="about" class="flex flex-col justify-center items-center h-screen bg-first-background bg-no-repeat bg-cover bg-fixed py-2 lg:py-10 lg:overflow-hidden">
 			
 			<div class="text-white space-y-6 px-8 lg:px-12 pb-4 lg:ml-28 lg:mt-40 lg:mr-56">
 				<h2 class="drop-shadow-lg text-white text-[24px] font-bold mb-2 sm:text-2xl md:text-[32px]">A propos de <span class="text-custom-light-blue text-[24px] font-bold sm:text-2xl md:text-[32px]">LFB-Services</span></h2>
@@ -346,11 +346,11 @@
 		<div class="space-y-32">
 
 		
-		<section id="services" class="px-8 mt-12 text-center flex flex-col justify-center items-center py-10">
+		<section id="services" class="px-8 lg:h-screen mt-12 text-center flex flex-col justify-center items-center py-10">
 			<!-- <h3 class="text-black custom-border text-2xl font-bold pb-4 mb-8 md:text-[42px] flex justify-center items-center w-full">Notre savoir faire</h3> -->
 
 			<div class="flex flex-wrap lg:flex-row lg:flex-nowrap justify-center items-center lg:space-x-12 lg:space-y-0 lg:justify-start">
-				<div class="hover:shadow-2xl transition-all duration-300 w-[300px] h-[380px] lg:w-[300px] lg:h-[480px] flex flex-col justify-evenly items-center">
+				<div class="hover:shadow-2xl transition-all duration-300 max-w-[300px] h-[380px] lg:w-[300px] lg:h-[480px] flex flex-col justify-evenly items-center">
 					<div class="">
 						<img class="p-2 w-[155px] m-auto" src="imgs/logos/infra logo.png" alt="">
 						<p class="p-4 text-lg font-bold text-custom-dark-blue md:text-[20px]">Infrastructure réseau et systèmes</p>
@@ -390,19 +390,19 @@
 		</section>
 
 
-		<section id="clients" class="flex flex-col justify-center items-center py-10 space-y-12">
-			<h3 class="text-black w-full custom-border text-2xl font-bold pb-4 mb-8 md:text-[42px] flex justify-center items-center ">Nos clients</h3>
+		<section id="clients" class="lg:h-screen flex flex-col justify-center items-center py-10 space-y-12">
+			<h3 class="text-black  custom-border text-2xl font-bold pb-4 mb-8 md:text-[42px] flex justify-center items-center ">Nos clients</h3>
 			
 			<div id="client-container ">
 			</div>
-			<div class="bg-[#E8E9EB] m-auto space-x-8 w-full carousel"
+			<div class=" m-auto space-x-8 w-full carousel"
 				data-flickity='{ "wrapAround": true, "autoPlay": 3000,
 				"lazyLoad": 1,
 				"adaptiveHeight": false,
 				"pauseAutoPlayOnHover": false,
 				"prevNextButtons": false,
 				"pageDots": false,
-				"contain": true}'>
+				"contain": false}'>
 				<div class="flex justify-center items-center h-full m-auto carousel-cell"><img src="imgs/Clients/Air_Algérie_Logo.svg.png" class="w-[125px] p-3" alt=""></div>
 				<div class="flex justify-center items-center carousel-cell h-full m-auto "><img src="imgs/Clients/Logo-heetch-Horizontal.jpg" class="w-[125px] p-3" alt=""></div>
 				<div class="flex justify-center items-center carousel-cell h-full m-auto "><img src="imgs/Clients/Renault-trucks-logo.png" class="w-[125px] p-3" alt=""></div>
@@ -453,7 +453,7 @@
 		</section>
 
 
-		<section id="partners" class=" px-8 flex flex-col justify-center items-center py-10 space-y-4 ">
+		<section id="partners" class="lg:h-screen px-8 flex flex-col justify-center items-center py-10 space-y-4 ">
 			<!-- <h3 class="text-black w-full custom-border text-2xl font-bold pb-4 mb-8 md:text-[42px] flex justify-center items-center  text-center">Nos partenaires</h3> -->
 			<div class="overflow-hidden flex justify-center items-center space-x-24 py-8 mb-4">
 				<!-- <img class="w-1/6 md:w-24" src="imgs/Partenaires/Cisco-grayscale.png" alt="">
@@ -483,7 +483,7 @@
 		</section> -->
 
 
-		<section id="contact" class="lg:mx-24 flex flex-col justify-center items-center py-10 ">
+		<section id="contact" class="lg:h-screen lg:mx-24 flex flex-col justify-center items-center py-10 ">
 			<!-- <h3 class="text-black w-full custom-border text-2xl font-bold pb-4 mb-8 md:text-[42px] flex justify-center items-center  text-center">Nous contacter</h3> -->
 			<div class="flex flex-col justify-center items-center lg:flex-row md:space-x-12 lg:space-x-28 my-20">
 			<form action="" class="w-5/6 flex flex-col justify-center items-center space-y-6">
