@@ -4279,8 +4279,8 @@ textarea.form-control.is-invalid{
   margin-left: 3rem;
 }
 
-.mt-20{
-  margin-top: 5rem;
+.mt-40{
+  margin-top: 10rem;
 }
 
 .mb-8{
@@ -4439,6 +4439,10 @@ textarea.form-control.is-invalid{
   width: 2rem;
 }
 
+.w-\[200px\]{
+  width: 200px;
+}
+
 .min-w-max{
   min-width: -webkit-max-content;
   min-width: -moz-max-content;
@@ -4447,6 +4451,18 @@ textarea.form-control.is-invalid{
 
 .max-w-\[300px\]{
   max-width: 300px;
+}
+
+.max-w-\[200px\]{
+  max-width: 200px;
+}
+
+.max-w-\[400px\]{
+  max-width: 400px;
+}
+
+.max-w-\[250px\]{
+  max-width: 250px;
 }
 
 .flex-1{
@@ -4595,12 +4611,6 @@ textarea.form-control.is-invalid{
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
-}
-
-.space-y-32 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-y-reverse: 0;
-  margin-top: calc(8rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(8rem * var(--tw-space-y-reverse));
 }
 
 .space-y-12 > :not([hidden]) ~ :not([hidden]){
@@ -4851,6 +4861,10 @@ textarea.form-control.is-invalid{
 
 .p-\[25px\]{
   padding: 25px;
+}
+
+.p-8{
+  padding: 2rem;
 }
 
 .px-2{
@@ -5313,10 +5327,16 @@ textarea.form-control.is-invalid{
   content: '';
   display: block;
   position: absolute;
-  bottom: 0;
-  width: 5vw;
+  bottom: 0px;
+  width: 4vw;
   left: 47.5%;
   border-bottom: 4px solid #1191d0;
+}
+
+@media only screen and (max-width: 500px) {
+  .custom-border::after {
+    width: 10vw;
+  }
 }
 
 iframe {
@@ -5637,6 +5657,11 @@ iframe {
     padding-right: 2rem;
   }
 
+  .md\:px-16{
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
   .md\:text-left{
     text-align: left;
   }
@@ -5731,6 +5756,14 @@ iframe {
     width: 500px;
   }
 
+  .lg\:max-w-\[\]{
+    max-width: ;
+  }
+
+  .lg\:max-w-\[700px\]{
+    max-width: 700px;
+  }
+
   .lg\:flex-row{
     flex-direction: row;
   }
@@ -5771,6 +5804,18 @@ iframe {
     --tw-space-x-reverse: 0;
     margin-right: calc(7rem * var(--tw-space-x-reverse));
     margin-left: calc(7rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .lg\:space-y-2 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+  }
+
+  .lg\:space-y-14 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-y-reverse: 0;
+    margin-top: calc(3.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(3.5rem * var(--tw-space-y-reverse));
   }
 
   .lg\:overflow-hidden{
