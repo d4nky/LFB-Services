@@ -4242,11 +4242,6 @@ textarea.form-control.is-invalid{
   margin: auto;
 }
 
-.my-20{
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-}
-
 .mb-2{
   margin-bottom: 0.5rem;
 }
@@ -4279,16 +4274,20 @@ textarea.form-control.is-invalid{
   margin-left: 3rem;
 }
 
-.mt-40{
-  margin-top: 10rem;
+.mt-4{
+  margin-top: 1rem;
+}
+
+.mb-6{
+  margin-bottom: 1.5rem;
+}
+
+.mt-6{
+  margin-top: 1.5rem;
 }
 
 .mb-8{
   margin-bottom: 2rem;
-}
-
-.mt-4{
-  margin-top: 1rem;
 }
 
 .mb-20{
@@ -4297,14 +4296,6 @@ textarea.form-control.is-invalid{
 
 .mr-1{
   margin-right: 0.25rem;
-}
-
-.-mt-1{
-  margin-top: -0.25rem;
-}
-
-.-mt-20{
-  margin-top: -5rem;
 }
 
 .block{
@@ -4363,8 +4354,8 @@ textarea.form-control.is-invalid{
   height: 380px;
 }
 
-.h-2\/4{
-  height: 50%;
+.h-1\/4{
+  height: 25%;
 }
 
 .h-96{
@@ -4375,8 +4366,8 @@ textarea.form-control.is-invalid{
   height: 2rem;
 }
 
-.h-1\/4{
-  height: 25%;
+.h-\[400px\]{
+  height: 400px;
 }
 
 .w-64{
@@ -4399,8 +4390,8 @@ textarea.form-control.is-invalid{
   width: 100%;
 }
 
-.w-48{
-  width: 12rem;
+.w-\[180px\]{
+  width: 180px;
 }
 
 .w-2{
@@ -4423,6 +4414,10 @@ textarea.form-control.is-invalid{
   width: 125px;
 }
 
+.w-\[130\]{
+  width: 130;
+}
+
 .w-1\/6{
   width: 16.666667%;
 }
@@ -4431,8 +4426,8 @@ textarea.form-control.is-invalid{
   width: 25%;
 }
 
-.w-\[500px\]{
-  width: 500px;
+.w-\[250px\]{
+  width: 250px;
 }
 
 .w-36{
@@ -4451,10 +4446,6 @@ textarea.form-control.is-invalid{
   width: 2rem;
 }
 
-.w-\[200px\]{
-  width: 200px;
-}
-
 .min-w-max{
   min-width: -webkit-max-content;
   min-width: -moz-max-content;
@@ -4465,16 +4456,8 @@ textarea.form-control.is-invalid{
   max-width: 300px;
 }
 
-.max-w-\[200px\]{
-  max-width: 200px;
-}
-
 .max-w-\[400px\]{
   max-width: 400px;
-}
-
-.max-w-\[250px\]{
-  max-width: 250px;
 }
 
 .flex-1{
@@ -4631,12 +4614,6 @@ textarea.form-control.is-invalid{
   margin-bottom: calc(3rem * var(--tw-space-y-reverse));
 }
 
-.space-y-14 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-y-reverse: 0;
-  margin-top: calc(3.5rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(3.5rem * var(--tw-space-y-reverse));
-}
-
 .space-y-2 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
   margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
@@ -4659,12 +4636,6 @@ textarea.form-control.is-invalid{
   --tw-space-x-reverse: 0;
   margin-right: calc(1.5rem * var(--tw-space-x-reverse));
   margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.space-y-0 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-y-reverse: 0;
-  margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(0px * var(--tw-space-y-reverse));
 }
 
 .self-start{
@@ -4746,6 +4717,11 @@ textarea.form-control.is-invalid{
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
+.border-custom-dark-blue{
+  --tw-border-opacity: 1;
+  border-color: rgb(48 70 114 / var(--tw-border-opacity));
+}
+
 .bg-gray-200{
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
@@ -4797,6 +4773,11 @@ textarea.form-control.is-invalid{
 .bg-custom-light-blue{
   --tw-bg-opacity: 1;
   background-color: rgb(17 145 208 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#f3f3f3\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 243 243 / var(--tw-bg-opacity));
 }
 
 .bg-custom-light-gray{
@@ -4881,10 +4862,6 @@ textarea.form-control.is-invalid{
   padding: 25px;
 }
 
-.p-8{
-  padding: 2rem;
-}
-
 .px-2{
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -4915,9 +4892,14 @@ textarea.form-control.is-invalid{
   padding-right: 1.5rem;
 }
 
-.py-5{
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
+.py-\[21px\]{
+  padding-top: 21px;
+  padding-bottom: 21px;
+}
+
+.px-\[15px\]{
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .px-7{
@@ -4940,14 +4922,14 @@ textarea.form-control.is-invalid{
   padding-bottom: 2.5rem;
 }
 
-.py-8{
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.py-8{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .px-\[25px\]{
@@ -4974,8 +4956,8 @@ textarea.form-control.is-invalid{
   padding-top: 0.5rem;
 }
 
-.pl-8{
-  padding-left: 2rem;
+.pl-10{
+  padding-left: 2.5rem;
 }
 
 .pr-8{
@@ -5027,21 +5009,13 @@ textarea.form-control.is-invalid{
   font-size: 24px;
 }
 
-.text-\[12px\]{
-  font-size: 12px;
+.text-\[14px\]{
+  font-size: 14px;
 }
 
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
-}
-
-.text-\[14px\]{
-  font-size: 14px;
-}
-
-.text-\[32px\]{
-  font-size: 32px;
 }
 
 .text-\[18px\]{
@@ -5050,10 +5024,6 @@ textarea.form-control.is-invalid{
 
 .text-\[20px\]{
   font-size: 20px;
-}
-
-.text-\[28px\]{
-  font-size: 28px;
 }
 
 .font-semibold{
@@ -5072,8 +5042,16 @@ textarea.form-control.is-invalid{
   font-weight: 100;
 }
 
+.font-\[400\]{
+  font-weight: 400;
+}
+
 .uppercase{
   text-transform: uppercase;
+}
+
+.italic{
+  font-style: italic;
 }
 
 .leading-6{
@@ -5082,6 +5060,10 @@ textarea.form-control.is-invalid{
 
 .leading-9{
   line-height: 2.25rem;
+}
+
+.leading-\[28px\]{
+  line-height: 28px;
 }
 
 .leading-tight{
@@ -5351,13 +5333,13 @@ textarea.form-control.is-invalid{
   position: absolute;
   bottom: 0px;
   width: 4vw;
-  left: 47.5%;
+  left: 47%;
   border-bottom: 4px solid #1191d0;
 }
 
 @media only screen and (max-width: 500px) {
   .custom-border::after {
-    width: 10vw;
+    width: 8vw;
   }
 }
 
@@ -5669,19 +5651,9 @@ iframe {
     margin-left: calc(3rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
-  .md\:px-12{
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
-
   .md\:px-8{
     padding-left: 2rem;
     padding-right: 2rem;
-  }
-
-  .md\:px-16{
-    padding-left: 4rem;
-    padding-right: 4rem;
   }
 
   .md\:text-left{
@@ -5710,12 +5682,8 @@ iframe {
     font-size: 14px;
   }
 
-  .md\:text-\[42px\]{
-    font-size: 42px;
-  }
-
-  .md\:text-\[20px\]{
-    font-size: 20px;
+  .md\:text-\[30px\]{
+    font-size: 30px;
   }
 
   .md\:text-4xl{
@@ -5728,6 +5696,10 @@ iframe {
   .lg\:mx-24{
     margin-left: 6rem;
     margin-right: 6rem;
+  }
+
+  .lg\:-mt-20{
+    margin-top: -5rem;
   }
 
   .lg\:ml-28{
@@ -5746,12 +5718,8 @@ iframe {
     margin-left: 6rem;
   }
 
-  .lg\:mt-\[38px\]{
-    margin-top: 38px;
-  }
-
-  .lg\:-mt-20{
-    margin-top: -5rem;
+  .lg\:mt-\[32px\]{
+    margin-top: 32px;
   }
 
   .lg\:inline-block{
@@ -5770,6 +5738,10 @@ iframe {
     height: 480px;
   }
 
+  .lg\:h-\[1200px\]{
+    height: 1200px;
+  }
+
   .lg\:w-\[300px\]{
     width: 300px;
   }
@@ -5778,12 +5750,8 @@ iframe {
     width: 500px;
   }
 
-  .lg\:max-w-\[\]{
-    max-width: ;
-  }
-
-  .lg\:max-w-\[700px\]{
-    max-width: 700px;
+  .lg\:max-w-\[600px\]{
+    max-width: 600px;
   }
 
   .lg\:flex-row{
@@ -5816,28 +5784,10 @@ iframe {
     margin-left: calc(3rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
-  .lg\:space-y-0 > :not([hidden]) ~ :not([hidden]){
-    --tw-space-y-reverse: 0;
-    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(0px * var(--tw-space-y-reverse));
-  }
-
   .lg\:space-x-28 > :not([hidden]) ~ :not([hidden]){
     --tw-space-x-reverse: 0;
     margin-right: calc(7rem * var(--tw-space-x-reverse));
     margin-left: calc(7rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
-  .lg\:space-y-2 > :not([hidden]) ~ :not([hidden]){
-    --tw-space-y-reverse: 0;
-    margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
-  }
-
-  .lg\:space-y-14 > :not([hidden]) ~ :not([hidden]){
-    --tw-space-y-reverse: 0;
-    margin-top: calc(3.5rem * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(3.5rem * var(--tw-space-y-reverse));
   }
 
   .lg\:overflow-hidden{
@@ -5859,8 +5809,8 @@ iframe {
     line-height: 2rem;
   }
 
-  .lg\:text-\[14px\]{
-    font-size: 14px;
+  .lg\:text-\[42px\]{
+    font-size: 42px;
   }
 
   .lg\:text-\[18px\]{
@@ -5869,8 +5819,8 @@ iframe {
 }
 
 @media (min-width: 1175px){
-  .xl\:text-\[18px\]{
-    font-size: 18px;
+  .xl\:text-\[16px\]{
+    font-size: 16px;
   }
 
   .xl\:text-base{
@@ -5884,10 +5834,6 @@ iframe {
     --tw-space-x-reverse: 0;
     margin-right: calc(3rem * var(--tw-space-x-reverse));
     margin-left: calc(3rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
-  .\32xl\:pl-24{
-    padding-left: 6rem;
   }
 
   .\32xl\:pr-24{
