@@ -4242,6 +4242,42 @@ textarea.form-control.is-invalid{
   margin: auto;
 }
 
+.m-2{
+  margin: 0.5rem;
+}
+
+.m-8{
+  margin: 2rem;
+}
+
+.m-6{
+  margin: 1.5rem;
+}
+
+.m-4{
+  margin: 1rem;
+}
+
+.my-4{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.mx-6{
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.mx-8{
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.mx-4{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 .mb-2{
   margin-bottom: 0.5rem;
 }
@@ -4300,6 +4336,10 @@ textarea.form-control.is-invalid{
 
 .mb-10{
   margin-bottom: 2.5rem;
+}
+
+.mr-auto{
+  margin-right: auto;
 }
 
 .block{
@@ -4376,6 +4416,10 @@ textarea.form-control.is-invalid{
 
 .h-\[400px\]{
   height: 400px;
+}
+
+.h-\[480px\]{
+  height: 480px;
 }
 
 .w-64{
@@ -4460,6 +4504,66 @@ textarea.form-control.is-invalid{
 
 .w-\[180px\]{
   width: 180px;
+}
+
+.w-\[100px\]{
+  width: 100px;
+}
+
+.w-\[120px\]{
+  width: 120px;
+}
+
+.w-\[130px\]{
+  width: 130px;
+}
+
+.w-\[115px\]{
+  width: 115px;
+}
+
+.w-\[11px\]{
+  width: 11px;
+}
+
+.w-\[105px\]{
+  width: 105px;
+}
+
+.w-\[1px\]{
+  width: 1px;
+}
+
+.w-\[150px\]{
+  width: 150px;
+}
+
+.w-\[10px\]{
+  width: 10px;
+}
+
+.w-\[48\]{
+  width: 48;
+}
+
+.w-\[48px\]{
+  width: 48px;
+}
+
+.w-32{
+  width: 8rem;
+}
+
+.w-\[px\]{
+  width: px;
+}
+
+.w-\[50px\]{
+  width: 50px;
+}
+
+.w-\[140px\]{
+  width: 140px;
 }
 
 .min-w-max{
@@ -4654,6 +4758,30 @@ textarea.form-control.is-invalid{
   margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.space-x-10 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(2.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-12 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(3rem * var(--tw-space-x-reverse));
+  margin-left: calc(3rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-y-20 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(5rem * var(--tw-space-y-reverse));
+}
+
+.space-x-20 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(5rem * var(--tw-space-x-reverse));
+  margin-left: calc(5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .self-start{
   align-self: flex-start;
 }
@@ -4740,6 +4868,21 @@ textarea.form-control.is-invalid{
 .border-custom-dark-blue{
   --tw-border-opacity: 1;
   border-color: rgb(48 70 114 / var(--tw-border-opacity));
+}
+
+.border-gray-200{
+  --tw-border-opacity: 1;
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
+}
+
+.border-gray-400{
+  --tw-border-opacity: 1;
+  border-color: rgb(156 163 175 / var(--tw-border-opacity));
+}
+
+.border-gray-600{
+  --tw-border-opacity: 1;
+  border-color: rgb(75 85 99 / var(--tw-border-opacity));
 }
 
 .bg-gray-200{
@@ -4835,6 +4978,10 @@ textarea.form-control.is-invalid{
   background-image: url('imgs/bg.png');
 }
 
+.bg-\[url\(\'\/dist\/imgs\/icons8-mobile-application-hamburger-menu-setting-interface-96\.png\'\)\]{
+  background-image: url('/dist/imgs/icons8-mobile-application-hamburger-menu-setting-interface-96.png');
+}
+
 .bg-cover{
   background-size: cover;
 }
@@ -4885,6 +5032,10 @@ textarea.form-control.is-invalid{
 
 .p-\[25px\]{
   padding: 25px;
+}
+
+.p-8{
+  padding: 2rem;
 }
 
 .px-2{
@@ -4982,6 +5133,26 @@ textarea.form-control.is-invalid{
   padding-right: 15px;
 }
 
+.px-\[31px\]{
+  padding-left: 31px;
+  padding-right: 31px;
+}
+
+.px-\[30px\]{
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.px-3{
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.py-20{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
 .pt-2{
   padding-top: 0.5rem;
 }
@@ -4996,6 +5167,10 @@ textarea.form-control.is-invalid{
 
 .pb-4{
   padding-bottom: 1rem;
+}
+
+.pb-10{
+  padding-bottom: 2.5rem;
 }
 
 .text-left{
@@ -5185,6 +5360,24 @@ textarea.form-control.is-invalid{
 .shadow-md{
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-xl{
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-2xl{
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-sm{
+  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -5414,6 +5607,22 @@ iframe {
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
+.hover\:relative:hover{
+  position: relative;
+}
+
+.hover\:-top-3:hover{
+  top: -0.75rem;
+}
+
+.hover\:-top-4:hover{
+  top: -1rem;
+}
+
+.hover\:-top-6:hover{
+  top: -1.5rem;
+}
+
 .hover\:cursor-pointer:hover{
   cursor: pointer;
 }
@@ -5445,6 +5654,10 @@ iframe {
 
 .hover\:bg-white\/\[\.20\]:hover{
   background-color: rgb(255 255 255 / .20);
+}
+
+.hover\:p-4:hover{
+  padding: 1rem;
 }
 
 .hover\:text-gray-900:hover{
@@ -5776,6 +5989,10 @@ iframe {
     display: flex;
   }
 
+  .lg\:hidden{
+    display: none;
+  }
+
   .lg\:h-screen{
     height: 100vh;
   }
@@ -5842,6 +6059,12 @@ iframe {
     --tw-space-x-reverse: 0;
     margin-right: calc(7rem * var(--tw-space-x-reverse));
     margin-left: calc(7rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .lg\:space-y-0 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 
   .lg\:overflow-hidden{

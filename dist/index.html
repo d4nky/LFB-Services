@@ -7,6 +7,8 @@
 		<title>LFB-Services</title>
 		<link rel="stylesheet" href="output.css" />
 		<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 		
 
 
@@ -168,6 +170,16 @@
 				</div>
 				
 			</nav>
+
+			<nav class="lg:hidden py-[21px] px-[30px] sticky top-0 flex justify-center items-center bg-white z-40 border-b-1 border-gray-600" id="mobile-nav">
+					<img class="w-[48px] mr-auto cursor-pointer" src="/dist/imgs/icons8-mobile-application-hamburger-menu-setting-interface-96.png"/>
+				<a class="absolute" href="#header">
+					<img class="w-[130px]" src="/dist/imgs/logos/LFB-logo.png" alt="">
+				</a>
+			</nav>
+
+
+
 		<header id="header" class="z-30 w-full">
 			
 			
@@ -194,6 +206,8 @@
 								class="text-center text-white absolute flex justify-center items-center flex-col w-full h-full m-auto space-y-10"
 							>
 								<h1
+									data-aos-duration="1000"
+									data-aos="fade-down"
 									id="h1"
 									class="px-2 text-3xl font-bold  md:text-[45px]"
 								>
@@ -213,7 +227,6 @@
 								role="button"
           						data-mdb-ripple="true"
           						data-mdb-ripple-color="light"
-									data-aos="fade-up"
 									class="noSelect transition-all duration-50 hover:backdrop-blur-sm hover:bg-white/[.20]  text-xs md:text-sm border-2  h-[57px] w-[160px] xl:text-base"
 								>START NOW</button></a>
 								
@@ -233,7 +246,8 @@
 							<div
 								class="text-center text-white absolute flex justify-center items-center flex-col w-full h-full m-auto space-y-10"
 							>
-								<h1 id="h1" class="px-2 text-3xl font-bold  md:text-[45px]">
+								<h1 
+								id="h1" class="px-2 text-3xl font-bold  md:text-[45px]">
 									DESIGN YOUR&nbsp;<span
 										class="bg-custom-light-blue"
 										>BUSINESS</span
@@ -297,9 +311,10 @@
 					data-bs-target="#carouselExampleControls"
 					data-bs-slide="prev"
 				>
-					<span
+					<span data-aos="fade-right"
 						class="carousel-control-prev-icon inline-block bg-no-repeat"
 						aria-hidden="true"
+						data-aos-duration="1000"
 					></span>
 					<span class="visually-hidden">Previous</span>
 				</button>
@@ -310,8 +325,10 @@
 					data-bs-slide="next"
 				>
 					<span
+					data-aos="fade-left"
 						class="carousel-control-next-icon inline-block bg-no-repeat"
 						aria-hidden="true"
+						data-aos-duration="1000"
 					></span>
 					<span class="visually-hidden">Next</span>
 				</button>
@@ -321,11 +338,18 @@
 		<section id="about" class="flex flex-col justify-center items-center h-screen bg-first-background bg-no-repeat bg-cover bg-fixed py-2 lg:py-10 lg:overflow-hidden">
 			
 			<div class="text-white space-y-6 px-8 lg:px-12 pb-4 lg:ml-28 lg:mt-40 lg:mr-56">
-				<h2 class="drop-shadow-lg text-white text-[24px] font-bold mb-2 sm:text-2xl md:text-[32px] lg:text-[42px]">A propos de <span class="text-custom-light-blue text-[24px] font-bold sm:text-2xl md:text-[32px]">LFB-Services</span></h2>
-				<p class="text-[14px] text-white font-thin md:text-[14px] lg:text[18px] drop-shadow-lg mt-12">Présent en Algérie depuis 2012, nous accompagnons nos clients dans la mise en place de leurs systèmes d'information en leur fournissant les ressources nécessaires pour optimiser et sécuriser leurs patrimoines de données ainsi que l'amélioration de leurs niveaux de services.
+				<h2 data-aos-duration="1000"
+									data-aos="fade-right"
+				 class="drop-shadow-lg text-white text-[24px] font-bold mb-2 sm:text-2xl md:text-[32px] lg:text-[42px]">A propos de <span class="text-custom-light-blue text-[24px] font-bold sm:text-2xl md:text-[32px]">LFB-Services</span></h2>
+				<p  data-aos-duration="1000"
+									data-aos="fade-right"
+				class="text-[14px] text-white font-thin md:text-[14px] lg:text[18px] drop-shadow-lg mt-12">Présent en Algérie depuis 2012, nous accompagnons nos clients dans la mise en place de leurs systèmes d'information en leur fournissant les ressources nécessaires pour optimiser et sécuriser leurs patrimoines de données ainsi que l'amélioration de leurs niveaux de services.
 				Notre objectif est de satisfaire les clients que nous accompagnions et d'établir avec eux un partenariat sur le long terme.
 				Nous intervenons sur tous les secteurs d'activité de l'économie algérienne et oeuvrons principalement sur les axes suivants :</p>
-				<ul class="text-[14px] font-thin text-white text-left list-disc ml-12 lg:ml-24 space-y-4 lg:text[18px]">
+				<ul data-aos-duration="1000"
+					data-aos-delay="500"
+									data-aos="fade-right"
+				class="text-[14px] font-thin text-white text-left list-disc ml-12 lg:ml-24 space-y-4 lg:text[18px]">
 					<li>
 						Infrastructure réseau et systèmes
 					</li>
@@ -346,46 +370,57 @@
 		<div class="">
 
 		
-		<section id="services" class="px-8 lg:h-screen mt-4 text-center flex flex-col justify-center items-center py-10 space-y-10">
+		<section id="services" class="bg-[#f3f3f3] px-8 lg:h-screen text-center flex flex-col justify-center items-center py-10 space-y-10">
 			<h3 class="text-black border-b-[1px] border-black text-2xl font-bold pb-4 mb-6 md:text-[30px] flex justify-center items-center ">Notre savoir faire</h3>
 
 			<div class="mt-6 flex flex-wrap lg:flex-row lg:flex-nowrap justify-center items-center  lg:space-x-12 md:space-y-0 lg:justify-start">
-				<div class="mb-6 hover:shadow-2xl transition-all duration-300 max-w-[300px] 
-				lg:w-[300px] lg:h-[480px] flex flex-col justify-center items-center border-2 border-custom-dark-blue py-6">
-					<div class="">
-						<img class="w-[155px] m-auto" src="imgs/logos/infra logo.png" alt="">
-						<p class="p-4 font-bold text-custom-dark-blue text-[24px]">Infrastructure réseau et systèmes</p>
+				
+
+
+				
+
+
+				
+
+
+				<div data-aos="fade-up" class="transition-all duration-300 max-w-[300px] 
+				lg:w-[300px]  flex flex-col justify-center items-center">
+					<div class="h-full w-full flex justify-center items-center">
+						<img class="w-[125px] m-auto" src="imgs/logos/infra logo.png" alt="">
 					</div>
-					<div class="px-6 drop-shadow-sm text-left lg:mt-[32px] text-[18px] font-[400] leading-[28px]">
+					<div class="bg-white p-8 drop-shadow-sm text-left text-[18px] font-[400] leading-[28px]">
+						<p class="pb-4 font-bold text-custom-dark-blue text-[24px]">Infrastructure réseau et systèmes</p>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim urna leo varius nam quam faucibus mi. Etiam lacus id sit nibh mauris. Aliquet integer nec praesent malesuada diam faucibus urna.</p>
 					</div>
 				</div>
-				<div class="mb-6 hover:shadow-2xl transition-all duration-300 w-[300px] 
-				 lg:w-[300px] lg:h-[480px] flex flex-col justify-evenly items-center border-2 border-custom-dark-blue py-6">
-					<div class="">
-						<img class="w-[155px] m-auto" src="imgs/logos/integration logo.png" alt="">
-						<p class="p-4 font-bold text-custom-dark-blue text-[24px]">Intégration des solutions d'entreprise</p>
+
+
+				<div class="transition-all duration-300 max-w-[300px] 
+				lg:w-[300px]  flex flex-col justify-center items-center">
+					<div class="h-full w-full flex justify-center items-center">
+						<img class=" w-[125px] m-auto" src="imgs/logos/integration logo.png" alt="">
 					</div>
-					<div class="px-6 drop-shadow-sm text-left lg:mt-[32px] text-[18px] font-[400] leading-[28px]">
+					<div class="bg-white px-6 text-left lg:mt-[32px] text-[18px] font-[400] leading-[28px]">
+						<p class="p-4 font-bold text-custom-dark-blue text-[24px]">Intégration des solutions d'entreprise</p>
 						<p>Nous proposons des solutions clés en main intégrant du matériel et des progiciels adaptés à votre métier et à votre budget.</p>
 					</div>
 				</div>
-				<div class="mb-6 hover:shadow-2xl transition-all duration-300 w-[300px] 
-				 lg:w-[300px] lg:h-[480px] flex flex-col justify-evenly items-center border-2 border-custom-dark-blue py-6">
-					<div class="">
-						<img class="w-[155px] m-auto" src="imgs/logos/dev logo.png" alt="">
-						<p class="p-4 font-bold text-custom-dark-blue text-[24px]">Développement</p>
+				<div class="transition-all duration-300 w-[300px] 
+				 lg:w-[300px] flex flex-col justify-evenly items-center  ">
+					<div class="h-full w-full flex justify-center items-center">
+						<img class="w-[125px] m-auto" src="imgs/logos/dev logo.png" alt="">
 					</div>
-					<div class="px-6 drop-shadow-sm text-left lg:mt-[32px] text-[18px] font-[400] leading-[28px]">
+					<div class="bg-white px-6 drop-shadow-sm text-left lg:mt-[32px] text-[18px] font-[400] leading-[28px]">
+						<p class="p-4 font-bold text-custom-dark-blue text-[24px]">Développement</p>
 						<p>LFB Services couvre l’ensemble du cycle de vie des applications développées, que ça soit un site internet, une application mobile ou bien une application métier, nous nous engageons à vous livrer un produit de grande qualité.</p>
 					</div>
 				</div>
-				<div class="hover:shadow-2xl transition-all duration-300 w-[300px] h-[400px] lg:w-[300px] lg:h-[480px] flex flex-col justify-evenly items-center border-2 border-custom-dark-blue py-6">
-					<div class="">
-						<img class="w-[155px] m-auto" src="imgs/logos/info logo.png" alt="">
-						<p class="p-4  font-bold text-custom-dark-blue text-[24px]">Infogérance et Outsourcing</p>
+				<div class="transition-all duration-300 w-[300px] lg:w-[300px]  flex flex-col justify-evenly items-center border-custom-dark-blue ">
+					<div class="h-full w-full flex justify-center items-center">
+						<img class="w-[125px] m-auto" src="imgs/logos/info logo.png" alt="">
 					</div>
-					<div class="px-6 drop-shadow-sm text-left lg:mt-[32px] text-[18px] font-[400] leading-[28px]">
+					<div class="bg-white px-6 drop-shadow-sm text-left lg:mt-[32px] text-[18px] font-[400] leading-[28px]">
+						<p class="p-4  font-bold text-custom-dark-blue text-[24px]">Infogérance et Outsourcing</p>
 						<p>Nous sommes partenaires des plus grands éditeurs et constructeurs du monde de l’IT</p>
 					</div>
 				</div>
@@ -393,10 +428,10 @@
 		</section>
 
 
-		<section id="clients" class=" bg-[#f3f3f3] lg:h-[1200px] flex flex-col justify-center items-center py-10 space-y-12">
+		<section id="clients" class="flex flex-col justify-center items-center py-10 space-y-12">
 			<h3 class="text-black  border-b-[1px] border-black text-2xl font-bold pb-4 md:text-[30px] flex justify-center items-center ">Nos clients</h3>
 			
-			<div class=" space-x-8 w-full bg-white py-6 carousel"
+			<div class="space-x-24 w-full bg-white py-6 carousel"
 				data-flickity='{ "wrapAround": true, "autoPlay": 3000,
 				"lazyLoad": 1,
 				"adaptiveHeight": false,
@@ -404,34 +439,35 @@
 				"prevNextButtons": false,
 				"pageDots": false,
 				"contain": false}'>
-				<div class="flex justify-center items-center h-full m-auto carousel-cell"><img src="imgs/Clients/Air_Algérie_Logo.svg.png" class="w-[125px] p-3" alt=""></div>
-				<div class="flex justify-center items-center carousel-cell h-full m-auto "><img src="imgs/Clients/Logo-heetch-Horizontal.jpg" class="w-[125px] p-3" alt=""></div>
-				<div class="flex justify-center items-center carousel-cell h-full m-auto "><img src="imgs/Clients/Renault-trucks-logo.png" class="w-[125px] p-3" alt=""></div>
-				<div class="flex justify-center items-center carousel-cell h-full m-auto "><img src="imgs/Clients/Sanofi-Logo-Video-Still-2.jpg" class="w-[125px] p-3" alt=""></div>
-				<div class="flex justify-center items-center carousel-cell h-full m-auto "><img src="imgs/Clients/SNC-Lavalin_logo.svg" class="w-[125px] p-3" alt=""></div>
-				<div class="flex justify-center items-center carousel-cell h-full m-auto "><img src="imgs/Clients/sud-etanche-logo.png" class="w-[125px] p-3" alt=""></div>
-				<div class="flex justify-center items-center carousel-cell h-full m-auto "><img src="imgs/Clients/TDA.svg" class="w-[130] p-3" alt=""></div>
-				<div class="flex justify-center items-center carousel-cell h-full m-auto "><img src="imgs/Clients/Tchin-lait.svg" class="w-[125px] p-3" alt=""></div>
-				<div class="flex justify-center items-center carousel-cell h-full m-auto "><img src="imgs/Clients/Vitalcare.svg" class="w-[125px] p-3" alt=""></div>
-				<div class="flex justify-center items-center carousel-cell h-full m-auto "><img src="imgs/Clients/Presidence.svg" class="w-[125px] p-3" alt=""></div>
-				<div class="flex justify-center items-center carousel-cell h-full m-auto "><img src="imgs/Clients/Myah.svg" class="w-[125px] p-3" alt=""></div>
-				<div class="flex justify-center items-center carousel-cell h-full m-auto "><img src="imgs/Clients/Ministere Finance.svg" class="w-[125px] p-3" alt=""></div>
-				<div class="flex justify-center items-center carousel-cell h-full m-auto "><img src="imgs/Clients/Mobilis.svg" class="w-[125px] p-3" alt=""></div>
-				<div class="flex justify-center items-center carousel-cell h-full m-auto "><img src="imgs/Clients/LIAD.svg" class="w-[125px] p-3" alt=""></div>
-				<div class="flex justify-center items-center carousel-cell h-full m-auto "><img src="imgs/Clients/MDI.svg" class="w-[125px] p-3" alt=""></div>
-				<div class="flex justify-center items-center carousel-cell h-full m-auto "><img src="imgs/Clients/Hamoud.svg" class="w-[125px] p-3" alt=""></div>
-				<div class="flex justify-center items-center carousel-cell h-full m-auto "><img src="imgs/Clients/CNRC.svg" class="w-[125px] p-3" alt=""></div>
-				<div class="flex justify-center items-center carousel-cell h-full m-auto "><img src="imgs/Clients/BETAFER.svg" class="w-[125px] p-3" alt=""></div>
-				<div class="carousel-cell"><img src="imgs/Clients/BOMARE.svg" class="w-[125px] p-3" alt=""></div>
-				<div class="carousel-cell"><img src="imgs/Clients/BASF.svg" class="w-[125px] p-3" alt=""></div>
-				<div class="flex justify-center items-center carousel-cell h-full m-auto "><img src="imgs/Clients/Algerie Telecom.svg" class="w-[125px] p-3" alt=""></div>
+				<div class="flex justify-center items-center h-full m-auto carousel-cell mx-4"><img src="imgs/Clients/Air_Algérie_Logo.svg.png" class="w-[140px] p-3" alt=""></div>
+				<div class="flex justify-center items-center carousel-cell h-full m-auto "><img src="imgs/Clients/Logo-heetch-Horizontal.jpg" class="w-[140px] p-3" alt=""></div>
+				<div class="flex justify-center items-center carousel-cell h-full m-auto mx-4"><img src="imgs/Clients/Renault-trucks-logo.png" class="w-[140px] p-3" alt=""></div>
+				<div class="flex justify-center items-center carousel-cell h-full m-auto mx-4"><img src="imgs/Clients/Sanofi-Logo-Video-Still-2.jpg" class="w-[140px] p-3" alt=""></div>
+				<div class="flex justify-center items-center carousel-cell h-full m-auto mx-4"><img src="imgs/Clients/SNC-Lavalin_logo.svg" class="w-[140px] p-3" alt=""></div>
+				<div class="flex justify-center items-center carousel-cell h-full m-auto mx-4"><img src="imgs/Clients/sud-etanche-logo.png" class="w-[140px] p-3" alt=""></div>
+				<div class="flex justify-center items-center carousel-cell h-full m-auto mx-4"><img src="imgs/Clients/TDA.png" class="w-[100px] p-3" alt=""></div>
+				<div class="flex justify-center items-center carousel-cell h-full m-auto mx-4"><img src="imgs/Clients/Tchin-lait.png" class="w-[140px] p-3" alt=""></div>
+				<div class="flex justify-center items-center carousel-cell h-full m-auto mx-4"><img src="imgs/Clients/mercedes.png" class="w-[100px] p-3" alt=""></div>
+				<div class="flex justify-center items-center carousel-cell h-full m-auto mx-4"><img src="imgs/Clients/Vitalcare.svg" class="w-[140px] p-3" alt=""></div>
+				<div class="flex justify-center items-center carousel-cell h-full m-auto mx-4"><img src="imgs/Clients/Presidence.svg" class="w-[100px] p-3" alt=""></div>
+				<div class="flex justify-center items-center carousel-cell h-full m-auto mx-4"><img src="imgs/Clients/Myah.svg" class="w-[140px] p-3" alt=""></div>
+				<div class="flex justify-center items-center carousel-cell h-full m-auto mx-4"><img src="imgs/Clients/Ministere Finance.svg" class="w-[100px] p-3" alt=""></div>
+				<div class="flex justify-center items-center carousel-cell h-full m-auto mx-4"><img src="imgs/Clients/Mobilis.svg" class="w-[100px] p-3" alt=""></div>
+				<div class="flex justify-center items-center carousel-cell h-full m-auto mx-4"><img src="imgs/Clients/LIAD.svg" class="w-[140px] p-3" alt=""></div>
+				<div class="flex justify-center items-center carousel-cell h-full m-auto mx-4"><img src="imgs/Clients/MDI.svg" class="w-[105px] p-3" alt=""></div>
+				<div class="flex justify-center items-center carousel-cell h-full m-auto mx-4"><img src="imgs/Clients/Hamoud.png" class="w-[100px] p-3" alt=""></div>
+				<div class="flex justify-center items-center carousel-cell h-full m-auto mx-4"><img src="imgs/Clients/CNRC.png" class="w-[120px] p-3" alt=""></div>
+				<div class="flex justify-center items-center carousel-cell h-full m-auto mx-4"><img src="imgs/Clients/BETAFER.svg" class="w-[120px] p-3" alt=""></div>
+				<div class="carousel-cell mx-4"><img src="imgs/Clients/BOMARE.png" class="w-[140px] p-3" alt=""></div>
+				<div class="carousel-cell mx-4"><img src="imgs/Clients/BASF.svg" class="w-[140px] p-3" alt=""></div>
+				<div class="flex justify-center items-center carousel-cell h-full m-auto mx-4"><img src="imgs/Clients/Algerie Telecom.svg" class="w-[140px] p-3" alt=""></div>
 
 
 			</div>
 
 			<div id="quote-cards" class=" flex flex-wrap justify-between items-center">		
 					<div id="quote-card" class="m-auto max-w-[400px] p-6 lg:max-w-[600px] space-y-2 text-center">
-						<h3 class="font-bold text-[20px]">"Review 1"</h3>
+						<img class="flex justify-center items-center m-auto w-[100px]" src="/dist/imgs/Clients/BASF.svg" alt="">
 						<p class="text-[24px] italic">"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda natus modi nemo neque, voluptatem ex non architecto labore nam quibusdam consequatur deleniti vel nostrum? Culpa autem eveniet vel dolorum delectus?</p>
 						<p class="text-[18px] text-bold">-Name of client</p>
 					</div>
@@ -439,7 +475,7 @@
 			
 
 					<div id="quote-card" class="m-auto max-w-[400px] p-6 lg:max-w-[600px] space-y-2 text-center">
-						<h3 class="font-bold text-[20px]">"Review 2"</h3>
+						<img class="flex justify-center items-center m-auto w-[100px]" src="/dist/imgs/Clients/TDA.png" alt="">
 						<p class="text-[24px] italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam laborum repellat deleniti error voluptas. Voluptatum harum, aut, eos veniam aliquid repellat vel est consectetur omnis aspernatur quas nulla perspiciatis! Quam!</p>
 						<p class="text-[18px] text-bold">-Name of client</p>
 					</div>
@@ -460,22 +496,23 @@
 		</section>
 
 
-		<section id="partners" class="lg:h-screen px-2 flex flex-col justify-center items-center py-10 space-y-4 ">
+		<section id="partners" class="bg-[#f3f3f3] py-20 px-2 flex flex-col justify-center items-center space-y-4 ">
 			<h3 class="text-black border-b-[1px] border-black text-2xl font-bold pb-4 mb-2 md:text-[30px] flex justify-center items-center  text-center">Nos partenaires</h3>
 			<div class="overflow-hidden flex justify-center items-center space-x-24 py-8 mb-4">
-				<img class="w-1/6 md:w-24" src="imgs/Partenaires/Cisco-grayscale.png" alt="">
-				<img class="w-1/4 h-1/4 md:w-32" src="imgs/Partenaires/Microsoft_logo_(2012).svg.png" alt="">
-				<img class="w-1/4 md:w-44" src="imgs/Partenaires/fortinet-grayscale.png" alt="">
+				<img class="w-[140px]" src="imgs/Partenaires/Cisco-grayscale.png" alt="">
+				<img class="w-[140px]" src="imgs/Partenaires/Microsoft_logo_(2012).svg.png" alt="">
+				<img class="w-[140px]" src="imgs/Partenaires/fortinet-grayscale.png" alt="">
+				<img class="w-[50px]" src="imgs/Partenaires/200px-HP_logo_2012.svg.png" alt="">
+				<img class="w-[140px]" src="imgs/Partenaires/Kaspersky_logo.svg" alt="">
 			</div>
-			<div class="flex justify-between items-center md:px-8">
-				<div class="space-y-4 flex-wrap justify-center items-center ">
+			<div class="flex w-full m-auto flex-row flex-wrap   space-y-4 justify-center items-center md:px-8">
+			
 					<div class=" flex flex-col justify-center items-center space-y-4">
 						<h3 class="text-[18px] w-[250px] lg:w-[500px] font-bold text-center mt-4 md:text-left ">LFB-SERVICES is a proud Microsoft Gold partner</h3>
 						<p class="px-6 w-[250px] lg:w-[500px] font-thin text-[12px]text-left">LFB Services s’est associée aux plus grandes entreprises du secteur de l’IT pour offrir à ces clients les meilleures solutions du marché, et qui répondent à leurs attentes.</p>
 					</div>
-					<img class="m-auto w-36 sm:w-48 md:w-80" src="imgs/Partenaires/GoldBadge.jpeg" alt="">
+					<img class="w-48" src="imgs/Partenaires/GoldBadge.png" alt="">
 					 
-				</div>
 			</div>
 		</section>
 
@@ -490,13 +527,13 @@
 		</section> -->
 
 
-		<section id="contact" class="lg:h-screen lg:mx-24 flex flex-col justify-center items-center py-10 ">
+		<section id="contact" class="lg:h-screen lg:mx-24 flex flex-col justify-center items-center py-10">
 			<h3 class="text-black border-b-[1px] border-black text-2xl font-bold pb-4 mb-8 md:text-[30px] flex justify-center items-center  text-center">Nous contacter</h3>
 			<div class="flex flex-col justify-center items-center lg:flex-row md:space-x-12 lg:space-x-28 mb-20">
 			<form action="" class="w-5/6 flex flex-col justify-center items-center space-y-6">
 
 					<div class="flex space-x-6 w-full">
-						<input type="text" class="border-none w-full text-[14px] lg:text-[18px] shadow-lg px-[25px] py-[20] bg-custom-light-gray placeholder:text-black" placeholder="Votre nom">
+						<input id="name" type="text" class="border-none w-full text-[14px] lg:text-[18px] shadow-lg px-[25px] py-[20] bg-custom-light-gray placeholder:text-black" placeholder="Votre nom">
 					<input type="text" class="border-none w-full text-[14px] lg:text-[18px]  shadow-lg p-[25px] bg-custom-light-gray placeholder:text-black" placeholder="Votre email">
 				</div>
 				<input type="text" class="border-none w-full text-[14px] lg:text-[18px] shadow-lg p-[25px] bg-custom-light-gray placeholder:text-black" placeholder="Objet">
@@ -534,7 +571,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="z-2 mt-4 w-full px- flex flex-col justify-center items-center space-y-6">
+			<div class="z-2 mt-4 w-full px- flex flex-col justify-center items-center space-y-6 shadow-xl">
 				<div class=" w-full flex justify-center items-center">
 					<div class="mapouter"><div class="gmap_canvas"><iframe  height="200" width="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=lfb%20services&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe> <a href="https://123movies-to.org">123movies</a><br><style>.mapouter{position:relative;text-align:right;height:200px;width:100%;}</style><a href="https://www.embedgooglemap.net">embedgooglemap.net</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:200px;width:100%;}</style></div></div>
 				</div>
@@ -562,5 +599,10 @@
 		<script src="main.js"></script>
 		<script src="//code.tidio.co/ifypvamfk473nptf6gyb8bogtt2lrckx.js" async></script>
 		<script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+			<script>
+  				AOS.init();
+			</script>
+
 	</body>
 </html>
