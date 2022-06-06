@@ -4453,20 +4453,24 @@ textarea.form-control.is-invalid{
   width: 120px;
 }
 
-.w-\[70px\]{
-  width: 70px;
+.w-\[60px\]{
+  width: 60px;
 }
 
-.w-\[25px\]{
-  width: 25px;
+.w-\[80px\]{
+  width: 80px;
+}
+
+.w-\[35px\]{
+  width: 35px;
 }
 
 .w-\[250px\]{
   width: 250px;
 }
 
-.w-48{
-  width: 12rem;
+.w-40{
+  width: 10rem;
 }
 
 .w-4\/5{
@@ -4479,30 +4483,6 @@ textarea.form-control.is-invalid{
 
 .w-8{
   width: 2rem;
-}
-
-.w-\[4px\]{
-  width: 4px;
-}
-
-.w-\[35px\]{
-  width: 35px;
-}
-
-.w-\[80px\]{
-  width: 80px;
-}
-
-.w-\[8px\]{
-  width: 8px;
-}
-
-.w-\[60px\]{
-  width: 60px;
-}
-
-.w-40{
-  width: 10rem;
 }
 
 .min-w-max{
@@ -5029,6 +5009,11 @@ textarea.form-control.is-invalid{
   padding-bottom: 1rem;
 }
 
+.py-\[36px\]{
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+
 .pt-2{
   padding-top: 0.5rem;
 }
@@ -5082,8 +5067,8 @@ textarea.form-control.is-invalid{
   line-height: 1.5rem;
 }
 
-.text-\[24px\]{
-  font-size: 24px;
+.text-\[30px\]{
+  font-size: 30px;
 }
 
 .text-\[14px\]{
@@ -5097,6 +5082,10 @@ textarea.form-control.is-invalid{
 
 .text-\[18px\]{
   font-size: 18px;
+}
+
+.text-\[24px\]{
+  font-size: 24px;
 }
 
 .text-\[20px\]{
@@ -5444,6 +5433,10 @@ iframe {
   outline: none !important;
 }
 
+#tidio-chat-iframe {
+  inset: 0;
+}
+
 .placeholder\:text-black::-moz-placeholder{
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -5682,13 +5675,6 @@ iframe {
   color: rgb(209 213 219 / var(--tw-text-opacity));
 }
 
-@media (min-width: 360px){
-  .sm\:text-2xl{
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-}
-
 @media (min-width: 768px){
   .md\:space-x-1 > :not([hidden]) ~ :not([hidden]){
     --tw-space-x-reverse: 0;
@@ -5729,14 +5715,6 @@ iframe {
   .md\:text-sm{
     font-size: 0.875rem;
     line-height: 1.25rem;
-  }
-
-  .md\:text-\[32px\]{
-    font-size: 32px;
-  }
-
-  .md\:text-\[14px\]{
-    font-size: 14px;
   }
 
   .md\:text-\[30px\]{
@@ -5795,8 +5773,16 @@ iframe {
     height: 100vh;
   }
 
+  .lg\:w-\[120px\]{
+    width: 120px;
+  }
+
   .lg\:w-\[140px\]{
     width: 140px;
+  }
+
+  .lg\:w-\[160px\]{
+    width: 160px;
   }
 
   .lg\:w-\[50px\]{
@@ -5805,14 +5791,6 @@ iframe {
 
   .lg\:w-\[500px\]{
     width: 500px;
-  }
-
-  .lg\:w-\[120px\]{
-    width: 120px;
-  }
-
-  .lg\:w-\[160px\]{
-    width: 160px;
   }
 
   .lg\:max-w-\[600px\]{
@@ -5905,4 +5883,3 @@ iframe {
     padding-right: 6rem;
   }
 }
-

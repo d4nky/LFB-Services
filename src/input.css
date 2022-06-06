@@ -37,4 +37,6 @@ iframe {
 .noSelect:focus {
 	outline: none !important;
 }
-
+#tidio-chat-iframe {
+	inset: 0;
+}
