@@ -4489,6 +4489,14 @@ textarea.form-control.is-invalid{
   width: 10px;
 }
 
+.w-\[8px\]{
+  width: 8px;
+}
+
+.w-\[110px\]{
+  width: 110px;
+}
+
 .min-w-max{
   min-width: -webkit-max-content;
   min-width: -moz-max-content;
@@ -5775,6 +5783,10 @@ iframe {
 
   .lg\:mt-12{
     margin-top: 3rem;
+  }
+
+  .lg\:mt-10{
+    margin-top: 2.5rem;
   }
 
   .lg\:inline-block{
