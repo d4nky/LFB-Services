@@ -28,9 +28,6 @@ const offsetY = 50;
 // 	}
 // });
 
+const mobileNavButton = document.getElementById('mobile-nav-button');
 
-const mobileNavButton = document.getElementById('mobile-nav');
-
-mobileNavButton.addEventListener('click', (e) =>{
-	
-})
+mobileNavButton.addEventListener('click', (e) => {});
