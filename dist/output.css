@@ -4295,6 +4295,10 @@ textarea.form-control.is-invalid{
   margin-top: 1.5rem;
 }
 
+.mb-5{
+  margin-bottom: 1.25rem;
+}
+
 .mt-4{
   margin-top: 1rem;
 }
@@ -4309,14 +4313,6 @@ textarea.form-control.is-invalid{
 
 .mr-1{
   margin-right: 0.25rem;
-}
-
-.mb-10{
-  margin-bottom: 2.5rem;
-}
-
-.mb-5{
-  margin-bottom: 1.25rem;
 }
 
 .block{
@@ -4371,16 +4367,16 @@ textarea.form-control.is-invalid{
   height: 57px;
 }
 
+.h-\[447px\]{
+  height: 447px;
+}
+
 .h-96{
   height: 24rem;
 }
 
 .h-8{
   height: 2rem;
-}
-
-.h-\[447px\]{
-  height: 447px;
 }
 
 .w-64{
@@ -4423,12 +4419,12 @@ textarea.form-control.is-invalid{
   width: 160px;
 }
 
-.w-\[125px\]{
-  width: 125px;
+.w-\[350px\]{
+  width: 350px;
 }
 
-.w-\[300px\]{
-  width: 300px;
+.w-\[125px\]{
+  width: 125px;
 }
 
 .w-\[140px\]{
@@ -4475,26 +4471,14 @@ textarea.form-control.is-invalid{
   width: 2rem;
 }
 
-.w-\[350px\]{
-  width: 350px;
-}
-
 .min-w-max{
   min-width: -webkit-max-content;
   min-width: -moz-max-content;
   min-width: max-content;
 }
 
-.max-w-\[300px\]{
-  max-width: 300px;
-}
-
 .max-w-\[400px\]{
   max-width: 400px;
-}
-
-.max-w-\[350px\]{
-  max-width: 350px;
 }
 
 .flex-1{
@@ -4763,11 +4747,6 @@ textarea.form-control.is-invalid{
   border-color: rgb(75 85 99 / var(--tw-border-opacity));
 }
 
-.border-custom-dark-blue{
-  --tw-border-opacity: 1;
-  border-color: rgb(48 70 114 / var(--tw-border-opacity));
-}
-
 .bg-gray-200{
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
@@ -4900,8 +4879,8 @@ textarea.form-control.is-invalid{
   padding: 0px;
 }
 
-.p-8{
-  padding: 2rem;
+.p-9{
+  padding: 2.25rem;
 }
 
 .p-3{
@@ -4910,10 +4889,6 @@ textarea.form-control.is-invalid{
 
 .p-\[25px\]{
   padding: 25px;
-}
-
-.p-9{
-  padding: 2.25rem;
 }
 
 .px-2{
@@ -5431,6 +5406,10 @@ iframe {
   outline: none !important;
 }
 
+.awesome-iframe {
+  position: absolute;
+}
+
 .placeholder\:text-black::-moz-placeholder{
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -5762,10 +5741,6 @@ iframe {
     margin-left: 6rem;
   }
 
-  .lg\:mt-\[32px\]{
-    margin-top: 32px;
-  }
-
   .lg\:mr-10{
     margin-right: 2.5rem;
   }
@@ -5784,10 +5759,6 @@ iframe {
 
   .lg\:h-screen{
     height: 100vh;
-  }
-
-  .lg\:w-\[300px\]{
-    width: 300px;
   }
 
   .lg\:w-\[140px\]{
@@ -5828,12 +5799,6 @@ iframe {
 
   .lg\:justify-center{
     justify-content: center;
-  }
-
-  .lg\:space-x-12 > :not([hidden]) ~ :not([hidden]){
-    --tw-space-x-reverse: 0;
-    margin-right: calc(3rem * var(--tw-space-x-reverse));
-    margin-left: calc(3rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .lg\:space-x-24 > :not([hidden]) ~ :not([hidden]){

@@ -37,3 +37,6 @@ iframe {
 .noSelect:focus {
 	outline: none !important;
 }
+.awesome-iframe {
+	position: absolute;
+}
