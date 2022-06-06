@@ -4242,6 +4242,10 @@ textarea.form-control.is-invalid{
   margin: auto;
 }
 
+.m-4{
+  margin: 1rem;
+}
+
 .mx-4{
   margin-left: 1rem;
   margin-right: 1rem;
@@ -4291,10 +4295,6 @@ textarea.form-control.is-invalid{
   margin-top: 1.5rem;
 }
 
-.mr-10{
-  margin-right: 2.5rem;
-}
-
 .mt-4{
   margin-top: 1rem;
 }
@@ -4309,6 +4309,14 @@ textarea.form-control.is-invalid{
 
 .mr-1{
   margin-right: 0.25rem;
+}
+
+.mb-10{
+  margin-bottom: 2.5rem;
+}
+
+.mb-5{
+  margin-bottom: 1.25rem;
 }
 
 .block{
@@ -4369,6 +4377,10 @@ textarea.form-control.is-invalid{
 
 .h-8{
   height: 2rem;
+}
+
+.h-\[447px\]{
+  height: 447px;
 }
 
 .w-64{
@@ -4435,8 +4447,12 @@ textarea.form-control.is-invalid{
   width: 120px;
 }
 
-.w-\[50px\]{
-  width: 50px;
+.w-\[70px\]{
+  width: 70px;
+}
+
+.w-\[25px\]{
+  width: 25px;
 }
 
 .w-\[250px\]{
@@ -4459,12 +4475,8 @@ textarea.form-control.is-invalid{
   width: 2rem;
 }
 
-.w-\[70px\]{
-  width: 70px;
-}
-
-.w-\[25px\]{
-  width: 25px;
+.w-\[350px\]{
+  width: 350px;
 }
 
 .min-w-max{
@@ -4479,6 +4491,10 @@ textarea.form-control.is-invalid{
 
 .max-w-\[400px\]{
   max-width: 400px;
+}
+
+.max-w-\[350px\]{
+  max-width: 350px;
 }
 
 .flex-1{
@@ -4657,12 +4673,6 @@ textarea.form-control.is-invalid{
   --tw-space-x-reverse: 0;
   margin-right: calc(1.5rem * var(--tw-space-x-reverse));
   margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.space-x-12 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-x-reverse: 0;
-  margin-right: calc(3rem * var(--tw-space-x-reverse));
-  margin-left: calc(3rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .self-start{
@@ -4902,6 +4912,10 @@ textarea.form-control.is-invalid{
   padding: 25px;
 }
 
+.p-9{
+  padding: 2.25rem;
+}
+
 .px-2{
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -5000,11 +5014,6 @@ textarea.form-control.is-invalid{
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.px-20{
-  padding-left: 5rem;
-  padding-right: 5rem;
 }
 
 .pt-2{
@@ -5781,16 +5790,16 @@ iframe {
     width: 300px;
   }
 
-  .lg\:w-\[500px\]{
-    width: 500px;
-  }
-
   .lg\:w-\[140px\]{
     width: 140px;
   }
 
   .lg\:w-\[50px\]{
     width: 50px;
+  }
+
+  .lg\:w-\[500px\]{
+    width: 500px;
   }
 
   .lg\:max-w-\[600px\]{
@@ -5827,16 +5836,16 @@ iframe {
     margin-left: calc(3rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
-  .lg\:space-x-28 > :not([hidden]) ~ :not([hidden]){
-    --tw-space-x-reverse: 0;
-    margin-right: calc(7rem * var(--tw-space-x-reverse));
-    margin-left: calc(7rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
   .lg\:space-x-24 > :not([hidden]) ~ :not([hidden]){
     --tw-space-x-reverse: 0;
     margin-right: calc(6rem * var(--tw-space-x-reverse));
     margin-left: calc(6rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .lg\:space-x-28 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-x-reverse: 0;
+    margin-right: calc(7rem * var(--tw-space-x-reverse));
+    margin-left: calc(7rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .lg\:overflow-hidden{
