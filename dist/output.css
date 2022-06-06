@@ -4251,6 +4251,11 @@ textarea.form-control.is-invalid{
   margin-right: 1rem;
 }
 
+.my-0{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
 .mb-2{
   margin-bottom: 0.5rem;
 }
@@ -4471,6 +4476,18 @@ textarea.form-control.is-invalid{
   width: 2rem;
 }
 
+.w-\[4px\]{
+  width: 4px;
+}
+
+.w-\[35px\]{
+  width: 35px;
+}
+
+.w-\[80px\]{
+  width: 80px;
+}
+
 .min-w-max{
   min-width: -webkit-max-content;
   min-width: -moz-max-content;
@@ -4669,6 +4686,10 @@ textarea.form-control.is-invalid{
 
 .overflow-scroll{
   overflow: scroll;
+}
+
+.overflow-x-hidden{
+  overflow-x: hidden;
 }
 
 .scroll-smooth{
@@ -5406,10 +5427,6 @@ iframe {
   outline: none !important;
 }
 
-.awesome-iframe {
-  position: absolute;
-}
-
 .placeholder\:text-black::-moz-placeholder{
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -5863,3 +5880,4 @@ iframe {
     padding-right: 6rem;
   }
 }
+

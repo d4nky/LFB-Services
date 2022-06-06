@@ -27,3 +27,10 @@ const offsetY = 50;
 // 		content.style.display = 'none'
 // 	}
 // });
+
+
+const mobileNavButton = document.getElementById('mobile-nav');
+
+mobileNavButton.addEventListener('click', (e) =>{
+	
+})
