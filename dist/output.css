@@ -4501,6 +4501,10 @@ textarea.form-control.is-invalid{
   width: 60px;
 }
 
+.w-40{
+  width: 10rem;
+}
+
 .min-w-max{
   min-width: -webkit-max-content;
   min-width: -moz-max-content;
@@ -5805,6 +5809,10 @@ iframe {
 
   .lg\:w-\[120px\]{
     width: 120px;
+  }
+
+  .lg\:w-\[160px\]{
+    width: 160px;
   }
 
   .lg\:max-w-\[600px\]{
