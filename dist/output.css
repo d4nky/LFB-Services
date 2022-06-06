@@ -4256,6 +4256,11 @@ textarea.form-control.is-invalid{
   margin-bottom: 0px;
 }
 
+.my-5{
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
 .mb-2{
   margin-bottom: 0.5rem;
 }
