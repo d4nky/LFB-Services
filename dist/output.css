@@ -4320,6 +4320,10 @@ textarea.form-control.is-invalid{
   margin-right: 0.25rem;
 }
 
+.-mt-20{
+  margin-top: -5rem;
+}
+
 .block{
   display: block;
 }
@@ -5430,6 +5434,10 @@ iframe {
 
 #tidio-chat-iframe {
   inset: 0;
+}
+
+body{
+  overflow-x: hidden;
 }
 
 .placeholder\:text-black::-moz-placeholder{
