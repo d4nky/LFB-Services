@@ -4284,6 +4284,10 @@ textarea.form-control.is-invalid{
   margin-right: auto;
 }
 
+.ml-5{
+  margin-left: 1.25rem;
+}
+
 .-mt-20{
   margin-top: -5rem;
 }
@@ -4324,10 +4328,6 @@ textarea.form-control.is-invalid{
   margin-right: 0.25rem;
 }
 
-.mt-8{
-  margin-top: 2rem;
-}
-
 .block{
   display: block;
 }
@@ -4366,6 +4366,10 @@ textarea.form-control.is-invalid{
 
 .h-4{
   height: 1rem;
+}
+
+.h-56{
+  height: 14rem;
 }
 
 .h-screen{
@@ -4662,6 +4666,12 @@ textarea.form-control.is-invalid{
   --tw-space-x-reverse: 0;
   margin-right: calc(1.5rem * var(--tw-space-x-reverse));
   margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-y-9 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2.25rem * var(--tw-space-y-reverse));
 }
 
 .self-start{
@@ -4971,14 +4981,14 @@ textarea.form-control.is-invalid{
   padding-bottom: 20px;
 }
 
-.px-8{
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
 .py-10{
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+}
+
+.px-8{
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .py-6{
@@ -5059,6 +5069,10 @@ textarea.form-control.is-invalid{
   line-height: 1rem;
 }
 
+.text-\[18px\]{
+  font-size: 18px;
+}
+
 .text-3xl{
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -5071,10 +5085,6 @@ textarea.form-control.is-invalid{
 
 .text-\[30px\]{
   font-size: 30px;
-}
-
-.text-\[18px\]{
-  font-size: 18px;
 }
 
 .text-2xl{
@@ -5273,6 +5283,10 @@ textarea.form-control.is-invalid{
 
 .duration-500{
   transition-duration: 500ms;
+}
+
+.duration-200{
+  transition-duration: 200ms;
 }
 
 .duration-300{
@@ -5779,12 +5793,12 @@ body{
     display: none;
   }
 
-  .lg\:h-\[447px\]{
-    height: 447px;
-  }
-
   .lg\:h-screen{
     height: 100vh;
+  }
+
+  .lg\:h-\[447px\]{
+    height: 447px;
   }
 
   .lg\:w-\[120px\]{
@@ -5853,11 +5867,6 @@ body{
 
   .lg\:overflow-hidden{
     overflow: hidden;
-  }
-
-  .lg\:py-10{
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
   }
 
   .lg\:px-12{
