@@ -19,3 +19,24 @@ mobileNavButton.addEventListener('click', (e) => {
 		menuToggle = false;
 	}
 });
+
+const scrollUpButton = document.getElementById('scroll-up');
+
+console.log(pageYOffset)
+
+window.onscroll = scrollFunction();
+
+function scrollFunction() {
+	if (
+		document.body.scrollTop > 50 ||
+		document.documentElement.scrollTop > 50
+	) {
+		scrollUpButton.display = 'block';
+	} else {
+		scrollUpButton.style.display = 'none';
+	}
+}
+scrollUpButton.addEventListener('click', () => {
+	document.body.scrollTop = 0;
+	document.documentElement.scrollTop = 0;
+});
