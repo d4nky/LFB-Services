@@ -4202,76 +4202,16 @@ textarea.form-control.is-invalid{
   bottom: 7rem;
 }
 
-.bottom-0{
-  bottom: 0px;
-}
-
-.bottom-\[20px\]{
-  bottom: 20px;
-}
-
-.right-\[30px\]{
-  right: 30px;
-}
-
-.right-\[35px\]{
-  right: 35px;
-}
-
-.right-\[37px\]{
-  right: 37px;
-}
-
-.right-\[px\]{
-  right: px;
-}
-
-.right-\[40px\]{
-  right: 40px;
-}
-
-.right-\[25px\]{
-  right: 25px;
-}
-
-.right-\[27px\]{
-  right: 27px;
-}
-
-.right-\[28px\]{
-  right: 28px;
-}
-
-.right-\[29px\]{
-  right: 29px;
+.bottom-\[120px\]{
+  bottom: 120px;
 }
 
 .right-\[31px\]{
   right: 31px;
 }
 
-.right-\[32px\]{
-  right: 32px;
-}
-
-.bottom-\[30px\]{
-  bottom: 30px;
-}
-
-.bottom-\[10px\]{
-  bottom: 10px;
-}
-
-.bottom-\[40px\]{
-  bottom: 40px;
-}
-
-.bottom-\[90px\]{
-  bottom: 90px;
-}
-
-.bottom-\[120px\]{
-  bottom: 120px;
+.bottom-0{
+  bottom: 0px;
 }
 
 .z-20{
@@ -4736,6 +4676,12 @@ textarea.form-control.is-invalid{
   margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.space-y-3 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
+}
+
 .self-start{
   align-self: flex-start;
 }
@@ -5086,6 +5032,16 @@ textarea.form-control.is-invalid{
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.py-\[19px\]{
+  padding-top: 19px;
+  padding-bottom: 19px;
+}
+
+.py-\[18px\]{
+  padding-top: 18px;
+  padding-bottom: 18px;
 }
 
 .pt-2{
@@ -5841,10 +5797,6 @@ body{
 
   .lg\:-mt-20{
     margin-top: -5rem;
-  }
-
-  .lg\:block{
-    display: block;
   }
 
   .lg\:inline-block{
