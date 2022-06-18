@@ -4,6 +4,16 @@
 // 	container.innerHTML = sampleResp;
 // });
 
+const arrow = document.getElementById('test-arrow');
+const text = document.getElementById('test-text');
+
+arrow.addEventListener('click', () => {
+	if (text.style.display == 'none') {
+		text.style.display = 'block';
+	} else {
+		text.style.display = 'none';
+	}
+});
 const mobileNavButton = document.getElementById('mobile-nav-button');
 const mobileMenu = document.getElementById('mobile-menu');
 
@@ -22,7 +32,7 @@ mobileNavButton.addEventListener('click', (e) => {
 
 const scrollUpButton = document.getElementById('scroll-up');
 
-console.log(pageYOffset)
+console.log(pageYOffset);
 
 window.onscroll = scrollFunction();
 
