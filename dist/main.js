@@ -3,17 +3,32 @@
 // Promise.all([fetch('test.json').then((x) => x.text())]).then(([sampleResp]) => {
 // 	container.innerHTML = sampleResp;
 // });
+const card = document.querySelectorAll('#card');
+const text = document.querySelectorAll('#text');
+const arrow = document.querySelectorAll('#arrow');
 
-const arrow = document.getElementById('test-arrow');
-const text = document.getElementById('test-text');
+// card.classList.add = 'h-[180px]';
 
-arrow.addEventListener('click', () => {
-	if (text.style.display == 'none') {
-		text.style.display = 'block';
-	} else {
-		text.style.display = 'none';
-	}
-});
+let cardToggle = false;
+for (let i = 0; i < arrow.length; i++) {
+	const clickedArrow = arrow[i];
+	const currentText = text[i]
+	const currentCard = card[i]
+	clickedArrow.addEventListener('click', (e) => {
+		e.preventDefault();
+		if (currentText.style.display = 'none') {
+			currentCard.classList.add = 'h-auto';
+			currentCard.classList.remove = 'h-[320px]';
+			currentText.style.display = 'block';
+		} else if (currentText.style.display = 'block') {
+			currentText.style.display = 'none';
+			currentCard.classList.remove = 'h-auto';
+			currentCard.classList.add = 'h-[320px]';
+		}
+		console.log(currentCard)
+	});
+}
+
 const mobileNavButton = document.getElementById('mobile-nav-button');
 const mobileMenu = document.getElementById('mobile-menu');
 
@@ -30,23 +45,25 @@ mobileNavButton.addEventListener('click', (e) => {
 	}
 });
 
-const scrollUpButton = document.getElementById('scroll-up');
+//
 
-console.log(pageYOffset);
+// const scrollUpButton = document.getElementById('scroll-up');
 
-window.onscroll = scrollFunction();
+// console.log(pageYOffset);
 
-function scrollFunction() {
-	if (
-		document.body.scrollTop > 50 ||
-		document.documentElement.scrollTop > 50
-	) {
-		scrollUpButton.display = 'block';
-	} else {
-		scrollUpButton.style.display = 'none';
-	}
-}
-scrollUpButton.addEventListener('click', () => {
-	document.body.scrollTop = 0;
-	document.documentElement.scrollTop = 0;
-});
+// window.onscroll = scrollFunction();
+
+// function scrollFunction() {
+// 	if (
+// 		document.body.scrollTop > 50 ||
+// 		document.documentElement.scrollTop > 50
+// 	) {
+// 		scrollUpButton.display = 'block';
+// 	} else {
+// 		scrollUpButton.style.display = 'none';
+// 	}
+// }
+// scrollUpButton.addEventListener('click', () => {
+// 	document.body.scrollTop = 0;
+// 	document.documentElement.scrollTop = 0;
+// });
