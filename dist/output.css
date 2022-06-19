@@ -5472,11 +5472,17 @@ iframe {
 }
 
 #button{
-  margin-right: 40px;
+  margin-right: -40px;
 }
 
 .mobile{
   right: 100px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .desktop{
+    margin-right: 30px;
+  }
 }
 
 body{
