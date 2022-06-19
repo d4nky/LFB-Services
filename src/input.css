@@ -37,8 +37,11 @@ iframe {
 .noSelect:focus {
 	outline: none !important;
 }
-#tidio-chat-iframe {
-	inset: 0;
+#button{
+	margin-right: 40px;
+}
+.mobile{
+	right: 100px;
 }
 body{
 	overflow-x: hidden;
