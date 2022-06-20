@@ -5471,27 +5471,29 @@ iframe {
   outline: none !important;
 }
 
-#button{
+#button {
   margin-right: -40px;
 }
 
-.mobile{
+.mobile {
   right: 100px;
 }
 
 @media only screen and (min-width: 1024px) {
-  .desktop{
-    margin-right: 28.5px;
+  .desktop {
+    margin-right: 27.5px;
+    margin-bottom: 120px;
   }
 }
 
 @media only screen and (max-width: 1024px) {
-  .desktop{
-    margin-right: 12.5px;
+  .desktop {
+    margin-right: 10px;
+    margin-bottom: 110px;
   }
 }
 
-body{
+body {
   overflow-x: hidden;
 }
 
