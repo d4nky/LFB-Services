@@ -4268,6 +4268,11 @@ textarea.form-control.is-invalid{
   margin-bottom: 1.25rem;
 }
 
+.my-4{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .mb-2{
   margin-bottom: 0.5rem;
 }
@@ -4338,6 +4343,46 @@ textarea.form-control.is-invalid{
 
 .mr-1{
   margin-right: 0.25rem;
+}
+
+.mt-7{
+  margin-top: 1.75rem;
+}
+
+.mt-8{
+  margin-top: 2rem;
+}
+
+.mt-14{
+  margin-top: 3.5rem;
+}
+
+.mt-10{
+  margin-top: 2.5rem;
+}
+
+.mt-\[46px\]{
+  margin-top: 46px;
+}
+
+.mt-16{
+  margin-top: 4rem;
+}
+
+.mt-\[68\]{
+  margin-top: 68;
+}
+
+.mt-\[68px\]{
+  margin-top: 68px;
+}
+
+.mt-\[70px\]{
+  margin-top: 70px;
+}
+
+.mt-\[72px\]{
+  margin-top: 72px;
 }
 
 .block{
@@ -4939,6 +4984,10 @@ textarea.form-control.is-invalid{
   padding: 25px;
 }
 
+.p-7{
+  padding: 1.75rem;
+}
+
 .px-2{
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -5124,6 +5173,10 @@ textarea.form-control.is-invalid{
 
 .text-\[20px\]{
   font-size: 20px;
+}
+
+.text-\[15px\]{
+  font-size: 15px;
 }
 
 .font-semibold{
@@ -5798,6 +5851,11 @@ body {
     margin-right: 6rem;
   }
 
+  .lg\:mx-4{
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
   .lg\:ml-28{
     margin-left: 7rem;
   }
@@ -5824,6 +5882,10 @@ body {
 
   .lg\:-mt-20{
     margin-top: -5rem;
+  }
+
+  .lg\:mt-0{
+    margin-top: 0px;
   }
 
   .lg\:inline-block{

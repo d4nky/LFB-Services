@@ -9,25 +9,25 @@ const arrow = document.querySelectorAll('#arrow');
 
 // card.classList.add = 'h-[180px]';
 
-let cardToggle = false;
-for (let i = 0; i < arrow.length; i++) {
-	const clickedArrow = arrow[i];
-	const currentText = text[i]
-	const currentCard = card[i]
-	clickedArrow.addEventListener('click', (e) => {
-		e.preventDefault();
-		if (currentText.style.display = 'none') {
-			currentCard.classList.add = 'h-auto';
-			currentCard.classList.remove = 'h-[320px]';
-			currentText.style.display = 'block';
-		} else if (currentText.style.display = 'block') {
-			currentText.style.display = 'none';
-			currentCard.classList.remove = 'h-auto';
-			currentCard.classList.add = 'h-[320px]';
-		}
-		console.log(currentCard)
-	});
-}
+// let cardToggle = false;
+// for (let i = 0; i < arrow.length; i++) {
+// 	const clickedArrow = arrow[i];
+// 	const currentText = text[i]
+// 	const currentCard = card[i]
+// 	clickedArrow.addEventListener('click', (e) => {
+// 		e.preventDefault();
+// 		if (currentText.style.display = 'none') {
+// 			currentCard.classList.add = 'h-auto';
+// 			currentCard.classList.remove = 'h-[320px]';
+// 			currentText.style.display = 'block';
+// 		} else if (currentText.style.display = 'block') {
+// 			currentText.style.display = 'none';
+// 			currentCard.classList.remove = 'h-auto';
+// 			currentCard.classList.add = 'h-[320px]';
+// 		}
+// 		console.log(currentCard)
+// 	});
+// }
 
 const mobileNavButton = document.getElementById('mobile-nav-button');
 const mobileMenu = document.getElementById('mobile-menu');
