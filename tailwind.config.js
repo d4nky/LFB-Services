@@ -26,8 +26,8 @@ module.exports = {
 			backgroundImage: {
 				'main-background': "url('imgs/3.jpg')",
 				'nav-logo': "url('imgs/logos/LFB-logo_transparent.png')",
-				'second-background': "url('imgs/1.jpg')",
-				'third-background': "url('imgs/2.jpg')",
+				'second-background': "url('imgs/1.jpeg')",
+				'third-background': "url('imgs/2.jpeg')",
 				'first-background': "url('imgs/bg.png')",
 			},
 			colors: {
