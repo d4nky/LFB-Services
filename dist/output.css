@@ -5582,6 +5582,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: left;
+  word-break: normal;
 }
 
 @media only screen and (max-width:1324px){
