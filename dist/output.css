@@ -5868,6 +5868,10 @@ body {
 }
 
 @media (min-width: 768px){
+  .md\:ml-24{
+    margin-left: 6rem;
+  }
+
   .md\:space-x-1 > :not([hidden]) ~ :not([hidden]){
     --tw-space-x-reverse: 0;
     margin-right: calc(0.25rem * var(--tw-space-x-reverse));
