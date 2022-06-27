@@ -700,15 +700,15 @@
 		<section id="contact" class="overflow-x-hidden lg:mx-24 flex flex-col justify-center items-center py-10">
 			<h3 class="text-black border-b-[1px] border-black text-2xl font-bold pb-4 mb-8 md:text-[30px] flex justify-center items-center text-center">Nous contacter</h3>
 			<div class="flex flex-col justify-center items-center lg:flex-row md:space-x-12 lg:space-x-28 mb-20">
-			<form action="" class="w-5/6 flex flex-col justify-center items-center space-y-6">
+			<form action="https://formspree.io/f/mknyappd" method="POST" class="w-5/6 flex flex-col justify-center items-center space-y-6">
 
 					<div class="flex space-x-6 w-full">
-						<input id="name" type="text" class="focus:border-custom-light-blue border-none w-full text-[14px] lg:text-[18px] shadow-lg px-[25px] py-[20] bg-custom-light-gray placeholder:text-black" placeholder="Votre nom">
-					<input type="text" class="focus:border-custom-light-blue  border-none w-full text-[14px] lg:text-[18px]  shadow-lg p-[25px] bg-custom-light-gray placeholder:text-black" placeholder="Votre email">
+						<input name="Nom" id="name" type="text" class="focus:border-custom-light-blue border-none w-full text-[14px] lg:text-[18px] shadow-lg px-[25px] py-[20] bg-custom-light-gray placeholder:text-black" placeholder="Votre nom">
+					<input name="Email" type="text" class="focus:border-custom-light-blue  border-none w-full text-[14px] lg:text-[18px]  shadow-lg p-[25px] bg-custom-light-gray placeholder:text-black" placeholder="Votre email">
 				</div>
-				<input type="text" class="focus:border-custom-light-blue  border-none w-full text-[14px] lg:text-[18px] shadow-lg p-[25px] bg-custom-light-gray placeholder:text-black" placeholder="Objet">
+				<input name="Message" type="text" class="focus:border-custom-light-blue  border-none w-full text-[14px] lg:text-[18px] shadow-lg p-[25px] bg-custom-light-gray placeholder:text-black" placeholder="Objet">
 				<textarea name="" id="" cols="30" rows="10" class="focus:border-custom-light-blue  border-none w-full text-[14px] lg:text-[18px] shadow-lg p-[25px] bg-custom-light-gray placeholder:text-black" placeholder="Votre message"></textarea>
-				<button class="drop-shadow-lg self-start lg:text-[18px] px-12 py-4 text-white lg:self bg-custom-light-blue">
+				<button type="submit" class="drop-shadow-lg self-start lg:text-[18px] px-12 py-4 text-white lg:self bg-custom-light-blue">
 					Envoyer
 				</button>
 			</form>
