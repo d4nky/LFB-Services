@@ -4397,6 +4397,14 @@ textarea.form-control.is-invalid{
   height: 57px;
 }
 
+.h-auto{
+  height: auto;
+}
+
+.h-\[500px\]{
+  height: 500px;
+}
+
 .h-96{
   height: 24rem;
 }
@@ -4687,10 +4695,6 @@ textarea.form-control.is-invalid{
 
 .overflow-hidden{
   overflow: hidden;
-}
-
-.overflow-scroll{
-  overflow: scroll;
 }
 
 .overflow-x-hidden{
@@ -4998,11 +5002,6 @@ textarea.form-control.is-invalid{
   padding-right: 2rem;
 }
 
-.py-8{
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -5011,6 +5010,11 @@ textarea.form-control.is-invalid{
 .py-20{
   padding-top: 5rem;
   padding-bottom: 5rem;
+}
+
+.py-8{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .px-\[25px\]{
@@ -5501,11 +5505,17 @@ body {
 }
 
 .card .face p {
-  display: none;
+  transition: 0.6s ease;
+  height: 0px;
+  opacity: 0;
+  overflow: hidden;
+  visibility: hidden;
 }
 
 .card:hover .face p {
-  display: block;
+  visibility: visible;
+  height: auto;
+  opacity: 1;
 }
 
 .card-container .card {
@@ -5529,7 +5539,7 @@ body {
   align-items: center;
   z-index: 1;
   transform: translateY(100px);
-  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2); */
 }
 
 /*  */
@@ -5585,7 +5595,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: left;
-  word-break: normal;
+  word-break: break-all;
 }
 
 @media only screen and (max-width: 1324px) {
@@ -5946,10 +5956,6 @@ body {
 
   .lg\:h-screen{
     height: 100vh;
-  }
-
-  .lg\:h-\[550px\]{
-    height: 550px;
   }
 
   .lg\:w-\[120px\]{

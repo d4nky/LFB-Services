@@ -8,7 +8,6 @@
 const card = document.querySelectorAll('#card');
 const text = document.querySelectorAll('#text');
 
-let cardToggle = false;
 for (let i = 0; i < card.length; i++) {
 	const currentText = text[i]
 	const currentCard = card[i]
@@ -20,6 +19,7 @@ for (let i = 0; i < card.length; i++) {
 		}
 	});
 }
+console.log(card)
 
 //Mobile menu
 const mobileNavButton = document.getElementById('mobile-nav-button');

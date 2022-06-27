@@ -69,10 +69,16 @@ body {
 	z-index: 0;
 }
 .card .face p {
-	display: none;
+	transition: 0.6s ease;
+	height: 0px;
+	opacity: 0;
+	overflow: hidden;
+	visibility: hidden;
 }
 .card:hover .face p {
-	display: block;
+	visibility: visible;
+	height: auto;
+	opacity: 1;
 }
 .card-container .card {
 	position: relative;
@@ -93,7 +99,7 @@ body {
 	align-items: center;
 	z-index: 1;
 	transform: translateY(100px);
-	box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+	/* box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2); */
 }
 /*  */
 .card-container .card:hover .face.face1 {
@@ -143,7 +149,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	text-align: left;
-	word-break: normal;
+	word-break: break-all;
 	
 }
 @media only screen and (max-width: 1324px) {

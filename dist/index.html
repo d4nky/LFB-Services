@@ -301,8 +301,6 @@
 			
 			
 			<header id="header" class=" z-30 w-full">
-				
-				
 				<div
 				id="carouselExampleControls"
 				class="noSelect carousel slide relative w-full"
@@ -490,11 +488,11 @@
 		<div class="">
 
 		
-		<section id="services" class="overflow-x-hidden overflow-y-hidden px-8 text-center flex flex-col justify-center items-center py-10">
+		<section id="services" class="h-auto transition-all duration-700 overflow-x-hidden overflow-y-hidden px-8 text-center flex flex-col justify-center items-center py-10">
 			<h3 class="text-black border-b-[1px] border-black text-2xl font-bold pb-4 mb-6 md:text-[30px] flex justify-center items-center ">Notre savoir faire</h3>
 
 
-				<div class="card-container lg:h-[550px] mt-0">
+				<div class="card-container h-[500px] mt-0">
    <div class="card">
       <div class="face face1">
          <div class="content">
@@ -504,7 +502,7 @@
       </div>
       <div class="face face2">
          <div class="content">
-            <p class="py-8">Partenaire des plus grands éditeurs et constructeurs informatiques au monde, nous accompagnons nos clients dans le déploiement de leurs infrastructures système et réseaux en leur fournissant le matériel et assistance nécessaire pour la réussite de leurs projets.</p>
+            <p>Partenaire des plus grands éditeurs et constructeurs informatiques au monde, nous accompagnons nos clients dans le déploiement de leurs infrastructures système et réseaux en leur fournissant le matériel et assistance nécessaire pour la réussite de leurs projets.</p>
          </div>
       </div>
    </div>
@@ -550,7 +548,7 @@
 </div>
 
 
-			<div class="hidden mt-6 flex flex-wrap justify-center items-center md:space-y-0">
+			<!-- <div class="mt-6 flex flex-wrap justify-center items-center md:space-y-0">
 				
 				<div id="card" data-aos="fade-up" class="lg:mx-4 my-4 lg:mt-0 hover:shadow-lg transition-all duration-700 w-full lg:max-w-[22%] p-7 flex flex-col justify-center items-center self-start">
 					<div class="bg-white mb-5 flex justify-start items-center">
@@ -592,11 +590,11 @@
 						<p id="text" class="text-[15px]">LFB Services couvre l’ensemble du cycle de vie des applications développées, que ça soit un site internet, une application mobile ou bien une application métier, nous nous engageons à vous livrer un produit de grande qualité.</p>
 					</div>
 				</div>
-			</div>
+			</div> -->
 		</section>
 
 
-		<section id="clients" class="overflow-x-hidden flex flex-col justify-center items-center py-10 space-y-12">
+		<section id="clients" class="transition-all duration-700 overflow-x-hidden flex flex-col justify-center items-center py-10 space-y-12">
 			<h3 class="text-black  border-b-[1px] border-black text-2xl font-bold pb-4 md:text-[30px] flex justify-center items-center ">Nos clients</h3>
 			
 			<div class="border-b-2 border-t-2 border-gray600/5 space-x-24 w-full bg-white py-6 carousel"
@@ -687,14 +685,16 @@
 		</section>
 
 
-		<!-- <section id="news" class="px-8 flex flex-col justify-center items-center py-10">
-			<h3 class="text-black w-full custom-border text-center text-2xl font-bold pb-4 mb-8 md:text-4xl">A la une</h3>
-			<div class="py-6 h-96 overflow-scroll w-4/5 bg-custom-news-gray  rounded-lg">
+		<section id="news" class="px-8 flex flex-col justify-center items-center py-10">
+			<h3 class="text-black border-b-[1px] border-black text-2xl font-bold pb-4 mb-2 md:text-[30px] flex justify-center items-center text-left">A la une</h3>
+			<div class="py-6 h-96 w-4/5 bg-custom-news-gray  rounded-lg">
 				<div class="bg-custom-news-gray">
-					<div class="space-y-8 scrollbar-hide  flex flex-col justify-center items-center" id="news-container"></div>
+					<!-- <div class="space-y-8 scrollbar-hide  flex flex-col justify-center items-center" id="news-container"></div> -->
+					
+					<iframe allowfullscreen id="wallsio-iframe" src="https://my.walls.io/i6q8r?nobackground=1&amp;show_header=0" style="border:0;height:800px;width:100%" loading="lazy" title="My social wall"></iframe>
 				</div>
 			</div>
-		</section> -->
+		</section>
 
 
 		<section id="contact" class="overflow-x-hidden lg:mx-24 flex flex-col justify-center items-center py-10">
@@ -725,7 +725,7 @@
 						<div class="w-full space-y-4 flex flex-col justify-center lg:justify-start m-auto ">
 					<div class="flex">
 						<img class="w-4 h-4 mt-1 mr-1" src="imgs/logos/location.png" alt="">
-						<p class="font-bold text-[18px] drop-shadow-sm">Address:</p>&nbsp;<p class="text-custom-light-blue font-thin text-[18px]">Lotissment Sidi Merzoug 21Logements Promotionnels BT03 Ben Aknoun - Alger Algérie</p>
+						<p class="font-bold text-[18px] drop-shadow-sm">Address:</p>&nbsp;<p class="text-custom-light-blue font-thin text-[18px]">Lotissement Sidi Merzoug 21 Logements Promotionnels BT 03 Ben Aknoun - Alger Algérie</p>
 					</div>
 					<div class="flex">
 						<img class="w-4 h-4 mt-1 mr-1" src="imgs/logos/phone.png" alt="">
@@ -764,7 +764,8 @@
 		</footer>
 		
 		<script> configObj = {"buttonD":"M11.384 13.333h9.232c.638 0 .958.68.505 1.079l-4.613 4.07c-.28.246-.736.246-1.016 0l-4.613-4.07c-.453-.399-.133-1.079.505-1.079z","buttonT":"translate(-1028 -172) translate(832 140) translate(32 32) translate(164) matrix(1 0 0 -1 0 32)","shadowSize":"none","roundnessSize":"100px","buttonDToLeft":"auto","selectedBackgroundColor":"#304672","selectedIconColor":"#ffffff","buttonWidth":"60px","buttonHeight":"60px","svgWidth":"48px","svgHeight":"48px"};function createButton(obj, pageSimulator) {    const body = document.querySelector("body");    backToTopButton = document.createElement("span");    backToTopButton.classList.add("softr-back-to-top-button"); backToTopButton.classList.add("desktop");    backToTopButton.id = "softr-back-to-top-button";    pageSimulator      ? pageSimulator.appendChild(backToTopButton)      : body.appendChild(backToTopButton);    backToTopButton.style.width = obj.buttonWidth;    backToTopButton.style.height = obj.buttonHeight;    backToTopButton.style.marginRight = obj.buttonDToRight;    backToTopButton.style.marginBottom = obj.buttonDToBottom;    backToTopButton.style.borderRadius = obj.roundnessSize;    backToTopButton.style.boxShadow = obj.shadowSize;    backToTopButton.style.color = obj.selectedBackgroundColor;    backToTopButton.style.backgroundColor = obj.selectedBackgroundColor;    pageSimulator ? backToTopButton.style.position = "absolute" : backToTopButton.style.position = "fixed";    backToTopButton.style.outline = "none";    backToTopButton.style.bottom = "0px";    backToTopButton.style.right = "0px"; backToTopButton.style.left = "auto";   backToTopButton.style.cursor = "pointer";    backToTopButton.style.textAlign = "center";    backToTopButton.style.border = "solid 2px currentColor";    backToTopButton.innerHTML =      '<svg class="back-to-top-button-svg" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" > <g fill="none" fill-rule="evenodd"> <path d="M0 0H32V32H0z" transform="translate(-1028 -172) translate(832 140) translate(32 32) translate(164) matrix(1 0 0 -1 0 32)" /> <path class="back-to-top-button-img desktop" fill-rule="nonzero" d="M11.384 13.333h9.232c.638 0 .958.68.505 1.079l-4.613 4.07c-.28.246-.736.246-1.016 0l-4.613-4.07c-.453-.399-.133-1.079.505-1.079z" transform="translate(-1028 -172) translate(832 140) translate(32 32) translate(164) matrix(1 0 0 -1 0 32)" /> </g> </svg>';    backToTopButtonSvg = document.querySelector(".back-to-top-button-svg");    backToTopButtonSvg.style.verticalAlign = "middle";    backToTopButtonSvg.style.margin = "auto";    backToTopButtonSvg.style.justifyContent = "center";    backToTopButtonSvg.style.width = obj.svgWidth;    backToTopButtonSvg.style.height = obj.svgHeight;    backToTopButton.appendChild(backToTopButtonSvg);    backToTopButtonImg = document.querySelector(".back-to-top-button-img");    backToTopButtonImg.style.fill = obj.selectedIconColor;    backToTopButtonSvg.appendChild(backToTopButtonImg);    backToTopButtonImg.setAttribute("d", obj.buttonD);    backToTopButtonImg.setAttribute("transform", obj.buttonT);        if(!pageSimulator) {      backToTopButton.style.display = "none";      window.onscroll = function() {        if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {          backToTopButton.style.display = "block";        } else {          backToTopButton.style.display = "none";        }      };        backToTopButton.onclick = function() {        document.body.scrollTop = 0;        document.documentElement.scrollTop = 0;      };    }  };document.addEventListener("DOMContentLoaded", function() { createButton(configObj, null); });</script>
-<script src="main.js"></script>
+		<!-- <script src="api.js"></script> -->
+		<script src="main.js"></script>
 		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 		<script src="/node_modules/tw-elements/dist/js/index.min.js"></script>
 		<script src="../path/to/flowbite/dist/flowbite.js"></script>
