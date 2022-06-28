@@ -4425,8 +4425,8 @@ textarea.form-control.is-invalid{
   width: 100%;
 }
 
-.w-\[180px\]{
-  width: 180px;
+.w-\[160px\]{
+  width: 160px;
 }
 
 .w-2{
@@ -4439,10 +4439,6 @@ textarea.form-control.is-invalid{
 
 .w-\[120px\]{
   width: 120px;
-}
-
-.w-\[160px\]{
-  width: 160px;
 }
 
 .w-\[125px\]{
@@ -4746,10 +4742,6 @@ textarea.form-control.is-invalid{
 
 .border-b-\[1px\]{
   border-bottom-width: 1px;
-}
-
-.border-t-2{
-  border-top-width: 2px;
 }
 
 .border-none{
@@ -5190,11 +5182,6 @@ textarea.form-control.is-invalid{
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
-.text-gray-700{
-  --tw-text-opacity: 1;
-  color: rgb(55 65 81 / var(--tw-text-opacity));
-}
-
 .text-custom-light-blue{
   --tw-text-opacity: 1;
   color: rgb(17 145 208 / var(--tw-text-opacity));
@@ -5618,12 +5605,6 @@ body {
 }
 
 .placeholder\:text-black::placeholder{
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
-.after\:text-black::after{
-  content: var(--tw-content);
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
@@ -6058,6 +6039,10 @@ body {
 }
 
 @media (min-width: 1175px){
+  .xl\:w-\[180px\]{
+    width: 180px;
+  }
+
   .xl\:text-\[16px\]{
     font-size: 16px;
   }
