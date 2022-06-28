@@ -161,3 +161,6 @@ body {
 		margin-top: 46px;
 	}
 }
+#content-text{
+	text-align: justify;
+}

@@ -5594,6 +5594,10 @@ body {
   }
 }
 
+#content-text{
+  text-align: justify;
+}
+
 .placeholder\:text-black::-moz-placeholder{
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
