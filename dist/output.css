@@ -4309,10 +4309,6 @@ textarea.form-control.is-invalid{
   margin-top: 3rem;
 }
 
-.ml-12{
-  margin-left: 3rem;
-}
-
 .mb-6{
   margin-bottom: 1.5rem;
 }
@@ -4401,36 +4397,12 @@ textarea.form-control.is-invalid{
   height: auto;
 }
 
-.h-\[1000px\]{
-  height: 1000px;
-}
-
 .h-96{
   height: 24rem;
 }
 
 .h-8{
   height: 2rem;
-}
-
-.h-\[550px\]{
-  height: 550px;
-}
-
-.h-\[500px\]{
-  height: 500px;
-}
-
-.h-\[400px\]{
-  height: 400px;
-}
-
-.h-\[300px\]{
-  height: 300px;
-}
-
-.h-\[350px\]{
-  height: 350px;
 }
 
 .w-64{
@@ -4761,6 +4733,11 @@ textarea.form-control.is-invalid{
 
 .border-2{
   border-width: 2px;
+}
+
+.border-y-2{
+  border-top-width: 2px;
+  border-bottom-width: 2px;
 }
 
 .border-b-2{
@@ -5104,14 +5081,14 @@ textarea.form-control.is-invalid{
   font-size: 18px;
 }
 
-.text-3xl{
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
 .text-base{
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .text-\[30px\]{
@@ -5545,7 +5522,7 @@ body {
 
 .card-container .card .face {
   width: 300px;
-  height: 200px;
+  height: 150px;
   transition: 0.6s ease;
 }
 
@@ -5566,7 +5543,8 @@ body {
 
 .card-container .card:hover .face.face1 {
   background: white;
-  transform: translateY(0);
+  transform: translateY(0px);
+  margin-top: 10px;
 }
 
 .card-container .card .face.face2 {
@@ -5614,9 +5592,14 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: left;
-  word-break: break-all;
 }
+
+/* .face .face2 .content{	
+	display: inline-block;
+	height: auto;
+	text-align: left;
+	width: 100%;
+} */
 
 @media only screen and (max-width: 1324px) {
   .card:hover {
@@ -5899,6 +5882,10 @@ body {
     text-align: left;
   }
 
+  .md\:text-\[20px\]{
+    font-size: 20px;
+  }
+
   .md\:text-\[45px\]{
     font-size: 45px;
   }
@@ -5941,10 +5928,6 @@ body {
     margin-right: 14rem;
   }
 
-  .lg\:ml-24{
-    margin-left: 6rem;
-  }
-
   .lg\:mt-0{
     margin-top: 0px;
   }
@@ -5975,14 +5958,6 @@ body {
 
   .lg\:h-screen{
     height: 100vh;
-  }
-
-  .lg\:h-\[400px\]{
-    height: 400px;
-  }
-
-  .lg\:h-\[500px\]{
-    height: 500px;
   }
 
   .lg\:h-\[490px\]{

@@ -86,7 +86,7 @@ body {
 }
 .card-container .card .face {
 	width: 300px;
-	height: 200px;
+	height: 150px;
 	transition: 0.6s ease;
 }
 
@@ -104,7 +104,8 @@ body {
 /*  */
 .card-container .card:hover .face.face1 {
 	background: white;
-	transform: translateY(0);
+	transform: translateY(0px);
+	margin-top: 10px;
 }
 .card-container .card .face.face2 {
 	position: relative;
@@ -148,10 +149,13 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	text-align: left;
-	word-break: break-all;
-	
 }
+/* .face .face2 .content{	
+	display: inline-block;
+	height: auto;
+	text-align: left;
+	width: 100%;
+} */
 @media only screen and (max-width: 1324px) {
 	.card:hover {
 		margin-top: 46px;

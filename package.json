@@ -5,6 +5,7 @@
   "dependencies": {
     "animate.css": "^4.1.1",
     "animated-tailwindcss": "^3.2.7",
+    "fitty": "^2.3.6",
     "flowbite": "^1.4.2",
     "tailwind-scrollbar-hide": "^1.1.7",
     "tailwindcss-animatecss": "^1.0.7",

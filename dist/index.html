@@ -139,6 +139,7 @@
 						dropdown-item
 						text-bold
 						text-xs
+						text-black
 						py-2
 						px-4
 						font-roboto
@@ -166,7 +167,7 @@
 						w-full
 						whitespace-nowrap
 						bg-transparent
-						text-gray-700
+						text-black
 						hover:bg-gray-100
 						"
 						href="#"
@@ -187,7 +188,7 @@
 					<img class="w-[120px]" src="imgs/logos/LFB-logo_transparent.png" alt="">
 				</a>
 			</nav>
-			<div id="mobile-menu" class="lg:hidden transition-all duration-200 font-bold bg-white z-40 w-full fixed flex flex-col justify-evenly items-start text-[18px] space-y-2 border-b-1 border-black">
+			<div id="mobile-menu" class="lg:hidden transition-all duration-200 font-bold bg-white z-40 w-full fixed flex flex-col justify-evenly items-start text-[18px] md:text-[20px] space-y-2 border-b-2 border-gray-600/5">
 				<a class="ml-5 p-4" href="#about">A propos</a> 
 				<a class="ml-5 p-4" href="#services">Savoir faire</a>
 				<a class="ml-5 p-4" href="#clients">Clients</a> 
@@ -201,7 +202,7 @@
 					border-black
 					text-black
 					font-medium
-					text-m
+					text-base
 					leading-tight
 					uppercase
 					transition
@@ -268,7 +269,7 @@
 						w-full
 						whitespace-nowrap
 						bg-transparent
-						text-gray-700
+						text-black
 						hover:bg-gray-100
 						"
 						href="#"
@@ -287,7 +288,7 @@
 						w-full
 						whitespace-nowrap
 						bg-transparent
-						text-gray-700
+						text-black
 						hover:bg-gray-100
 						"
 						href="#"
@@ -502,7 +503,7 @@
       </div>
       <div class="face face2">
          <div class="content">
-            <p>Partenaire des plus grands éditeurs et constructeurs informatiques au monde, nous accompagnons nos clients dans le déploiement de leurs infrastructures système et réseaux en leur fournissant le matériel et assistance nécessaire pour la réussite de leurs projets.</p>
+            <p id="content-text">Partenaire des plus grands éditeurs et constructeurs informatiques au monde, nous accompagnons nos clients dans le déploiement de leurs infrastructures système et réseaux en leur fournissant le matériel et assistance nécessaire pour la réussite de leurs projets.</p>
          </div>
       </div>
    </div>
@@ -515,7 +516,7 @@
 		</div>
 		<div class="face face2">
 			<div class="content">
-				<p>Nos consultants certifiés vous aideront à définir vos besoins et à les traduire en processus métier pour les intégrer à la suite dans votre system d’information. Par ailleurs, nos équipes assurant tout au long du projet un transfert de compétences à vos équipes, formation et assistance à la mise en production.</p>
+				<p id="content-text">Nos consultants certifiés vous aideront à définir vos besoins et à les traduire en processus métier pour les intégrer à la suite dans votre system d’information. Par ailleurs, nos équipes assurant tout au long du projet un transfert de compétences à vos équipes, formation et assistance à la mise en production.</p>
 			</div>
 		</div>
 	</div>
@@ -528,7 +529,7 @@
 	   </div>
 	   <div class="face face2">
 		  <div class="content">
-			 <p>Nous mettons à votre disposition les ressources nécessaires pour gérer votre système d’information. Nos contrats sont flexibles selon le besoin et la taille de l’entreprise. Nous nous engageons à intervenir selon un planning prédéfini avec le client pour les opérations de maintenance proactives et respecter les SLA pour des opérations ponctuelles à la demande du client.</p>
+			 <p id="content-text">Nous mettons à votre disposition les ressources nécessaires pour gérer votre système d’information. Nos contrats sont flexibles selon le besoin et la taille de l’entreprise. Nous nous engageons à intervenir selon un planning prédéfini avec le client pour les opérations de maintenance proactives et respecter les SLA pour des opérations ponctuelles à la demande du client.</p>
 		  </div>
 	   </div>
 	</div>
@@ -541,7 +542,7 @@
       </div>
       <div class="face face2">
          <div class="content">
-            <p>LFB Services couvre l’ensemble du cycle de vie des applications développées, que ça soit un site internet, une application mobile ou bien une application métier, nous nous engageons à vous livrer un produit de grande qualité.</p>
+            <p id="content-text">LFB Services couvre l’ensemble du cycle de vie des applications développées, que ça soit un site internet, une application mobile ou bien une application métier, nous nous engageons à vous livrer un produit de grande qualité.</p>
          </div>
       </div>
    </div>
@@ -597,7 +598,7 @@
 		<section id="clients" class="transition-all duration-700 overflow-x-hidden flex flex-col justify-center items-center py-10 space-y-12">
 			<h3 class="text-black  border-b-[1px] border-black text-2xl font-bold pb-4 md:text-[30px] flex justify-center items-center ">Nos clients</h3>
 			
-			<div class="border-b-2 border-t-2 border-gray600/5 space-x-24 w-full bg-white py-6 carousel"
+			<div class="border-y-2 border-gray-600/5 space-x-24 w-full bg-white py-6 carousel"
 				data-flickity='{ "wrapAround": true, "autoPlay": 3000,
 				"lazyLoad": true,
 				"imagesLoaded": true,
@@ -774,6 +775,13 @@
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		<script>
 			AOS.init();
+			</script>
+			<script src="fitty.min.js"></script>
+			<script>
+				fitty('#content-text',{
+					minSize: 12,
+					maxSize: 300,
+				});
 			</script>
 </body>
 </html>
