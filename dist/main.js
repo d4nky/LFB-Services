@@ -1,8 +1,8 @@
-// const container = document.getElementById('news-container');
+const container = document.getElementById('news');
 
-// Promise.all([fetch('test.json').then((x) => x.text())]).then(([sampleResp]) => {
-// 	container.innerHTML = sampleResp;
-// });
+Promise.all([fetch('test.txt').then((x) => x.text())]).then(([sampleResp]) => {
+	container.innerHTML = sampleResp;
+});
 
 //Card hover
 const card = document.querySelectorAll('#card');
