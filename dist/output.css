@@ -5913,6 +5913,10 @@ body {
     margin-top: -5rem;
   }
 
+  .lg\:-mr-9{
+    margin-right: -2.25rem;
+  }
+
   .lg\:inline-block{
     display: inline-block;
   }
