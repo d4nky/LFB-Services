@@ -4481,6 +4481,10 @@ textarea.form-control.is-invalid{
   width: 2rem;
 }
 
+.w-\[50\%\]{
+  width: 50%;
+}
+
 .min-w-max{
   min-width: -webkit-max-content;
   min-width: -moz-max-content;
@@ -5564,13 +5568,13 @@ body {
   -webkit-transform: scale(0.75);
 }
 
-/* #news{
-	display: flex;
-	flex: 3;
+#news{
+  display: flex;
+  flex: 3;
   flex-wrap:wrap;
   justify-content: space-between;
   align-items: center;
-} */
+}
 
 #map_canvas{
   height: 240px;
@@ -5954,6 +5958,10 @@ body {
 
   .lg\:min-w-\[600px\]{
     min-width: 600px;
+  }
+
+  .lg\:min-w-\[50\%\]{
+    min-width: 50%;
   }
 
   .lg\:max-w-\[600px\]{
