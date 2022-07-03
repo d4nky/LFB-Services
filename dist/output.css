@@ -4333,16 +4333,16 @@ textarea.form-control.is-invalid{
   margin-bottom: 5rem;
 }
 
-.-mr-9{
-  margin-right: -2.25rem;
-}
-
 .mb-8{
   margin-bottom: 2rem;
 }
 
 .mr-1{
   margin-right: 0.25rem;
+}
+
+.-mr-9{
+  margin-right: -2.25rem;
 }
 
 .block{
@@ -4453,12 +4453,16 @@ textarea.form-control.is-invalid{
   width: 105px;
 }
 
-.w-\[80px\]{
-  width: 80px;
+.w-\[150px\]{
+  width: 150px;
 }
 
 .w-\[60px\]{
   width: 60px;
+}
+
+.w-\[80px\]{
+  width: 80px;
 }
 
 .w-\[35px\]{
@@ -4481,10 +4485,6 @@ textarea.form-control.is-invalid{
   width: 2rem;
 }
 
-.w-\[\]{
-  width: ;
-}
-
 .min-w-max{
   min-width: -webkit-max-content;
   min-width: -moz-max-content;
@@ -4493,6 +4493,10 @@ textarea.form-control.is-invalid{
 
 .max-w-\[400px\]{
   max-width: 400px;
+}
+
+.max-w-\[600px\]{
+  max-width: 600px;
 }
 
 .flex-1{
@@ -4767,6 +4771,11 @@ textarea.form-control.is-invalid{
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
+.border-custom-dark-blue{
+  --tw-border-opacity: 1;
+  border-color: rgb(48 70 114 / var(--tw-border-opacity));
+}
+
 .bg-gray-200{
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
@@ -4825,14 +4834,14 @@ textarea.form-control.is-invalid{
   background-color: rgb(243 243 243 / var(--tw-bg-opacity));
 }
 
-.bg-custom-light-gray{
-  --tw-bg-opacity: 1;
-  background-color: rgb(236 237 237 / var(--tw-bg-opacity));
-}
-
 .bg-custom-dark-blue{
   --tw-bg-opacity: 1;
   background-color: rgb(48 70 114 / var(--tw-bg-opacity));
+}
+
+.bg-custom-light-gray{
+  --tw-bg-opacity: 1;
+  background-color: rgb(236 237 237 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-50{
@@ -5901,8 +5910,16 @@ body {
     margin-top: 2.5rem;
   }
 
+  .lg\:-mt-4{
+    margin-top: -1rem;
+  }
+
   .lg\:mr-10{
     margin-right: 2.5rem;
+  }
+
+  .lg\:-mr-9{
+    margin-right: -2.25rem;
   }
 
   .lg\:-ml-24{
@@ -5911,10 +5928,6 @@ body {
 
   .lg\:-mt-20{
     margin-top: -5rem;
-  }
-
-  .lg\:-mr-9{
-    margin-right: -2.25rem;
   }
 
   .lg\:inline-block{
@@ -6005,6 +6018,10 @@ body {
     overflow: hidden;
   }
 
+  .lg\:p-6{
+    padding: 1.5rem;
+  }
+
   .lg\:px-12{
     padding-left: 3rem;
     padding-right: 3rem;
@@ -6025,6 +6042,10 @@ body {
 }
 
 @media (min-width: 1175px){
+  .xl\:-mt-4{
+    margin-top: -1rem;
+  }
+
   .xl\:w-\[180px\]{
     width: 180px;
   }
