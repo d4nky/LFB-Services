@@ -1,719 +1,584 @@
 <!DOCTYPE html>
 <html lang="fr" class="scroll-smooth">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>LFB-Services</title>
-		<link rel="stylesheet" href="output.css" />
-		<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-		
-
-
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-		/>
-		
-	</head>
-	<body class="font-roboto overflow-x-hidden leading-[28px]">
-			<!-- <p class="fixed right-0 z-40 float-right md:space-x-1 space-y-1 md:space-y-0 mb-4">
-  <a class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-</a>
-</p>
-<div class="collapse fixed" id="collapseExample">
-	<div class="block p-6 rounded-lg shadow-lg bg-white">
-	  <a href="#about">ABOUT</a>
-    
-  </div>
-</div>			 -->
-
-		<!-- <a href="#header" class="fixed noSelect flex justify-end right-4 bottom-28 items-end">
-			<img src="imgs/logos/image.png" class="z-40 w-12" alt="">
-		</a> -->
-
-		
-
-		<!-- <button id="scroll-up" class="pointer fixed bottom-[120px] right-[31px] z-[9999]">
-			<img class="" src="imgs/icons8-flèche-haut-50.png" alt="">
-		</button> -->
-
-		<nav id="navBar"
-			class="border-b-2 border-gray-600/5 font-roboto hidden lg:flex z-30 sticky py-[18px] px-[15px] top-0 bg-white transition-all ease-in-out duration-500 justify-between items-center flex-row w-full"
-			>
-				<div
-					class="text-custom-dark-gray font-bold text-xs pl-10 flex items-center justify-start space-x-8 2xl:space-x-12 xl:text-[16px] "
-				>
-					<a class="noSelect" href="#">
-						<img
-							src="imgs/logos/LFB-logo_transparent.png"
-							class="w-[160px] xl:w-[180px]"
-							alt=""
-							/>
-						</a>
-					
-					<a class="hover:text-custom-dark-gray text-black" href="#about">A propos</a>
-					<a class="hover:text-custom-dark-gray text-black" href="#services">Savoir faire</a>
-					<a class="hover:text-custom-dark-gray text-black" href="#clients">Clients</a>
-					<a class="hover:text-custom-dark-gray text-black" href="#partners">Partenaires</a>
-					<a class="hover:text-custom-dark-gray text-black" href="#news">A la une</a>
-					
-				</div>
-				<div
-					class="font-bold text-xs pr-8 flex items-center justify-start space-x-8 2xl:pr-24 2xl:space-x-12 xl:text-base "
-				>
-					<a class="noSelect" href="https://lfb-services.freshdesk.com">Support</a>
-					<a class="noSelect" href="#contact">
-					<button class="hover:cursor-pointer font-bold text-xs bg-yellow-300 py-3 px-7 xl:text-base">Contact
-					</button></a>
-					<div class="flex justify-center">
-			<div>
-				<div class="text-bold text-xs dropdown relative">
-				<button
-					class=" noSelect
-					dropdown-toggle
-					border-black
-					text-black
-					font-medium
-					text-xs
-					text-bold
-					leading-tight
-					uppercase
-					transition
-					duration-150
-					ease-in-out
-					flex
-					items-center
-					whitespace-nowrap
-					"
-					type="button"
-					id="dropdownMenuButton1"
-					data-bs-toggle="dropdown"
-					aria-expanded="false"
-				>
-					FR
-					<svg
-					aria-hidden="true"
-					focusable="false"
-					data-prefix="fas"
-					data-icon="caret-down"
-					class="w-2 ml-2"
-					role="img"
-					xmlns="http://www.w3.org/2000/svg"
-					viewBox="0 0 320 512"
-					>
-					<path
-						fill="currentColor"
-						d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"
-					></path>
-					</svg>
-				</button>
-				<ul
-					class="
-					dropdown-menu
-					min-w-max
-					absolute
-					
-					bg-white
-					text-xs
-					z-50
-					float-left
-					py-2
-					px-4
-					list-none
-					text-left
-					shadow-lg
-					mt-1
-					hidden
-					m-0
-					bg-clip-padding
-					border-none
-					"
-					aria-labelledby="ƒdropdownMenuButton1"
-				>
-					<li>
-					<a
-						class="
-						dropdown-item
-						text-bold
-						text-xs
-					  text-black
-						py-2
-						px-4
-						font-roboto
-						block
-						w-full
-						whitespace-nowrap
-						bg-transparent
-						hover:bg-gray-100
-						"
-						href="#"
-						>Français</a
-					>
-					</li>
-					<li>
-					<a
-						class="
-						dropdown-item
-						text-bold
-						text-xs
-						py-2
-						px-4
-						font-roboto
-						block
-						w-full
-						whitespace-nowrap
-						bg-transparent
-						text-black
-						hover:bg-gray-100
-						"
-						href="Pages/English.html"
-						>English</a
-					>
-					</li>
-				</ul>
-				</div>
-			</div>
-			</div>
-				</div>
-				
-			</nav>
-
-			<nav class="lg:hidden px-[30px] py-[20px] sticky top-0 flex justify-center items-center bg-white z-50 border-b-2 border-gray-600/5" id="mobile-nav">
-					<img id="mobile-nav-button" class="w-[36px] mr-auto cursor-pointer" src="imgs/icons8-mobile-application-hamburger-menu-setting-interface-96.png"/>
-				<a  class="absolute" href="#header">
-					<img class="w-[120px]" src="imgs/logos/LFB-logo_transparent.png" alt="">
-				</a>
-			</nav>
-			<div id="mobile-menu" class="lg:hidden transition-all duration-200 font-bold bg-white z-40 w-full fixed flex flex-col justify-evenly items-start text-[18px] md:text-[20px] space-y-2 border-b-2 border-gray-600/5">
-				<a class="ml-5 p-4 noSelect" href="#about">A propos</a> 
-				<a class="ml-5 p-4 noSelect" href="#services">Savoir faire</a>
-				<a class="ml-5 p-4 noSelect" href="#clients">Clients</a> 
-				<a class="ml-5 p-4 noSelect" href="#partners">Partenaires</a> 
-				<a class="ml-5 p-4 noSelect" href="">A la une</a> 
-				<a class="ml-5 p-4 noSelect" href="#contact">Nous contacter</a> 
-				<div class="ml-5 p-4 dropdown relative">
-				<button
-					class=" noSelect
-					dropdown-toggle
-					border-black
-					text-black
-					font-medium
-					text-base
-					leading-tight
-					uppercase
-					transition
-					duration-150
-					ease-in-out
-					flex
-					items-center
-					whitespace-nowrap
-					"
-					type="button"
-					id="dropdownMenuButton1"
-					data-bs-toggle="dropdown"
-					aria-expanded="false"
-				>
-					FR
-					<svg
-					aria-hidden="true"
-					focusable="false"
-					data-prefix="fas"
-					data-icon="caret-down"
-					class="w-2 ml-2"
-					role="img"
-					xmlns="http://www.w3.org/2000/svg"
-					viewBox="0 0 320 512"
-					>
-					<path
-						fill="currentColor"
-						d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"
-					></path>
-					</svg>
-				</button>
-				<ul
-					class="
-					dropdown-menu
-					min-w-max
-					absolute
-					
-					bg-white
-					text-m
-					z-50
-					float-left
-					py-2
-					px-4
-					list-none
-					text-left
-					shadow-lg
-					mt-1
-					hidden
-					m-0
-					bg-clip-padding
-					border-none
-					"
-					aria-labelledby="ƒdropdownMenuButton1"
-				>
-					<li>
-					<a
-						class="
-						dropdown-item
-						text-sm
-						py-2
-						px-4
-						font-roboto
-						block
-						w-full
-						whitespace-nowrap
-						bg-transparent
-						text-black
-						hover:bg-gray-100
-						"
-						href="#"
-						>Français</a
-					>
-					</li>
-					<li>
-					<a
-						class="
-						dropdown-item
-						text-sm
-						py-2
-						px-4
-						font-roboto
-						block
-						w-full
-						whitespace-nowrap
-						bg-transparent
-						text-black
-						hover:bg-gray-100
-						"
-						href="Pages/English.html"
-						>English</a
-					>
-					</li>
-				</ul>
-				</div>
-			</div>
-			</div>
-			
-			
-			<header id="header" class=" z-30 w-full">
-				<div
-				id="carouselExampleControls"
-				class="noSelect carousel slide relative w-full"
-				
-				data-bs-ride="carousel"
-				>
-				<div
-				class="carousel-inner relative w-full overflow-hidden h-screen -mt-20"
-				>
-					<div
-						id="carousel-item"
-						class="carousel-item float-left active relative h-full w-full transition-all ease-in-out duration-500"
-					>
-						<div
-							class="h-full w-full bg-black opacity-40 absolute"
-						></div>
-						<div
-							class="bg-main-background bg-center bg-cover bg-fixed h-full"
-						>
-							<div
-								class="text-center text-white absolute flex justify-center items-center flex-col w-full h-full m-auto space-y-10"
-							>
-								<h1
-									data-aos-duration="1000"
-									data-aos="fade-down"
-									id="h1"
-									class="px-2 text-3xl font-bold  md:text-[45px]"
-								>
-									WE ARE&nbsp;<span
-										class="p-1/2 bg-custom-light-blue"
-										>LFB-SERVICES</span
-									>
-								</h1>
-								<h2
-									
-									class="text-base animate__animated animate__fadeIn font-thin md:text-lg lg:text-2xl"
-								>
-									THE IT SERVICE PROVIDER
-								</h2>
-								
-								<a href="#about"><button
-								role="button"
-          						data-mdb-ripple="true"
-          						data-mdb-ripple-color="light"
-									class="noSelect transition-all duration-50 hover:backdrop-blur-sm hover:bg-white/[.20]  text-xs md:text-sm border-2  h-[57px] w-[160px] xl:text-base"
-								>START NOW</button></a>
-								
-							</div>
-						</div>
-					</div>
-					<div
-						id="carousel-item"
-						class="carousel-item relative float-left h-full w-full transition-all ease-in-out duration-500"
-					>
-						<div
-							class="h-full w-full bg-black opacity-40 absolute"
-						></div>
-						<div
-							class="bg-second-background bg-center bg-cover bg-fixed h-full"
-						>
-							<div
-								class="text-center text-white absolute flex justify-center items-center flex-col w-full h-full m-auto space-y-10"
-							>
-								<h1 
-								id="h1" class="px-2 text-3xl font-bold  md:text-[45px]">
-									DESIGN YOUR&nbsp;<span
-										class="bg-custom-light-blue"
-										>BUSINESS</span
-									>
-								</h1>
-								<h2
-									
-									class="text-base animate__animated animate__fadeIn font-thin md:text-lg lg:text-2xl"
-								>
-									IT'S OUR JOB TO HELP YOU
-								</h2>
-								<a href="#about"><button
-								role="button"
-          						data-mdb-ripple="true"
-          						data-mdb-ripple-color="light"
-									data-aos="fade-up"
-									class="noSelect transition-all duration-50 hover:backdrop-blur-sm hover:bg-white/[.20]  text-xs md:text-sm border-2  h-[57px] w-[160px] xl:text-base"
-								>START NOW</button></a>
-							</div>
-						</div>
-					</div>
-					<div
-						id="carousel-item"
-						class="carousel-item relative float-left h-full w-full transition-all ease-in-out duration-500"
-					>
-						<div
-							class="h-full w-full bg-black opacity-40 absolute"
-						></div>
-						<div
-							class="bg-third-background bg-center bg-cover bg-fixed h-full"
-						>
-							<div
-								class="text-center text-white absolute flex justify-center items-center flex-col w-full h-full m-auto space-y-10"
-							>
-								<h1 id="h1" class="px-2 text-3xl font-bold  md:text-[45px]">
-									EVERYTHING IS&nbsp;<span
-										class="bg-custom-light-blue"
-										>DIGITAL</span
-									>
-								</h1>
-								<h2
-									
-									class="text-base animate__animated animate__fadeIn font-thin md:text-lg lg:text-2xl"
-								>
-									THE FUTURE OF IT
-								</h2>
-								<a href="#about"><button
-								role="button"
-          						data-mdb-ripple="true"
-          						data-mdb-ripple-color="light"
-									data-aos="fade-up"
-									class="noSelect transition-all duration-50 hover:backdrop-blur-sm hover:bg-white/[.20]  text-xs md:text-sm border-2  h-[57px] w-[160px] xl:text-base"
-								>START NOW</button></a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<button
-					class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
-					type="button"
-					data-bs-target="#carouselExampleControls"
-					data-bs-slide="prev"
-				>
-					<span data-aos="fade-right"
-						class="carousel-control-prev-icon inline-block bg-no-repeat"
-						aria-hidden="true"
-						data-aos-duration="1000"
-					></span>
-					<span class="visually-hidden">Previous</span>
-				</button>
-				<button
-					class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
-					type="button"
-					data-bs-target="#carouselExampleControls"
-					data-bs-slide="next"
-				>
-					<span
-					data-aos="fade-left"
-						class="carousel-control-next-icon inline-block bg-no-repeat"
-						aria-hidden="true"
-						data-aos-duration="1000"
-					></span>
-					<span class="visually-hidden">Next</span>
-				</button>
-			</div>
-		</header>
-
-		<section id="about" class="overflow-x-hidden overflow-y-hidden flex flex-col justify-center items-center lg:h-screen bg-first-background bg-no-repeat bg-cover bg-fixed py-10">
-			
-			<div class="text-white space-y-6 px-8 lg:px-12 pb-4 lg:ml-28 lg:mt-40 lg:mr-56">
-				<h2 data-aos-duration="1000"
-									data-aos="fade-right"
-				 class="drop-shadow-lg text-white  font-bold mb-2 text-[30px] lg:text-[42px]">A propos de <span class="text-custom-light-blue font-bold text-[30px] lg:text-[42px]">LFB-Services</span></h2>
-				<p  data-aos-duration="1000"
-									data-aos="fade-right"
-				class="text-white text-[18px] mt-12">Présent en Algérie depuis 2012, nous accompagnons nos clients dans la mise en place de leurs systèmes d'information en leur fournissant les ressources nécessaires pour optimiser et sécuriser leurs patrimoines de données ainsi que l'amélioration de leurs niveaux de services.
-				Notre objectif est de satisfaire les clients que nous accompagnions et d'établir avec eux un partenariat sur le long terme.
-				Nous intervenons sur tous les secteurs d'activité de l'économie algérienne et oeuvrons principalement sur les axes suivants :</p>
-				<ul data-aos-duration="1000"
-					data-aos-delay="100"
-									data-aos="fade-right"
-				class="text-white text-left list-disc md:ml-24 space-y-4 text-[18px]">
-					<li>
-						Infrastructure réseau et systèmes
-					</li>
-					<li>
-       					 Intégration des solutions d'entreprise (Microsoft, Fortinet, Vmware)
-					</li>
-					<li>
-        				Développement d'applications Web/Mobile (Industrialisation de processus métier)
-					</li>
-					<li>
-        				Outsourcing/Infogérance
-					</li>
-				</ul>
-			</div>
-			
-		</section>
-
-		<div class="">
-
-		
-		<section id="services" class="bg-[#f3f3f3] transition-all duration-700 overflow-x-hidden overflow-y-hidden px-8 text-center flex flex-col justify-center items-center py-20">
-			<h3 class="text-black border-b-[1px] border-black text-2xl font-bold pb-4 mb-6 md:text-[30px] flex justify-center items-center ">Notre savoir faire</h3>
-			<p class="font-bold text-center text[18px] py-4">Nos experts composés principalement par des ingénieurs sont prêts à vous accompagner dans vos différents projets informatiques.</p>
-
-				<div class="card-container lg:h-[470px] mt-0 mb-24 lg:mb-0">
-   <div  data-aos="fade-up" class="card">
-      <div class="face face1">
-         <div class="content">
-            <img src="imgs/logos/infra logo.png">
-            <h3 class="font-bold text-[18px]">Infrastructure réseau et systèmes</h3>
-         </div>
-      </div>
-      <div class="face face2">
-         <div class="content">
-            <p id="content-text">Partenaire des plus grands éditeurs et constructeurs informatiques au monde, nous accompagnons nos clients dans le déploiement de leurs infrastructures système et réseaux en leur fournissant le matériel et assistance nécessaire pour la réussite de leurs projets.</p>
-         </div>
-      </div>
-   </div>
-   <div data-aos="fade-up" class="card noSelect">
-	   <div class="face face1">
-		   <div class="content">
-			   <img src="imgs/logos/integration logo.png">
-			   <h3 class="font-bold">Intégration des solutions d'entreprise</h3>
-			</div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>LFB-Services</title>
+        <link rel="stylesheet" href="output.css" />
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+            />
+    </head>
+    <body class="font-roboto overflow-x-hidden leading-[28px]">
+        <!-- <p class="fixed right-0 z-40 float-right md:space-x-1 space-y-1 md:space-y-0 mb-4">
+            <a class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+            </a>
+            </p>
+            <div class="collapse fixed" id="collapseExample">
+            <div class="block p-6 rounded-lg shadow-lg bg-white">
+             <a href="#about">ABOUT</a>
+              
+            </div>
+            </div>			 -->
+        <!-- <a href="#header" class="fixed noSelect flex justify-end right-4 bottom-28 items-end">
+            <img src="imgs/logos/image.png" class="z-40 w-12" alt="">
+            </a> -->
+        <!-- <button id="scroll-up" class="pointer fixed bottom-[120px] right-[31px] z-[9999]">
+            <img class="" src="imgs/icons8-flèche-haut-50.png" alt="">
+            </button> -->
+        <nav id="navBar"
+            class="border-b-2 border-gray-600/5 font-roboto hidden lg:flex z-30 sticky py-[14px] px-[15px] top-0 bg-white transition-all ease-in-out duration-500 justify-between items-center flex-row w-full"
+            >
+            <div
+                class="text-custom-dark-gray font-bold text-xs pl-10 flex items-center justify-start space-x-8 2xl:space-x-12 xl:text-[16px] "
+                >
+                <a class="noSelect" href="#">
+                <img
+                    src="imgs/logos/LFB-logo_transparent.png"
+                    class="w-[160px] xl:w-[140px]"
+                    alt=""
+                    />
+                </a>
+                <a class="hover:text-custom-dark-gray text-black" href="#about">A propos</a>
+                <a class="hover:text-custom-dark-gray text-black" href="#services">Savoir faire</a>
+                <a class="hover:text-custom-dark-gray text-black" href="#clients">Clients</a>
+                <a class="hover:text-custom-dark-gray text-black" href="#partners">Partenaires</a>
+                <a class="hover:text-custom-dark-gray text-black" href="#news">A la une</a>
+            </div>
+            <div
+                class="font-bold text-xs pr-8 flex items-center justify-start space-x-8 text-[14px]"
+                >
+                <a class="noSelect" href="https://lfb-services.freshdesk.com">Support</a>
+                <a class="noSelect" href="#contact"><button class="hover:cursor-pointer font-bold text-[14px] bg-yellow-300 py-3 px-6 xl:text-base">Contact
+                </button></a>
+                <div class="flex justify-center">
+                    <div>
+                        <div class="text-bold text-xs dropdown relative">
+                            <button
+                                class=" noSelect
+                                dropdown-toggle
+                                border-black
+                                text-black
+                                font-medium
+                                text-xs
+                                text-bold
+                                leading-tight
+                                uppercase
+                                transition
+                                duration-150
+                                ease-in-out
+                                flex
+                                items-center
+                                whitespace-nowrap
+                                "
+                                type="button"
+                                id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                                >
+                                FR
+                                <svg
+                                    aria-hidden="true"
+                                    focusable="false"
+                                    data-prefix="fas"
+                                    data-icon="caret-down"
+                                    class="w-2 ml-2"
+                                    role="img"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 320 512"
+                                    >
+                                    <path
+                                        fill="currentColor"
+                                        d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"
+                                        ></path>
+                                </svg>
+                            </button>
+                            <ul
+                                class="
+                                dropdown-menu
+                                min-w-max
+                                absolute
+                                bg-white
+                                text-xs
+                                z-50
+                                float-left
+                                py-2
+                                px-4
+                                list-none
+                                text-left
+                                shadow-lg
+                                mt-1
+                                hidden
+                                m-0
+                                bg-clip-padding
+                                border-none
+                                "
+                                aria-labelledby="ƒdropdownMenuButton1"
+                                >
+                                <li>
+                                    <a
+                                        class="
+                                        dropdown-item
+                                        text-bold
+                                        text-xs
+                                        text-black
+                                        py-2
+                                        px-4
+                                        font-roboto
+                                        block
+                                        w-full
+                                        whitespace-nowrap
+                                        bg-transparent
+                                        hover:bg-gray-100
+                                        "
+                                        href="#"
+                                        >Français</a
+                                        >
+                                </li>
+                                <li>
+                                    <a
+                                        class="
+                                        dropdown-item
+                                        text-bold
+                                        text-xs
+                                        py-2
+                                        px-4
+                                        font-roboto
+                                        block
+                                        w-full
+                                        whitespace-nowrap
+                                        bg-transparent
+                                        text-black
+                                        hover:bg-gray-100
+                                        "
+                                        href="Pages/English.html"
+                                        >English</a
+                                        >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <nav class="lg:hidden px-[30px] py-[20px] sticky top-0 flex justify-center items-center bg-white z-50 border-b-2 border-gray-600/5" id="mobile-nav"><img id="mobile-nav-button" alt="Menu button" class="w-[36px] mr-auto cursor-pointer" src="imgs/icons8-mobile-application-hamburger-menu-setting-interface-96.png"/>
+            <a class="absolute" href="#header">
+            <img class="w-[120px]" src="imgs/logos/LFB-logo_transparent.png" alt="">
+            </a>
+        </nav>
+        <div id="mobile-menu" class="lg:hidden transition-all duration-200 font-bold bg-white z-40 w-full fixed flex flex-col justify-evenly items-start text-[18px] md:text-[20px] space-y-2 border-b-2 border-gray-600/5">
+            <a class="ml-5 p-4 noSelect" href="#about">A propos</a> 
+            <a class="ml-5 p-4 noSelect" href="#services">Savoir faire</a>
+            <a class="ml-5 p-4 noSelect" href="#clients">Clients</a> 
+            <a class="ml-5 p-4 noSelect" href="#partners">Partenaires</a> 
+            <a class="ml-5 p-4 noSelect" href="">A la une</a> 
+            <a class="ml-5 p-4 noSelect" href="#contact">Nous contacter</a> 
+            <div class="ml-5 p-4 dropdown relative">
+                <button class="noSelect dropdown-toggle border-black
+                    text-black font-medium text-base leading-tight uppercase transition duration-150 ease-in-out flex items-center whitespace-nowrap "type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    FR
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-down" class="w-2 ml-2" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" >
+                        <path fill="currentColor" d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"></path>
+                    </svg>
+                </button>
+                <ul class="dropdown-menu min-w-max absolute bg-white text-m z-50 float-left py-2 px-4 list-none text-left shadow-lg mt-1 hidden m-0 bg-clip-padding border-none"
+                    aria-labelledby="ƒdropdownMenuButton1">
+                    <li>
+                        <a class="dropdown-item text-sm py-2 px-4 font-roboto block w-full whitespace-nowrap bg-transparent text-black hover:bg-gray-100" href="#">Français</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item text-sm py-2 px-4 font-roboto block w-full whitespace-nowrap bg-transparent text-black hover:bg-gray-100" href="Pages/English.html">English</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+        <header id="header" class="z-30 w-full">
+            <div
+                id="carouselExampleControls"
+                class="noSelect carousel slide relative w-full"
+                data-bs-ride="carousel"
+                >
+                <div
+                    class="carousel-inner relative w-full overflow-hidden h-screen -mt-20"
+                    >
+                    <div
+                        id="carousel-item"
+                        class="carousel-item float-left active relative h-full w-full transition-all ease-in-out duration-500"
+                        >
+                        <div
+                            class="h-full w-full bg-black opacity-40 absolute"
+                            ></div>
+                        <div
+                            class="bg-main-background bg-center bg-cover bg-fixed h-full"
+                            >
+                            <div
+                                class="text-center text-white absolute flex justify-center items-center flex-col w-full h-full m-auto space-y-10"
+                                >
+                                <h1
+                                    data-aos-duration="1000"
+                                    data-aos="fade-down"
+                                    id="h1"
+                                    class="px-2 text-3xl font-bold  md:text-[45px]"
+                                    >
+                                    WE ARE&nbsp;<span
+                                        class="p-1/2 bg-custom-light-blue"
+                                        >LFB-SERVICES</span
+                                        >
+                                </h1>
+                                <h2
+                                    class="text-base animate__animated animate__fadeIn font-thin md:text-lg lg:text-2xl"
+                                    >
+                                    THE IT SERVICE PROVIDER
+                                </h2>
+                                <a href="#about"><button
+                                    role="button"
+                                    data-mdb-ripple="true"
+                                    data-mdb-ripple-color="light"
+                                    class="noSelect transition-all duration-50 hover:backdrop-blur-sm hover:bg-white/[.20]  text-xs md:text-sm border-2  h-[57px] w-[160px] xl:text-base"
+                                    >START NOW</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        id="carousel-item"
+                        class="carousel-item relative float-left h-full w-full transition-all ease-in-out duration-500"
+                        >
+                        <div
+                            class="h-full w-full bg-black opacity-40 absolute"
+                            ></div>
+                        <div
+                            class="bg-second-background bg-center bg-cover bg-fixed h-full"
+                            >
+                            <div
+                                class="text-center text-white absolute flex justify-center items-center flex-col w-full h-full m-auto space-y-10"
+                                >
+                                <h1 
+                                    id="h1" class="px-2 text-3xl font-bold  md:text-[45px]">
+                                    DESIGN YOUR&nbsp;<span
+                                        class="bg-custom-light-blue"
+                                        >BUSINESS</span
+                                        >
+                                </h1>
+                                <h2
+                                    class="text-base animate__animated animate__fadeIn font-thin md:text-lg lg:text-2xl"
+                                    >
+                                    IT'S OUR JOB TO HELP YOU
+                                </h2>
+                                <a href="#about"><button
+                                    role="button"
+                                    data-mdb-ripple="true"
+                                    data-mdb-ripple-color="light"
+                                    data-aos="fade-up"
+                                    class="noSelect transition-all duration-50 hover:backdrop-blur-sm hover:bg-white/[.20]  text-xs md:text-sm border-2  h-[57px] w-[160px] xl:text-base"
+                                    >START NOW</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="carousel-item" class="carousel-item relative float-left h-full w-full transition-all ease-in-out duration-500">
+                        <div class="h-full w-full bg-black opacity-40 absolute"></div>
+                        <div class="bg-third-background bg-center bg-cover bg-fixed h-full">
+                            <div class="text-center text-white absolute flex justify-center items-center flex-col w-full h-full m-auto space-y-10">
+                                <h1 id="h1" class="px-2 text-3xl font-bold  md:text-[45px]">EVERYTHING IS&nbsp;<span class="bg-custom-light-blue">DIGITAL</span>
+                                </h1>
+                                <h2 class="text-base animate__animated animate__fadeIn font-thin md:text-lg lg:text-2xl">
+                                    THE FUTURE OF IT
+                                </h2>
+                                <a href="#about"><button
+                                    role="button"
+                                    data-mdb-ripple="true"
+                                    data-mdb-ripple-color="light"
+                                    data-aos="fade-up"
+                                    class="noSelect transition-all duration-50 hover:backdrop-blur-sm hover:bg-white/[.20]  text-xs md:text-sm border-2  h-[57px] w-[160px] xl:text-base"
+                                    >START NOW</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button
+                    class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+                    type="button"
+                    data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev"
+                    >
+                <span data-aos="fade-right"
+                    class="carousel-control-prev-icon inline-block bg-no-repeat"
+                    aria-hidden="true"
+                    data-aos-duration="1000"
+                    ></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                    class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+                    type="button"
+                    data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next"
+                    >
+                <span
+                    data-aos="fade-left"
+                    class="carousel-control-next-icon inline-block bg-no-repeat"
+                    aria-hidden="true"
+                    data-aos-duration="1000"
+                    ></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </header>
+        <section id="about" class="overflow-x-hidden  flex flex-col justify-center items-center lg:h-screen bg-first-background bg-no-repeat bg-cover bg-fixed py-10">
+            <div class="text-white space-y-6 px-8 lg:px-12 pb-4 lg:ml-28 lg:mt-40 lg:mr-56">
+                <h2 data-aos-duration="1000"
+                    data-aos="fade-right"
+                    class="drop-shadow-lg text-white  font-bold mb-2 text-[30px] lg:text-[42px]">A propos de <span class="text-custom-light-blue font-bold text-[30px] lg:text-[42px]">LFB-Services</span></h2>
+                <p  data-aos-duration="1000"
+                    data-aos="fade-right"
+                    class="text-white text-[18px] mt-12">Présent en Algérie depuis 2012, nous accompagnons nos clients dans la mise en place de leurs systèmes d'information en leur fournissant les ressources nécessaires pour optimiser et sécuriser leurs patrimoines de données ainsi que l'amélioration de leurs niveaux de services.
+                    Notre objectif est de satisfaire les clients que nous accompagnions et d'établir avec eux un partenariat sur le long terme.
+                    Nous intervenons sur tous les secteurs d'activité de l'économie algérienne et oeuvrons principalement sur les axes suivants :
+                </p>
+                <ul data-aos-duration="1000"
+                    data-aos-delay="100"
+                    data-aos="fade-right"
+                    class="text-white text-left list-disc md:ml-24 space-y-4 text-[18px]">
+                    <li>
+                        Infrastructure réseau et systèmes
+                    </li>
+                    <li>
+                        Intégration des solutions d'entreprise (Microsoft, Fortinet, Vmware)
+                    </li>
+                    <li>
+                        Développement d'applications Web/Mobile (Industrialisation de processus métier)
+                    </li>
+                    <li>
+                        Outsourcing/Infogérance
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="services" class="bg-[#f3f3f3] h-auto transition-all duration-800 overflow-x-hidden  px-8 text-center flex flex-col justify-center items-center py-20">
+            <h3 class="text-black border-b-[1px] border-black text-2xl font-bold pb-4 mb-6 md:text-[30px] flex justify-center items-center ">Notre savoir faire</h3>
+            <p class="font-bold text-center text[18px] px-10 mt-4">Nos experts composés principalement par des ingénieurs sont prêts à vous accompagner dans vos différents projets informatiques.</p>
+            <div class="card-container mt-0 mb-24">
+                <div  data-aos="fade-up" class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <img src="imgs/logos/infra logo.png">
+                            <h3 class="font-bold text-[18px]">Infrastructure réseau et systèmes</h3>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="content">
+                            <p id="content-text">Partenaire des plus grands éditeurs et constructeurs informatiques au monde, nous accompagnons nos clients dans le déploiement de leurs infrastructures système et réseaux en leur fournissant le matériel et assistance nécessaire pour la réussite de leurs projets.</p>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-up" class="card noSelect">
+                    <div class="face face1">
+                        <div class="content">
+                            <img src="imgs/logos/integration logo.png">
+                            <h3 class="font-bold">Intégration des solutions d'entreprise</h3>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="content">
+                            <p id="content-text">Nos consultants certifiés vous aideront à définir vos besoins et à les traduire en processus métier pour les intégrer à la suite dans votre system d’information. Par ailleurs, nos équipes assurant tout au long du projet un transfert de compétences à vos équipes, formation et assistance à la mise en production.</p>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-up" class="card noSelect">
+                    <div class="face face1">
+                        <div class="content">
+                            <img src="imgs/logos/info logo.png">
+                            <h3 class="font-bold">Infogérance et Outsourcing</h3>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="content">
+                            <p id="content-text">Nous mettons à votre disposition les ressources nécessaires pour gérer votre système d’information. Nos contrats sont flexibles selon le besoin et la taille de l’entreprise. Nous nous engageons à intervenir selon un planning prédéfini avec le client pour les opérations de maintenance proactives et respecter les SLA pour des opérations ponctuelles à la demande du client.</p>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-up" class="card noSelect">
+                    <div class="face face1">
+                        <div class="content">
+                            <img src="imgs/logos/dev logo.png">
+                            <h3 class="font-bold">Développement</h3>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="content">
+                            <p id="content-text">LFB Services couvre l’ensemble du cycle de vie des applications développées, que ça soit un site internet, une application mobile ou bien une application métier, nous nous engageons à vous livrer un produit de grande qualité.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="clients" class="transition-all duration-700 overflow-x-hidden overflow-y-hidden flex flex-col justify-center items-center py-10 space-y-12">
+            <h3 class="text-black  border-b-[1px] border-black text-2xl font-bold pb-4 md:text-[30px] flex justify-center items-center ">Nos clients</h3>
+            <div class="border-y-2 border-gray-600/5 space-x-24 w-full bg-white py-6 carousel"
+                data-flickity='{ "wrapAround": true, "autoPlay": 3000,
+                "lazyLoad": true,
+                "imagesLoaded": true,
+                "adaptiveHeight": false,
+                "pauseAutoPlayOnHover": false,
+                "prevNextButtons": false,
+                "pageDots": false,
+                "contain": false}'>
+                <div class="flex justify-center items-center h-full m-auto carousel-cell mx-4"><img src="imgs/Clients/Air_Algérie_Logo.svg.png" class="w-[140px] p-3" alt=""></div>
+                <div class="flex justify-center items-center carousel-cell h-full m-auto "><img src="imgs/Clients/Logo-heetch-Horizontal.jpg" class="w-[140px] p-3" alt=""></div>
+                <div class="flex justify-center items-center carousel-cell h-full m-auto mx-4"><img src="imgs/Clients/Renault-trucks-logo.png" class="w-[140px] p-3" alt=""></div>
+                <div class="flex justify-center items-center carousel-cell h-full m-auto mx-4"><img src="imgs/Clients/Sanofi-Logo-Video-Still-2.jpg" class="w-[140px] p-3" alt=""></div>
+                <div class="flex justify-center items-center carousel-cell h-full m-auto mx-4"><img src="imgs/Clients/SNC-Lavalin_logo.svg" class="w-[140px] p-3" alt=""></div>
+                <div class="flex justify-center items-center carousel-cell h-full m-auto mx-4"><img src="imgs/Clients/sud-etanche-logo.png" class="w-[140px] p-3" alt=""></div>
+                <div class="flex justify-center items-center carousel-cell h-full m-auto mx-4"><img src="imgs/Clients/TDA.png" class="w-[100px] p-3" alt=""></div>
+                <div class="flex justify-center items-center carousel-cell h-full m-auto mx-4"><img src="imgs/Clients/Tchin-lait.png" class="w-[140px] p-3" alt=""></div>
+                <div class="flex justify-center items-center carousel-cell h-full m-auto mx-4"><img src="imgs/Clients/mercedes.png" class="w-[100px] p-3" alt=""></div>
+                <div class="flex justify-center items-center carousel-cell h-full m-auto mx-4"><img src="imgs/Clients/Vitalcare.svg" class="w-[140px] p-3" alt=""></div>
+                <div class="flex justify-center items-center carousel-cell h-full m-auto mx-4"><img src="imgs/Clients/Presidence.svg" class="w-[100px] p-3" alt=""></div>
+                <div class="flex justify-center items-center carousel-cell h-full m-auto mx-4"><img src="imgs/Clients/Myah.svg" class="w-[140px] p-3" alt=""></div>
+                <div class="flex justify-center items-center carousel-cell h-full m-auto mx-4"><img src="imgs/Clients/Ministere Finance.svg" class="w-[100px] p-3" alt=""></div>
+                <div class="flex justify-center items-center carousel-cell h-full m-auto mx-4"><img src="imgs/Clients/Mobilis.svg" class="w-[100px] p-3" alt=""></div>
+                <div class="flex justify-center items-center carousel-cell h-full m-auto mx-4"><img src="imgs/Clients/LIAD.svg" class="w-[140px] p-3" alt=""></div>
+                <div class="flex justify-center items-center carousel-cell h-full m-auto mx-4"><img src="imgs/Clients/MDI.svg" class="w-[105px] p-3" alt=""></div>
+                <div class="flex justify-center items-center carousel-cell h-full m-auto mx-4"><img src="imgs/Clients/Hamoud.png" class="w-[100px] p-3" alt=""></div>
+                <div class="flex justify-center items-center carousel-cell h-full m-auto mx-4"><img src="imgs/Clients/CNRC.png" class="w-[120px] p-3" alt=""></div>
+                <div class="flex justify-center items-center carousel-cell h-full m-auto mx-4"><img src="imgs/Clients/BETAFER.svg" class="w-[120px] p-3" alt=""></div>
+                <div class="carousel-cell mx-4"><img src="imgs/Clients/BOMARE.png" class="w-[140px] p-3" alt=""></div>
+                <div class="carousel-cell mx-4"><img src="imgs/Clients/BASF.svg" class="w-[140px] p-3" alt=""></div>
+                <div class="flex justify-center items-center carousel-cell h-full m-auto mx-4"><img src="imgs/Clients/Algerie Telecom.svg" class="w-[140px] p-3" alt=""></div>
+            </div>
+            <div id="quote-cards" class="flex flex-wrap justify-between items-center pt-14">
+                <div data-aos="fade-right" id="quote-card" class="text-left m-auto p-10 lg:p-6 max-w-[600px] space-y-2">
+                    <img class="flex justify-center items-start lg:w-[150px]" src="imgs/Clients/inamed-logo.png" alt="">
+                    <p class="text-[18px] md:text-[24px]">"LFB services a toujours su nous accompagner dans la modernisation et l’efficience de notre transition informatique. Notre travail en interne et avec nos partenaires extérieurs s’en est trouvé beaucoup plus fluide!"</p>
+                    <p class="text-[12px] md:text-[18px] font-bold">-Selim Adel FERRADJI
+                        <br><span class="text-[8px] md:text-[12px] font-thin">Directeur Général Adjoint, INAMED Group</span>
+                    </p>
+                </div>
+                <div data-aos="fade-left" id="quote-card" class="text-left m-auto pt-14 lg:pt-6 p-6 lg:-mt-[61px] max-w-[600px] space-y-2">
+                    <img class="flex justify-center items-start w-[100px] lg:w-[140px]" src="imgs/Clients/cnpm.png" alt="">
+                    <p class="text-[18px] md:text-[24px]">"Faire confiance à une équipe jeune et motivé, très professionnelle a été notre choix et nous n'avons pas été déçu, Bravo à l'équipe   LFB Services qui a conçu l'application VigimedZ du CNPM."</p>
+                    <p class="text-[12px] md:text-[18px] font-bold lg:mt-[30px]">-Pr Nadjat LOUMI-MEDEDJEL<br><span class="text-[8px] md:text-[12px] font-thin">Directeur Général, CNPM</span></p>
+                </div>
+            </div>
+        </section>
+        <section id="partners" class="overflow-x-hidden overflow-y-hidden bg-[#f3f3f3] py-20 px-2 flex flex-col justify-center items-center space-y-4 ">
+            <h3 class="text-black border-b-[1px] border-black text-2xl font-bold pb-4 mb-2 md:text-[30px] flex justify-center items-center text-center">Nos partenaires</h3>
+            <div class="overflow-hidden flex justify-center items-center lg:space-x-24 space-x-8 px-1 py-8 mb-4 flex-wrap lg:flex-nowrap">
+                <img class="w-[60px] my-5 lg:w-[120px]" src="imgs/Partenaires/1024px-Cisco_logo_blue_2016.svg.png" alt="">
+                <img class="w-[80px] my-5 lg:w-[140px]" src="imgs/Partenaires/Microsoft_logo_(2012).svg.png" alt="">
+                <img class="w-[100px] my-5 lg:w-[160px]" src="imgs/Partenaires/logo_fortinet.png" alt="">
+                <img class="w-[35px] my-5 lg:w-[50px]" src="imgs/Partenaires/200px-HP_logo_2012.svg.png" alt="">
+                <img class="w-[80px] my-5 lg:w-[140px]" src="imgs/Partenaires/Kaspersky_logo.svg" alt="">
+                <img class="w-[80px] my-5 lg:w-[140px]" src="imgs/Partenaires/Vmware.svg.png" alt="">
+            </div>
+            <div class="flex w-full m-auto flex-row flex-wrap   space-y-4 justify-center items-center md:px-8">
+                <div data-aos="fade-right" class=" flex flex-col justify-center items-center space-y-4 lg:mr-10">
+                    <h3 class="text-[18px] w-[250px] lg:w-[500px] font-bold mt-4 text-left ">LFB-SERVICES is a proud Microsoft Gold partner</h3>
+                    <p class="w-[250px] lg:w-[500px] font-thin text-left">LFB Services s’est associée aux plus grandes entreprises du secteur de l’IT pour offrir à ces clients les meilleures solutions du marché, et qui répondent à leurs attentes.</p>
+                </div>
+                <img data-aos="fade-left" class="w-40" src="imgs/Partenaires/GoldBadge.png" alt="">	 
+            </div>
+        </section>
+        <section id="news" class="flex flex-col justify-center items-center py-20 px-2 overflow-x-hidden overflow-y-hidden">
+            <h3 class="text-black border-b-[1px] border-black text-2xl font-bold pb-4 lg:mb-12 md:text-[30px] flex justify-center items-center text-center">A la une</h3>
+            <div id="news-container" class="lg:h-[700px] flex lg:justify-between justify-center items-start flex-wrap">
+            </div>
+        </section>
+        <section id="contact" class="bg-[#f3f3f3] overflow-x-hidden overflow-y-hidden lg:px-12 xl:px-18 2xl:px-24 flex flex-col justify-center items-center py-20">
+            <h3 class="text-black border-b-[1px] border-black text-2xl font-bold pb-4 mb-12 md:text-[30px] flex justify-center items-center text-center">Nous contacter</h3>
+            <div class="flex flex-col justify-center items-center lg:flex-row md:space-x-12 lg:space-x-28 mb-20">
+            <form action="https://formspree.io/f/mknyappd" method="POST" class="lg:w-[50%] w-[70%] lg:-mr-9 flex flex-col justify-center items-center space-y-6">
+                <div class="flex space-x-6 w-full">
+                    <input required name="Nom" id="name" type="text" class="focus:border-custom-light-blue border-1 border-custom-dark-blue w-full text-[14px] lg:text-[18px] shadow-lg px-[25px] py-[20] bg-white placeholder:text-black" placeholder="Votre nom">
+                    <input required name="Email" type="text" class="focus:border-custom-light-blue  border-1 border-custom-dark-blue w-full text-[14px] lg:text-[18px]  shadow-lg p-[25px] bg-white placeholder:text-black" placeholder="Votre email">
+                </div>
+                <input required name="Object" type="text" class="focus:border-custom-light-blue  border-1 border-custom-dark-blue w-full text-[14px] lg:text-[18px] shadow-lg p-[25px] bg-white placeholder:text-black" placeholder="Objet">
+                <textarea required name="Message" id="" cols="30" rows="10" class="focus:border-custom-light-blue border-1 border-custom-dark-blue w-full text-[14px] lg:text-[18px] shadow-lg p-[25px] bg-white placeholder:text-black" placeholder="Votre message"></textarea>
+                <button type="submit" class="transition-all duration-100 drop-shadow-lg self-start lg:text-[18px] px-12 py-4 text-white lg:self bg-custom-dark-blue selected focus:bg-custom-light-blue">
+                Envoyer
+                </button>
+            </form>
+            <div class="mt-0 lg:w-[50%] w-[70%] lg:-ml-24 lg:-mt-20 lg:flex lg:flex-col items-center justify-center">
+                <div data-aos="fade-left" class="mb-8">
+                    <p class="hidden lg:inline-block  font-bold text-[24px]">Veuillez remplir ce formulaire en complétant tous les champs requis.<br><br>
+                        Nous vous contacterons dès que possible.
+                    </p>
+                </div>
+                <div data-aos="fade-left" class="lg:flex border-1 border-black">
+                    <div class="lg:flex lg:items-center lg:justify-center">
+                        <div class="w-full space-y-4 flex flex-col justify-center lg:justify-start m-auto ">
+                            <div class="flex">
+                                <img class="w-4 h-4 mt-1 mr-1" src="imgs/logos/location.png" alt="">
+                                <p class="font-bold text-[18px] drop-shadow-sm">Adresse:</p>
+                                &nbsp;
+                                <p class="text-custom-light-blue font-thin text-[18px]">Lotissement Sidi Merzoug 21 Logements Promotionnels BT 03 Ben Aknoun - Alger Algérie</p>
+                            </div>
+                            <div class="flex">
+                                <img class="w-4 h-4 mt-1 mr-1" src="imgs/logos/phone.png" alt="">
+                                <p class="font-bold text-[18px] drop-shadow-sm">Téléphone:</p>
+                                &nbsp;<a class="text-custom-light-blue font-thin underline text-[18px]" href="tel:+213661128109">+213 (0) 661 128 109</a>
+                            </div>
+                            <div class="flex">
+                                <img class="w-4 h-4 mt-1 mr-1" src="imgs/logos/fax.png" alt="">
+                                <p class="font-bold text-[18px] drop-shadow-sm">Fax:</p>
+                                &nbsp;<a class="text-custom-light-blue font-thin underline text-[18px]" href="tel:+21323381555">+213 (0) 23 38 15 55</a>
+                            </div>
+                            <div class="flex">
+                                <img class="w-4 h-4 mt-1 mr-1" src="imgs/logos/mail.png" alt="">
+                                <p class="font-bold text-[18px] drop-shadow-sm">Email:</p>
+                                &nbsp;
+                                <p class="text-custom-light-blue font-thin text-[18px]">contact@lfb-services.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="z-2 h-full w-full shadow-xl mt-4 border-1 border-custom-dark-blue">
+                        <div class=" w-full flex justify-center items-center">
+                            <div class="mapouter">
+                                <div class="gmap_canvas">
+                                    <iframe height="240" width="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=lfb%20services&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br>
+                                    <style>.mapouter{position:relative;text-align:right;height:240px;width:100%;}</style>
+                                    <a href="https://www.embedgooglemap.net">embedgooglemap.net</a>
+                                    <style>.gmap_canvas {overflow:hidden;background:none!important;height:240px;width:100%;}</style>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 		</div>
-		<div class="face face2">
-			<div class="content">
-				<p id="content-text">Nos consultants certifiés vous aideront à définir vos besoins et à les traduire en processus métier pour les intégrer à la suite dans votre system d’information. Par ailleurs, nos équipes assurant tout au long du projet un transfert de compétences à vos équipes, formation et assistance à la mise en production.</p>
-			</div>
-		</div>
-	</div>
-	<div data-aos="fade-up" class="card noSelect">
-	   <div class="face face1">
-		  <div class="content">
-			 <img src="imgs/logos/info logo.png">
-			 <h3 class="font-bold">Infogérance et Outsourcing</h3>
-		  </div>
-	   </div>
-	   <div class="face face2">
-		  <div class="content">
-			 <p id="content-text">Nous mettons à votre disposition les ressources nécessaires pour gérer votre système d’information. Nos contrats sont flexibles selon le besoin et la taille de l’entreprise. Nous nous engageons à intervenir selon un planning prédéfini avec le client pour les opérations de maintenance proactives et respecter les SLA pour des opérations ponctuelles à la demande du client.</p>
-		  </div>
-	   </div>
-	</div>
-	<div data-aos="fade-up" class="card noSelect">
-		<div class="face face1">
-         <div class="content">
-            <img src="imgs/logos/dev logo.png">
-            <h3 class="font-bold">Développement</h3>
-         </div>
-      </div>
-      <div class="face face2">
-         <div class="content">
-            <p id="content-text">LFB Services couvre l’ensemble du cycle de vie des applications développées, que ça soit un site internet, une application mobile ou bien une application métier, nous nous engageons à vous livrer un produit de grande qualité.</p>
-         </div>
-      </div>
-   </div>
-</div>	
-		</section>
-
-
-		<section id="clients" class="transition-all duration-700 overflow-x-hidden overflow-y-hidden flex flex-col justify-center items-center py-10 space-y-12">
-			<h3 class="text-black  border-b-[1px] border-black text-2xl font-bold pb-4 md:text-[30px] flex justify-center items-center ">Nos clients</h3>
-			
-			<div class="border-y-2 border-gray-600/5 space-x-24 w-full bg-white py-6 carousel"
-				data-flickity='{ "wrapAround": true, "autoPlay": 3000,
-				"lazyLoad": true,
-				"imagesLoaded": true,
-				"adaptiveHeight": false,
-				"pauseAutoPlayOnHover": false,
-				"prevNextButtons": false,
-				"pageDots": false,
-				"contain": false}'>
-				<div class="flex justify-center items-center h-full m-auto carousel-cell mx-4"><img src="imgs/Clients/Air_Algérie_Logo.svg.png" class="w-[140px] p-3" alt=""></div>
-				<div class="flex justify-center items-center carousel-cell h-full m-auto "><img src="imgs/Clients/Logo-heetch-Horizontal.jpg" class="w-[140px] p-3" alt=""></div>
-				<div class="flex justify-center items-center carousel-cell h-full m-auto mx-4"><img src="imgs/Clients/Renault-trucks-logo.png" class="w-[140px] p-3" alt=""></div>
-				<div class="flex justify-center items-center carousel-cell h-full m-auto mx-4"><img src="imgs/Clients/Sanofi-Logo-Video-Still-2.jpg" class="w-[140px] p-3" alt=""></div>
-				<div class="flex justify-center items-center carousel-cell h-full m-auto mx-4"><img src="imgs/Clients/SNC-Lavalin_logo.svg" class="w-[140px] p-3" alt=""></div>
-				<div class="flex justify-center items-center carousel-cell h-full m-auto mx-4"><img src="imgs/Clients/sud-etanche-logo.png" class="w-[140px] p-3" alt=""></div>
-				<div class="flex justify-center items-center carousel-cell h-full m-auto mx-4"><img src="imgs/Clients/TDA.png" class="w-[100px] p-3" alt=""></div>
-				<div class="flex justify-center items-center carousel-cell h-full m-auto mx-4"><img src="imgs/Clients/Tchin-lait.png" class="w-[140px] p-3" alt=""></div>
-				<div class="flex justify-center items-center carousel-cell h-full m-auto mx-4"><img src="imgs/Clients/mercedes.png" class="w-[100px] p-3" alt=""></div>
-				<div class="flex justify-center items-center carousel-cell h-full m-auto mx-4"><img src="imgs/Clients/Vitalcare.svg" class="w-[140px] p-3" alt=""></div>
-				<div class="flex justify-center items-center carousel-cell h-full m-auto mx-4"><img src="imgs/Clients/Presidence.svg" class="w-[100px] p-3" alt=""></div>
-				<div class="flex justify-center items-center carousel-cell h-full m-auto mx-4"><img src="imgs/Clients/Myah.svg" class="w-[140px] p-3" alt=""></div>
-				<div class="flex justify-center items-center carousel-cell h-full m-auto mx-4"><img src="imgs/Clients/Ministere Finance.svg" class="w-[100px] p-3" alt=""></div>
-				<div class="flex justify-center items-center carousel-cell h-full m-auto mx-4"><img src="imgs/Clients/Mobilis.svg" class="w-[100px] p-3" alt=""></div>
-				<div class="flex justify-center items-center carousel-cell h-full m-auto mx-4"><img src="imgs/Clients/LIAD.svg" class="w-[140px] p-3" alt=""></div>
-				<div class="flex justify-center items-center carousel-cell h-full m-auto mx-4"><img src="imgs/Clients/MDI.svg" class="w-[105px] p-3" alt=""></div>
-				<div class="flex justify-center items-center carousel-cell h-full m-auto mx-4"><img src="imgs/Clients/Hamoud.png" class="w-[100px] p-3" alt=""></div>
-				<div class="flex justify-center items-center carousel-cell h-full m-auto mx-4"><img src="imgs/Clients/CNRC.png" class="w-[120px] p-3" alt=""></div>
-				<div class="flex justify-center items-center carousel-cell h-full m-auto mx-4"><img src="imgs/Clients/BETAFER.svg" class="w-[120px] p-3" alt=""></div>
-				<div class="carousel-cell mx-4"><img src="imgs/Clients/BOMARE.png" class="w-[140px] p-3" alt=""></div>
-				<div class="carousel-cell mx-4"><img src="imgs/Clients/BASF.svg" class="w-[140px] p-3" alt=""></div>
-				<div class="flex justify-center items-center carousel-cell h-full m-auto mx-4"><img src="imgs/Clients/Algerie Telecom.svg" class="w-[140px] p-3" alt=""></div>
-
-
-			</div>
-
-			<div id="quote-cards" class=" flex flex-wrap justify-between items-center">		
-					<div data-aos="fade-right" id="quote-card" class="m-auto lg:mt-10 max-w-[400px] p-6 lg:max-w-[600px] space-y-2 text-center">
-						<img class="flex justify-center items-center m-auto w-[150px]" src="imgs/Clients/inamed-logo.png" alt="">
-						<p class="text-[24px] italic font-thin">"LFB services a toujours su nous accompagner dans la modernisation et l’efficience de notre transition informatique. Notre travail en interne et avec nos partenaires extérieurs s’en est trouvé beaucoup plus fluide!"</p>
-						<p class="text-[18px] text-bold">-Selim Adel FERRADJI
-							<br><span class="text-[14px] font-thin">Directeur Général Adjoint</span></p>
-					</div>
-
-					<div data-aos="fade-left" id="quote-card" class="m-auto xl:-mt-4 p-6 max-w-[600px] space-y-2 text-center">
-						<img class="flex justify-center items-center m-auto w-[140px]" src="imgs/Clients/cnpm.png" alt="">
-						<p class="text-[24px] italic font-thin">"Faire confiance à une équipe jeune et motivé, très professionnelle a été notre choix et nous n'avons pas été déçu, Bravo à l'équipe   LFB Services qui a conçu l'application VigimedZ du CNPM."</p>
-						<p class="text-[18px] text-bold">-Pr Nadjat LOUMI-MEDEDJEL<br><span class="text-[14px] font-thin">Directeur Général</span></p>
-					</div>
-				</div>
-			</section>
-
-		<section id="partners" class="overflow-x-hidden overflow-y-hidden bg-[#f3f3f3] py-20 px-2 flex flex-col justify-center items-center space-y-4 ">
-			<h3 class="text-black border-b-[1px] border-black text-2xl font-bold pb-4 mb-2 md:text-[30px] flex justify-center items-center text-left">Nos partenaires</h3>
-			<div class="overflow-hidden flex justify-center items-center lg:space-x-24 space-x-8 py-8 mb-4 flex-wrap lg:flex-nowrap">
-				<img class="w-[60px] my-5 lg:w-[120px]" src="imgs/Partenaires/1024px-Cisco_logo_blue_2016.svg.png" alt="">
-				<img class="w-[80px] my-5 lg:w-[140px]" src="imgs/Partenaires/Microsoft_logo_(2012).svg.png" alt="">
-				<img class="w-[100px] my-5 lg:w-[160px]" src="imgs/Partenaires/logo_fortinet.png" alt="">
-				<img class="w-[35px] my-5 lg:w-[50px]" src="imgs/Partenaires/200px-HP_logo_2012.svg.png" alt="">
-				<img class="w-[80px] my-5 lg:w-[140px]" src="imgs/Partenaires/Kaspersky_logo.svg" alt="">
-				<img class="w-[80px] my-5 lg:w-[140px]" src="imgs/Partenaires/Vmware.svg.png" alt="">
-			</div>
-			<div class="flex w-full m-auto flex-row flex-wrap   space-y-4 justify-center items-center md:px-8">
-			
-					<div data-aos="fade-right" class=" flex flex-col justify-center items-center space-y-4 lg:mr-10">
-						<h3 class="text-[18px] w-[250px] lg:w-[500px] font-bold text-center mt-4 md:text-left ">LFB-SERVICES is a proud Microsoft Gold partner</h3>
-						<p class="w-[250px] lg:w-[500px] font-thin text-left">LFB Services s’est associée aux plus grandes entreprises du secteur de l’IT pour offrir à ces clients les meilleures solutions du marché, et qui répondent à leurs attentes.</p>
-					</div>
-					<img data-aos="fade-left" class="w-40" src="imgs/Partenaires/GoldBadge.png" alt="">	 
-			</div>
-		</section>
-
-		<section id="news" class="h-auto px-8 flex flex-col justify-center items-center py-20 overflow-x-hidden overflow-y-hidden">
-			<h3 class="text-black border-b-[1px] border-black text-2xl font-bold pb-4 mb-2 md:text-[30px] flex justify-center items-center text-left">A la une</h3>
-			<!-- <div id="news-container" class="h-full py-6 mx-10 w-full bg-custom-news-gray  rounded-lg">
-				
-			</div> -->
-		</section>
-
-		<section id="contact" class="bg-[#f3f3f3] overflow-x-hidden overflow-y-hidden lg:px-12 xl:px-18 2xl:px-24 flex flex-col justify-center items-center py-20">
-			<h3 class="text-black border-b-[1px] border-black text-2xl font-bold pb-4 mb-12 md:text-[30px] flex justify-center items-center text-center">Nous contacter</h3>
-			<div class="flex flex-col justify-center items-center lg:flex-row md:space-x-12 lg:space-x-28 mb-20">
-				<form action="https://formspree.io/f/mknyappd" method="POST" class="lg:w-[50%] w-[70%] lg:-mr-9 flex flex-col justify-center items-center space-y-6">
-					
-					<div class="flex space-x-6 w-full">
-						<input required name="Nom" id="name" type="text" class="focus:border-custom-light-blue border-1 border-custom-dark-blue w-full text-[14px] lg:text-[18px] shadow-lg px-[25px] py-[20] bg-white placeholder:text-black" placeholder="Votre nom">
-						<input required name="Email" type="text" class="focus:border-custom-light-blue  border-1 border-custom-dark-blue w-full text-[14px] lg:text-[18px]  shadow-lg p-[25px] bg-white placeholder:text-black" placeholder="Votre email">
-					</div>
-					<input required name="Object" type="text" class="focus:border-custom-light-blue  border-1 border-custom-dark-blue w-full text-[14px] lg:text-[18px] shadow-lg p-[25px] bg-white placeholder:text-black" placeholder="Objet">
-					<textarea required name="Message" id="" cols="30" rows="10" class="focus:border-custom-light-blue border-1 border-custom-dark-blue w-full text-[14px] lg:text-[18px] shadow-lg p-[25px] bg-white placeholder:text-black" placeholder="Votre message"></textarea>
-					<button type="submit" class="drop-shadow-lg self-start lg:text-[18px] px-12 py-4 text-white lg:self bg-custom-light-blue">
-						Envoyer
-					</button>
-				</form>
-				
-				<div class=" mt-0 lg:w-[50%] w-[70%] lg:-ml-24 lg:-mt-20 lg:flex lg:flex-col items-center justify-center">
-					<div data-aos="fade-left" class="mb-8">
-						<p class="hidden lg:inline-block  font-bold text-[24px]">Veuillez remplir ce formulaire en complétant tous les champs requis.<br><br>
-						Nous vous contacterons dès que possible.
-						</p>
-					</div>
-					<div data-aos="fade-left" class="lg:flex border-1 border-black">
-	
-						<div class="lg:flex lg:items-center lg:justify-center">
-							<div class="w-full space-y-4 flex flex-col justify-center lg:justify-start m-auto ">
-						<div class="flex">
-							<img class="w-4 h-4 mt-1 mr-1" src="imgs/logos/location.png" alt="">
-							<p class="font-bold text-[18px] drop-shadow-sm">Adresse:</p>&nbsp;<p class="text-custom-light-blue font-thin text-[18px]">Lotissement Sidi Merzoug 21 Logements Promotionnels BT 03 Ben Aknoun - Alger Algérie</p>
-						</div>
-						<div class="flex">
-							<img class="w-4 h-4 mt-1 mr-1" src="imgs/logos/phone.png" alt="">
-							<p class="font-bold text-[18px] drop-shadow-sm">Téléphone:</p>&nbsp;<a class="text-custom-light-blue font-thin underline text-[18px]" href="tel:+213661128109">+213 (0) 661 128 109</a>
-						</div>
-						<div class="flex">
-							<img class="w-4 h-4 mt-1 mr-1" src="imgs/logos/fax.png" alt="">
-							<p class="font-bold text-[18px] drop-shadow-sm">Fax:</p>&nbsp;<a class="text-custom-light-blue font-thin underline text-[18px]" href="tel:+21323381555">+213 (0) 23 38 15 55</a>
-						</div>
-						<div class="flex">
-							<img class="w-4 h-4 mt-1 mr-1" src="imgs/logos/mail.png" alt="">
-							<p class="font-bold text-[18px] drop-shadow-sm">Email:</p>&nbsp;<p class="text-custom-light-blue font-thin text-[18px]">contact@lfb-services.com</p>
-						</div>
-					</div>
-				</div>
-				<div class="z-2 h-full w-full shadow-xl mt-4 border-2 border-custom-dark-blue">
-					<div class=" w-full flex justify-center items-center">
-						<div class="mapouter"><div class="gmap_canvas"><iframe height="240" width="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=lfb%20services&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br><style>.mapouter{position:relative;text-align:right;height:240px;width:100%;}</style><a href="https://www.embedgooglemap.net">embedgooglemap.net</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:240px;width:100%;}</style></div></div>
-					</div>
-				</div>
-			</div>
-				</div>
-		
-				
-			</section>
-
-		<footer class="overflow-x-hidden drop-shadow-lg text-white flex flex-col bg-custom-dark-blue w-full py-4 space-y-2">
-			<p class="text-center font-bold text-[20px]">LFB-<span class="bg-custom-light-blue">SERVICES</span></p>
-			<div class="flex justify-center items-center space-x-6">
-				<a class="noSelect" href="https://www.facebook.com/pages/category/Computer-Company/LFB-Services-228031287326271/"><img class="w-8 h-8" src="imgs/logos/facebook.png" alt=""></a>
-				<a class="noSelect" href="https://dz.linkedin.com/company/lfb-services"><img class="w-8 h-8" src="imgs/logos/linkedin circled.png" alt=""></a>
-				<a class="noSelect" href=""><img class="w-8 h-8" src="imgs/logos/google plus.png" alt=""></a>
-				<a class="noSelect" href="https://twitter.com/lfbservices"><img class="w-8 h-8" src="imgs/logos/twitter circled.png" alt=""></a>
-			</div>
-			<p class="text-center font-thin text-xs">Copyright © 2022 LFB-Services.</p>
-		</footer>
-		
-		<script> configObj = {"buttonD":"M11.384 13.333h9.232c.638 0 .958.68.505 1.079l-4.613 4.07c-.28.246-.736.246-1.016 0l-4.613-4.07c-.453-.399-.133-1.079.505-1.079z","buttonT":"translate(-1028 -172) translate(832 140) translate(32 32) translate(164) matrix(1 0 0 -1 0 32)","shadowSize":"none","roundnessSize":"100px","buttonDToLeft":"auto","selectedBackgroundColor":"#304672","selectedIconColor":"#ffffff","buttonWidth":"60px","buttonHeight":"60px","svgWidth":"48px","svgHeight":"48px"};function createButton(obj, pageSimulator) {    const body = document.querySelector("body");    backToTopButton = document.createElement("span");    backToTopButton.classList.add("softr-back-to-top-button"); backToTopButton.classList.add("desktop");    backToTopButton.id = "softr-back-to-top-button";    pageSimulator      ? pageSimulator.appendChild(backToTopButton)      : body.appendChild(backToTopButton);    backToTopButton.style.width = obj.buttonWidth;    backToTopButton.style.height = obj.buttonHeight;    backToTopButton.style.marginRight = obj.buttonDToRight;    backToTopButton.style.marginBottom = obj.buttonDToBottom;    backToTopButton.style.borderRadius = obj.roundnessSize;    backToTopButton.style.boxShadow = obj.shadowSize;    backToTopButton.style.color = obj.selectedBackgroundColor;    backToTopButton.style.backgroundColor = obj.selectedBackgroundColor;    pageSimulator ? backToTopButton.style.position = "absolute" : backToTopButton.style.position = "fixed";    backToTopButton.style.outline = "none";    backToTopButton.style.bottom = "0px";    backToTopButton.style.right = "0px"; backToTopButton.style.left = "auto";   backToTopButton.style.cursor = "pointer";    backToTopButton.style.textAlign = "center";    backToTopButton.style.border = "solid 2px currentColor";    backToTopButton.innerHTML =      '<svg class="back-to-top-button-svg" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" > <g fill="none" fill-rule="evenodd"> <path d="M0 0H32V32H0z" transform="translate(-1028 -172) translate(832 140) translate(32 32) translate(164) matrix(1 0 0 -1 0 32)" /> <path class="back-to-top-button-img desktop" fill-rule="nonzero" d="M11.384 13.333h9.232c.638 0 .958.68.505 1.079l-4.613 4.07c-.28.246-.736.246-1.016 0l-4.613-4.07c-.453-.399-.133-1.079.505-1.079z" transform="translate(-1028 -172) translate(832 140) translate(32 32) translate(164) matrix(1 0 0 -1 0 32)" /> </g> </svg>';    backToTopButtonSvg = document.querySelector(".back-to-top-button-svg");    backToTopButtonSvg.style.verticalAlign = "middle";    backToTopButtonSvg.style.margin = "auto";    backToTopButtonSvg.style.justifyContent = "center";    backToTopButtonSvg.style.width = obj.svgWidth;    backToTopButtonSvg.style.height = obj.svgHeight;    backToTopButton.appendChild(backToTopButtonSvg);    backToTopButtonImg = document.querySelector(".back-to-top-button-img");    backToTopButtonImg.style.fill = obj.selectedIconColor;    backToTopButtonSvg.appendChild(backToTopButtonImg);    backToTopButtonImg.setAttribute("d", obj.buttonD);    backToTopButtonImg.setAttribute("transform", obj.buttonT);        if(!pageSimulator) {      backToTopButton.style.display = "none";      window.onscroll = function() {        if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {          backToTopButton.style.display = "block";        } else {          backToTopButton.style.display = "none";        }      };        backToTopButton.onclick = function() {        document.body.scrollTop = 0;        document.documentElement.scrollTop = 0;      };    }  };document.addEventListener("DOMContentLoaded", function() { createButton(configObj, null); });</script>
-		<!-- <script src="api.js"></script> -->
-		<script src="main.js"></script>
-		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-		<script src="/node_modules/tw-elements/dist/js/index.min.js"></script>
-		<script src="../path/to/flowbite/dist/flowbite.js"></script>
-		<script src="//code.tidio.co/ifypvamfk473nptf6gyb8bogtt2lrckx.js" async></script>
-		<script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
-		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-		<script>
-			AOS.init();
-			</script>
-			<script src="fitty.min.js"></script>
-			<script>
-				fitty('#content-text',{
-					minSize: 12,
-					maxSize: 300,
-				});
-			</script>
-</body>
+        </section>
+        <footer class="overflow-x-hidden drop-shadow-lg text-white flex flex-col bg-custom-dark-blue w-full py-4 space-y-2">
+            <p class="text-center font-bold text-[20px]">LFB-<span class="bg-custom-light-blue">SERVICES</span></p>
+            <div class="flex justify-center items-center space-x-6">
+                <a class="noSelect" href="https://www.facebook.com/pages/category/Computer-Company/LFB-Services-228031287326271/"><img class="w-8 h-8" src="imgs/logos/facebook.png" alt=""></a>
+                <a class="noSelect" href="https://dz.linkedin.com/company/lfb-services"><img class="w-8 h-8" src="imgs/logos/linkedin circled.png" alt=""></a>
+                <a class="noSelect" href=""><img class="w-8 h-8" src="imgs/logos/google plus.png" alt=""></a>
+                <a class="noSelect" href="https://twitter.com/lfbservices"><img class="w-8 h-8" src="imgs/logos/twitter circled.png" alt=""></a>
+            </div>
+            <p class="text-center font-thin text-xs">Copyright © 2022 LFB-Services.</p>
+        </footer>
+        <script> configObj = {"buttonD":"M11.384 13.333h9.232c.638 0 .958.68.505 1.079l-4.613 4.07c-.28.246-.736.246-1.016 0l-4.613-4.07c-.453-.399-.133-1.079.505-1.079z","buttonT":"translate(-1028 -172) translate(832 140) translate(32 32) translate(164) matrix(1 0 0 -1 0 32)","shadowSize":"none","roundnessSize":"100px","buttonDToLeft":"auto","selectedBackgroundColor":"#304672","selectedIconColor":"#ffffff","buttonWidth":"60px","buttonHeight":"60px","svgWidth":"48px","svgHeight":"48px"};function createButton(obj, pageSimulator) {    const body = document.querySelector("body");    backToTopButton = document.createElement("span");    backToTopButton.classList.add("softr-back-to-top-button"); backToTopButton.classList.add("desktop");    backToTopButton.id = "softr-back-to-top-button";    pageSimulator      ? pageSimulator.appendChild(backToTopButton)      : body.appendChild(backToTopButton);    backToTopButton.style.width = obj.buttonWidth;    backToTopButton.style.height = obj.buttonHeight;    backToTopButton.style.marginRight = obj.buttonDToRight;    backToTopButton.style.marginBottom = obj.buttonDToBottom;    backToTopButton.style.borderRadius = obj.roundnessSize;    backToTopButton.style.boxShadow = obj.shadowSize;    backToTopButton.style.color = obj.selectedBackgroundColor;    backToTopButton.style.backgroundColor = obj.selectedBackgroundColor;    pageSimulator ? backToTopButton.style.position = "absolute" : backToTopButton.style.position = "fixed";    backToTopButton.style.outline = "none";    backToTopButton.style.bottom = "0px";    backToTopButton.style.right = "0px"; backToTopButton.style.left = "auto";   backToTopButton.style.cursor = "pointer";    backToTopButton.style.textAlign = "center";    backToTopButton.style.border = "solid 2px currentColor";    backToTopButton.innerHTML =      '<svg class="back-to-top-button-svg" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" > <g fill="none" fill-rule="evenodd"> <path d="M0 0H32V32H0z" transform="translate(-1028 -172) translate(832 140) translate(32 32) translate(164) matrix(1 0 0 -1 0 32)" /> <path class="back-to-top-button-img desktop" fill-rule="nonzero" d="M11.384 13.333h9.232c.638 0 .958.68.505 1.079l-4.613 4.07c-.28.246-.736.246-1.016 0l-4.613-4.07c-.453-.399-.133-1.079.505-1.079z" transform="translate(-1028 -172) translate(832 140) translate(32 32) translate(164) matrix(1 0 0 -1 0 32)" /> </g> </svg>';    backToTopButtonSvg = document.querySelector(".back-to-top-button-svg");    backToTopButtonSvg.style.verticalAlign = "middle";    backToTopButtonSvg.style.margin = "auto";    backToTopButtonSvg.style.justifyContent = "center";    backToTopButtonSvg.style.width = obj.svgWidth;    backToTopButtonSvg.style.height = obj.svgHeight;    backToTopButton.appendChild(backToTopButtonSvg);    backToTopButtonImg = document.querySelector(".back-to-top-button-img");    backToTopButtonImg.style.fill = obj.selectedIconColor;    backToTopButtonSvg.appendChild(backToTopButtonImg);    backToTopButtonImg.setAttribute("d", obj.buttonD);    backToTopButtonImg.setAttribute("transform", obj.buttonT);        if(!pageSimulator) {      backToTopButton.style.display = "none";      window.onscroll = function() {        if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {          backToTopButton.style.display = "block";        } else {          backToTopButton.style.display = "none";        }      };        backToTopButton.onclick = function() {        document.body.scrollTop = 0;        document.documentElement.scrollTop = 0;      };    }  };document.addEventListener("DOMContentLoaded", function() { createButton(configObj, null); });</script>
+        <!-- <script src="api.js"></script> -->
+        <script src="main.js"></script>
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+        <script src="/node_modules/tw-elements/dist/js/index.min.js"></script>
+        <script src="../path/to/flowbite/dist/flowbite.js"></script>
+        <script src="//code.tidio.co/ifypvamfk473nptf6gyb8bogtt2lrckx.js" async></script>
+        <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <script src="fitty.min.js"></script>
+        <script>
+            fitty('#content-text',{
+            	minSize: 12,
+            	maxSize: 300,
+            });
+        </script>
+    </body>
 </html>

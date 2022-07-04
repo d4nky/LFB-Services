@@ -20,11 +20,6 @@
 		width: 8vw;
 	}
 }
-iframe {
-	height: 400px;
-	scrollbar-width: none;
-}
-
 .noSelect {
 	-webkit-tap-highlight-color: transparent;
 	-webkit-touch-callout: none;
@@ -166,22 +161,37 @@ body {
 		margin-top: 46px;
 	}
 }
-#content-text{
+#content-text {
 	text-align: justify;
 }
-#news iframe{
-	width: 450px;
-	margin: auto;
+#news-container iframe {
 	-webkit-transform: scale(0.75);
+	overflow: hidden;
+	/* align-self: flex-start;
+	align-items: flex-start;
+	align-content: flex-start; */
+	/* width: 500px; */
+	/* height: 100%; */
 }
-#news{
-	display: flex;
-	flex: 3;
-  	flex-wrap:wrap;
-  	justify-content: space-between;
-  	align-items: center;
+#news-container {
+	/* align-self: flex-start;
+	align-items: flex-start;
+	align-content: flex-start; */
 }
-#map_canvas{
+#map_canvas {
 	height: 240px;
 	width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+	#news-container iframe {
+	width: 90%;
+	height: 100vh;
+	}
+}
+@media only screen and (max-width: 500px) {
+	#news-container iframe {
+	width: 380px;
+	height: 350px
+	}
 }

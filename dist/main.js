@@ -1,4 +1,4 @@
-const container = document.getElementById('news');
+const container = document.getElementById('news-container');
 
 Promise.all([fetch('test.txt').then((x) => x.text())]).then(([sampleResp]) => {
 	container.innerHTML = sampleResp;

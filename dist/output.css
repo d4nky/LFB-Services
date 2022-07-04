@@ -4313,16 +4313,16 @@ textarea.form-control.is-invalid{
   margin-bottom: 1.5rem;
 }
 
+.mt-4{
+  margin-top: 1rem;
+}
+
 .mt-0{
   margin-top: 0px;
 }
 
 .mb-24{
   margin-bottom: 6rem;
-}
-
-.mt-4{
-  margin-top: 1rem;
 }
 
 .mb-12{
@@ -4453,10 +4453,6 @@ textarea.form-control.is-invalid{
   width: 105px;
 }
 
-.w-\[150px\]{
-  width: 150px;
-}
-
 .w-\[60px\]{
   width: 60px;
 }
@@ -4491,12 +4487,12 @@ textarea.form-control.is-invalid{
   min-width: max-content;
 }
 
-.max-w-\[400px\]{
-  max-width: 400px;
-}
-
 .max-w-\[600px\]{
   max-width: 600px;
+}
+
+.max-w-\[400px\]{
+  max-width: 400px;
 }
 
 .flex-1{
@@ -4912,6 +4908,10 @@ textarea.form-control.is-invalid{
   padding: 0.75rem;
 }
 
+.p-10{
+  padding: 2.5rem;
+}
+
 .p-\[25px\]{
   padding: 25px;
 }
@@ -4946,19 +4946,14 @@ textarea.form-control.is-invalid{
   padding-right: 1.5rem;
 }
 
-.py-\[18px\]{
-  padding-top: 18px;
-  padding-bottom: 18px;
+.py-\[14px\]{
+  padding-top: 14px;
+  padding-bottom: 14px;
 }
 
 .px-\[15px\]{
   padding-left: 15px;
   padding-right: 15px;
-}
-
-.px-7{
-  padding-left: 1.75rem;
-  padding-right: 1.75rem;
 }
 
 .px-4{
@@ -4991,14 +4986,19 @@ textarea.form-control.is-invalid{
   padding-bottom: 5rem;
 }
 
-.py-4{
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+.px-10{
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.px-1{
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
 }
 
 .py-8{
@@ -5021,6 +5021,21 @@ textarea.form-control.is-invalid{
   padding-right: 3rem;
 }
 
+.py-4{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.py-\[12px\]{
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.px-7{
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+
 .pt-2{
   padding-top: 0.5rem;
 }
@@ -5035,6 +5050,10 @@ textarea.form-control.is-invalid{
 
 .pb-4{
   padding-bottom: 1rem;
+}
+
+.pt-14{
+  padding-top: 3.5rem;
 }
 
 .text-left{
@@ -5064,6 +5083,10 @@ textarea.form-control.is-invalid{
   line-height: 1rem;
 }
 
+.text-\[14px\]{
+  font-size: 14px;
+}
+
 .text-\[18px\]{
   font-size: 18px;
 }
@@ -5087,12 +5110,16 @@ textarea.form-control.is-invalid{
   line-height: 2rem;
 }
 
-.text-\[24px\]{
-  font-size: 24px;
+.text-\[12px\]{
+  font-size: 12px;
 }
 
-.text-\[14px\]{
-  font-size: 14px;
+.text-\[8px\]{
+  font-size: 8px;
+}
+
+.text-\[24px\]{
+  font-size: 24px;
 }
 
 .text-\[20px\]{
@@ -5274,6 +5301,10 @@ textarea.form-control.is-invalid{
   transition-duration: 700ms;
 }
 
+.duration-100{
+  transition-duration: 100ms;
+}
+
 .ease-out{
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
@@ -5401,11 +5432,6 @@ textarea.form-control.is-invalid{
   .custom-border::after {
     width: 8vw;
   }
-}
-
-iframe {
-  height: 400px;
-  scrollbar-width: none;
 }
 
 .noSelect {
@@ -5568,27 +5594,43 @@ body {
   }
 }
 
-#content-text{
+#content-text {
   text-align: justify;
 }
 
-#news iframe{
-  width: 450px;
-  margin: auto;
+#news-container iframe {
   -webkit-transform: scale(0.75);
+  overflow: hidden;
+  /* align-self: flex-start;
+	align-items: flex-start;
+	align-content: flex-start; */
+  /* width: 500px; */
+  /* height: 100%; */
 }
 
-#news{
-  display: flex;
-  flex: 3;
-  flex-wrap:wrap;
-  justify-content: space-between;
-  align-items: center;
+#news-container {
+  /* align-self: flex-start;
+	align-items: flex-start;
+	align-content: flex-start; */
 }
 
-#map_canvas{
+#map_canvas {
   height: 240px;
   width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  #news-container iframe {
+    width: 90%;
+    height: 100vh;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #news-container iframe {
+    width: 380px;
+    height: 350px
+  }
 }
 
 .placeholder\:text-black::-moz-placeholder{
@@ -5689,6 +5731,11 @@ body {
 .focus\:bg-blue-700:focus{
   --tw-bg-opacity: 1;
   background-color: rgb(26 86 219 / var(--tw-bg-opacity));
+}
+
+.focus\:bg-custom-light-blue:focus{
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 145 208 / var(--tw-bg-opacity));
 }
 
 .focus\:no-underline:focus{
@@ -5887,6 +5934,18 @@ body {
   .md\:text-\[30px\]{
     font-size: 30px;
   }
+
+  .md\:text-\[24px\]{
+    font-size: 24px;
+  }
+
+  .md\:text-\[18px\]{
+    font-size: 18px;
+  }
+
+  .md\:text-\[12px\]{
+    font-size: 12px;
+  }
 }
 
 @media (min-width: 1024px){
@@ -5902,20 +5961,20 @@ body {
     margin-right: 14rem;
   }
 
-  .lg\:mb-0{
-    margin-bottom: 0px;
+  .lg\:-mt-\[61px\]{
+    margin-top: -61px;
   }
 
-  .lg\:mt-10{
-    margin-top: 2.5rem;
-  }
-
-  .lg\:-mt-4{
-    margin-top: -1rem;
+  .lg\:mt-\[30px\]{
+    margin-top: 30px;
   }
 
   .lg\:mr-10{
     margin-right: 2.5rem;
+  }
+
+  .lg\:mb-12{
+    margin-bottom: 3rem;
   }
 
   .lg\:-mr-9{
@@ -5928,6 +5987,14 @@ body {
 
   .lg\:-mt-20{
     margin-top: -5rem;
+  }
+
+  .lg\:mb-0{
+    margin-bottom: 0px;
+  }
+
+  .lg\:mt-10{
+    margin-top: 2.5rem;
   }
 
   .lg\:inline-block{
@@ -5946,16 +6013,24 @@ body {
     height: 100vh;
   }
 
+  .lg\:h-\[700px\]{
+    height: 700px;
+  }
+
   .lg\:h-\[470px\]{
     height: 470px;
   }
 
-  .lg\:w-\[120px\]{
-    width: 120px;
+  .lg\:w-\[150px\]{
+    width: 150px;
   }
 
   .lg\:w-\[140px\]{
     width: 140px;
+  }
+
+  .lg\:w-\[120px\]{
+    width: 120px;
   }
 
   .lg\:w-\[160px\]{
@@ -6002,6 +6077,10 @@ body {
     justify-content: center;
   }
 
+  .lg\:justify-between{
+    justify-content: space-between;
+  }
+
   .lg\:space-x-24 > :not([hidden]) ~ :not([hidden]){
     --tw-space-x-reverse: 0;
     margin-right: calc(6rem * var(--tw-space-x-reverse));
@@ -6027,6 +6106,10 @@ body {
     padding-right: 3rem;
   }
 
+  .lg\:pt-6{
+    padding-top: 1.5rem;
+  }
+
   .lg\:text-2xl{
     font-size: 1.5rem;
     line-height: 2rem;
@@ -6042,8 +6125,8 @@ body {
 }
 
 @media (min-width: 1175px){
-  .xl\:-mt-4{
-    margin-top: -1rem;
+  .xl\:w-\[140px\]{
+    width: 140px;
   }
 
   .xl\:w-\[180px\]{
